@@ -1,0 +1,327 @@
+@c
+@c essay-header.texi -- Essays common header;
+@c
+@c Copyright (C) 2013, 2014 Bruno Félix Rezende Ribeiro
+@c
+@c Permission is granted to copy, distribute and/or modify this
+@c document under the terms of the GNU Free Documentation License,
+@c Version 1.3 or any later version published by the Free Software
+@c Foundation; with no Invariant Sections.
+@c
+@c You should have received a copy of the GNU Free Documentation
+@c License along with this program.  If not, see
+@c <http://www.gnu.org/licenses/>.
+@c
+
+@ifclear INCLUDEessayHeader
+@set INCLUDEessayHeader
+@include release.texi
+@defindex rg
+@synindex rg cp
+
+@ifclear GNUphiCollection
+@ifclear GNUphiThird
+@set GNUphiStandalone
+@end ifclear
+@end ifclear
+
+
+
+
+
+@c --- Macro: essayWhole
+@macro essayWhole
+@inlineifset{GNUphiCollection, chapter}@inlineifset{GNUphiStandalone,
+document}@inlineifset{GNUphiThird, appendix}
+@end macro
+
+
+
+
+
+@c --- Macro: philosophyDescription
+@macro philosophyDescription
+This document is part of GNU philosophy, the GNU Project's exhaustive
+collection of articles and essays about free software and related
+matters.
+@end macro
+
+@macro VerbatimNotice
+Verbatim copying and distribution of this entire @essayWhole are
+permitted worldwide, without royalty, in any medium, provided this
+notice is preserved.
+@end macro
+
+@macro CCANDnotice
+This @essayWhole is licensed under the Creative Commons
+Attribution-NoDerivs@tie{}3.0 United States License. To view a copy of
+this license, visit
+@url{http://creativecommons.@/org/@/licenses/@/by-nd/@/3.0/us/} or
+send a letter to Creative Commons, 171@tie{}Second Street,
+Suite@tie{}300, San Francisco, California@tie{}94105, USA.
+@end macro
+
+
+
+
+
+@c --- Macro: essayCopyingSub
+
+@macro essayCopyingSub
+@c Notice above copyright one;
+@noindent
+@essayPreNotice
+
+@ifclear GNUphiCollection
+@iftex
+@sp 1
+@end iftex
+
+@noindent
+@philosophyDescription
+@end ifclear
+
+@c Copyright notice;
+@iftex
+@sp 1
+@end iftex
+@c @noindent
+@essayCopyright
+
+@c License notice;
+@ifset licenseVerbatim
+@quotation
+@VerbatimNotice
+@end quotation
+@end ifset
+
+@ifset licenseCCAND
+@quotation
+@CCANDnotice
+@end quotation
+@end ifset
+
+@end macro
+
+
+
+
+@c --- Macro: essayCopying
+
+@c Define the copying notice as macro so it can be used in several
+@c places for the specific needs of different output types.
+@macro essayCopying
+
+@c ##################################################################
+@c # In a collection, put the essay copying notice in small fonts.  #
+@c ##################################################################
+
+@ifclear GNUphiStandalone
+@ifnotinfo
+@smallquotation
+@essayCopyingSub
+@end smallquotation
+@iftex
+@sp 1
+@end iftex
+@end ifnotinfo
+
+@ifinfo
+@essayCopyingSub
+@end ifinfo
+@end ifclear
+
+
+
+
+@c ####################################################################
+@c # In a standalone which is not a Tex or Info, put the essay copying
+@c # notice in small fonts.
+@c ####################################################################
+
+@ifset GNUphiStandalone
+@ifnottex
+@ifnotinfo
+@smallquotation
+@essayCopyingSub
+@end smallquotation
+@end ifnotinfo
+@end ifnottex
+
+@iftex
+@essayCopyingSub
+@end iftex
+
+@ifinfo
+@essayCopyingSub
+@end ifinfo
+@end ifset
+
+
+@ifinfo
+@verbatim
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+@end verbatim
+@sp 1
+@end ifinfo
+@end macro
+
+
+
+
+
+@c --- Macro: essayHeader
+@macro essayHeader{file, node, title}
+
+@c %**start of header
+@ifset GNUphiStandalone
+@setfilename \file\.info
+@settitle \title\
+@defindex rg
+@synindex rg cp
+@end ifset
+@c %**end of header
+
+@c --- Copying notice;
+
+@c If this is a standalone essay, we don't have a copying notice
+@c already defined.  So, define it.
+@ifset GNUphiStandalone
+@copying
+@essayCopying
+@end copying
+@end ifset
+
+@c --- Title page and heading/footing;
+
+@c If this is a standalone essay, we don't have a title page and
+@c heading already defined for TeX output.  So, define it.  For a
+@c standalone essay the copying notice goes in the title page.
+@ifset GNUphiStandalone
+@titlepage
+@title \title\
+@subtitle @value{package}
+@vskip 0pt plus 1filll
+@insertcopying
+@end titlepage
+@iftex
+@headings off
+@everyheading @thistitle @| @| @value{package}
+@everyfooting  @| @thispage @|
+@end iftex
+@end ifset
+
+@c --- Info directory;
+
+@c If this is a standalone essay, we don't have the Info directory
+@c entry already defined for Info output.  So, define it.
+@ifset GNUphiStandalone
+@dircategory @value{package}
+@direntry
+* \node\: (\file\)
+@end direntry
+@end ifset
+
+@c If this is a standalone essay, we don't have the
+@ifset GNUphiStandalone
+@node Top
+@c In every output, but TeX, define the Top node as having the essay's
+@c title and then put the copying notice right after it.
+@ifnottex
+@top \title\
+@insertcopying
+@end ifnottex
+@c In TeX output, put the essay's title centralized.
+@iftex
+@centerchap \title\
+@end iftex
+@end ifset
+
+@c In a collection the node and chapter is already defined as the
+@c essay's title.  Then, just insert the copying notice after it.
+@ifclear GNUphiStandalone
+@essayCopying
+@end ifclear
+
+@unmacro essayPreNotice
+@unmacro essayCopyright
+
+@licenseVerbatim
+@end macro
+
+
+
+
+
+@c --- License macros;
+@macro clearLicense
+@clear licenseVerbatim
+@clear licenseCCAND
+@end macro
+
+@macro licenseVerbatim
+@clearLicense
+@set licenseVerbatim
+@end macro
+
+@macro licenseCCAND
+@clearLicense
+@set licenseCCAND
+@end macro
+
+@licenseVerbatim
+
+
+
+
+
+@c --- macro: essayCite
+@macro essayCite{file, node, title}
+@inlineifset{GNUphiCollection, @inlinefmtifelse{info,
+@inlinefmtifelse{plaintext, @cite{\title\}, @cite{\title\}
+(@pxref{\node\,it})},
+@ref{\node\,,\title\}}}@inlineifset{GNUphiStandalone,
+@inlinefmtifelse{info, @inlinefmtifelse{plaintext, @cite{\title\},
+@cite{\title\} (@pxref{,it,,\file\})},
+@ref{,,,\file\,\title\}}}@inlineifset{GNUphiThird,
+@inlinefmtifelse{info, @inlinefmtifelse{plaintext, @cite{\title\},
+@cite{\title\} (@pxref{,it,,\file\})}, @ref{,,,\file\,\title\}}}
+@end macro
+
+
+
+
+
+@c --- Essay heading macros;
+@macro essaySuperHeading{text}
+@ifnothtml
+@heading \text\
+@end ifnothtml
+@ifhtml
+@majorheading \text\
+@end ifhtml
+@end macro
+
+@macro essayHeading{text}
+@ifnothtml
+@subheading \text\
+@end ifnothtml
+@ifhtml
+@heading \text\
+@end ifhtml
+@end macro
+
+@macro essaySubHeading{text}
+@ifnothtml
+@subsubheading \text\
+@end ifnothtml
+@ifhtml
+@subheading \text\
+@end ifhtml
+@end macro
+
+
+
+
+
+@end ifclear

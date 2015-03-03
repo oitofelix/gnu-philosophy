@@ -1,0 +1,103 @@
+@c
+@c make-help.texi -- Build System Help: Make interface;
+@c
+@c Copyright (C) 2010, 2013, 2014 Bruno Félix Rezende Ribeiro
+@c <oitofelix@gnu.org>
+@c
+@c Permission is granted to copy, distribute and/or modify this
+@c document under the terms of the GNU Free Documentation License,
+@c Version 1.3 or any later version published by the Free Software
+@c Foundation; with no Invariant Sections.
+@c
+@c You should have received a copy of the GNU Free Documentation
+@c License along with this program.  If not, see
+@c <http://www.gnu.org/licenses/>.
+@c
+
+@c %**start of header
+@ifclear manual
+@setfilename make-help
+@documentencoding UTF-8
+@c @documentlanguage en_US
+@firstparagraphindent insert
+@c @footnotestyle end
+@c @settitle Make interface
+@end ifclear
+@include release.texi
+@c %**end of header
+
+
+
+
+
+@c --- homepage: Navigation bar;
+@ifset homepage
+@include navigation.texi
+@end ifset
+
+
+
+
+
+@c --- file: Copying notice;
+@c @ifset file
+@c @set FILE make-help
+@c @include copying.texi
+@c @insertcopying
+@c @end ifset
+
+
+
+
+
+@ifset help
+@centerchap Build System Help: Make interface
+@end ifset
+
+@ifclear help
+@smallindentedblock
+This particular text can be seen by running @samp{make help}.
+@end smallindentedblock
+@end ifclear
+
+As soon as the @command{configure} script finishes its execution, the
+build system is instantiated so you can use the command @command{make}
+to tell the build system what task you want done.  In order to do that
+you can run @samp{make @var{goal}}, where @var{goal} is one of the
+supported goals.  Actually, @command{make} accepts an arbitrary list
+of goals at once, separated by blanks, in which case it will strive to
+accomplish each of them.
+
+This package's build system has a help mechanism which will assist you
+through the build and installation process, as well as instruct you
+about all relevant goals.  Throughout its help documentation you are
+pointed to specific help topics --- denoted by @samp{help-@var{topic}}
+--- which you can visualize by running @samp{make help-@var{topic}},
+where @var{topic} is the topic at hand.
+
+This package has a somewhat different set of make goals and rules one
+would expect from an ordinary GNU software package.  The help
+documentation describes the most general function of each available
+goal, whose meaning often can be further specialized by the use of
+suffixes.  See @samp{help-suffixes}.  You can obtain further help in
+the following topics.
+
+@table @samp
+@item help-build
+Building;
+@item help-install
+Installation;
+@item help-clean
+Cleaning;
+@item help-dist
+Distribution;
+@end table
+
+
+
+
+
+@c --- homepage: Footer;
+@ifset homepage
+@include footer.texi
+@end ifset

@@ -1,0 +1,173 @@
+@c
+@c AUTHORS.texi -- List of major contributors;
+@c
+@c Copyright (C) 2010, 2013, 2014 Bruno Félix Rezende Ribeiro
+@c <oitofelix@gnu.org>
+@c
+@c Permission is granted to copy, distribute and/or modify this
+@c document under the terms of the GNU Free Documentation License,
+@c Version 1.3 or any later version published by the Free Software
+@c Foundation; with no Invariant Sections.
+@c
+@c You should have received a copy of the GNU Free Documentation
+@c License along with this program.  If not, see
+@c <http://www.gnu.org/licenses/>.
+@c
+
+@c %**start of header
+@ifclear manual
+@setfilename AUTHORS
+@documentencoding UTF-8
+@c @documentlanguage en_US
+@firstparagraphindent insert
+@footnotestyle end
+@settitle AUTHORS
+@end ifclear
+@include release.texi
+@c %**end of header
+
+
+
+
+
+@c --- homepage: Navigation bar;
+@ifset homepage
+@include navigation.texi
+@end ifset
+
+
+
+
+
+@c --- file: Copying notice;
+@ifset file
+@set FILE AUTHORS
+@include copying.texi
+@insertcopying
+@end ifset
+
+
+
+
+@c --- AUTHORS;
+@ifclear manual
+@centerchap Authors
+@end ifclear
+
+This @inlineifset{manual, chapter}@inlineifset{file,
+file}@inlineifset{homepage, page} contains a list of those people who
+are the writers of the philosophical essays and articles found herein.
+This program would not be what it is today without the invaluable help
+of these people, to whom we would like to say:
+
+@iftex
+@sp 1
+@end iftex
+@center @strong{THANK YOU VERY MUCH!}
+@iftex
+@sp 1
+@end iftex
+
+The names are listed in chronological order of contribution.  Each
+person's contact information, usually email, and a summary of that
+person's contribution is put in per correspondent section.
+
+For the list of maintainers of this package through the ages, see
+@inlineifset{homepage, @url{MAINTAINERS.html, the thanks
+page}}@inlineifset{file, file @file{MAINTAINERS}}@inlineifset{manual,
+@ref{Maintainers}}.
+
+For other external contributions, that does not matter for copyright
+purposes, e.g., bug reports, patch for markup and good ideas, see
+@inlineifset{homepage, @url{THANKS.html, the thanks
+page}}@inlineifset{file, file @file{THANKS}}@inlineifset{manual,
+@ref{Thanks}}.
+
+If you would appreciate your own name listed here, @strong{please
+contribute!}  See @inlineifset{homepage,
+@url{README.html#Contributing, how to contribute}}@inlineifset{file,
+the ``Contributing'' section of the @file{README}
+file}@inlineifset{manual, @ref{Contributing}}.
+
+@table @asis
+@item Richard M. Stallman (rms) @email{rms@@gnu.org}
+He is the author of the vast majority of essays contained in this
+package.  Those are:
+
+@itemize
+@item The Free Software Definition
+@item The GNU Project
+@item The Initial Announcement of the GNU Operating System
+@item The GNU Manifesto
+@item Why Software Should Not Have Owners
+@item Why Software Should Be Free
+@item Why Schools Should Exclusively Use Free Software
+@item Releasing Free Software If You Work at a University
+@item Why Free Software Needs Free Documentation
+@item Selling Free Software
+@item The Free Software Song
+@item What's in a Name?
+@item Categories of Free and Nonfree Software
+@item Why Open Source Misses the Point of Free Software
+@item Did You Say ``Intellectual Property''?  It's a Seductive Mirage
+@item Words to Avoid (or Use with Care) Because They Are Loaded or
+Confusing
+@item The Right to Read; A Dystopian Short Story
+@item Misinterpreting Copyright---A Series of Errors
+@item Science Must Push Copyright Aside
+@item Freedom---or Copyright
+@item What Is Copyleft?
+@item Copyleft: Pragmatic Idealism
+@item Anatomy of a Trivial Patent
+@item Software Patents and Literary Patents
+@item The Danger of Software Patents
+@item Microsoft's New Monopoly
+@item Introduction to the Licenses (coauthored by Brett Smith)
+@item GNU General Public License
+@item Why Upgrade to GPLv3
+@item GNU Lesser General Public License
+@item GNU Free Documentation License
+@item Can You Trust Your Computer?
+@item Who Does That Server Really Serve?
+@item Free but Shackled: The Java Trap
+@item The JavaScript Trap
+@item The X Window System Trap
+@item The Problem Is Software Controlled by Its Developer
+@item We Can Put an End to Word Attachments
+@item Thank You Larry McVoy
+@item Computing ``Progress'': Good and Bad
+@item Avoiding Ruinous Compromises
+@item Overcoming Social Inertia
+@item Freedom or Power? (coauthored by Bradley M. Kuhn)
+@end itemize
+
+@item Brett Smith
+@itemize
+@item Introduction to the Licenses (coauthored by Richard M. Stallman)
+@end itemize
+
+@item  Bradley M. Kuhn
+@itemize
+@item Freedom or Power? (coauthored by Richard M. Stallman)
+@end itemize
+
+@item Richard E. Buckman
+@itemize
+@item A Note on Software (coauthored by Joshua Gay)
+@end itemize
+
+@item Joshua Gay
+@itemize
+@item A Note on Software (coauthored by Richard E. Buckman)
+@end itemize
+
+@end table
+
+
+
+
+
+@c --- homepage: Footer;
+@ifset homepage
+@include footer.texi
+@end ifset

@@ -1,0 +1,97 @@
+@c
+@c make-help-build.texi -- Build System Help: Build;
+@c
+@c Copyright (C) 2010, 2013, 2014 Bruno Félix Rezende Ribeiro
+@c <oitofelix@gnu.org>
+@c
+@c Permission is granted to copy, distribute and/or modify this
+@c document under the terms of the GNU Free Documentation License,
+@c Version 1.3 or any later version published by the Free Software
+@c Foundation; with no Invariant Sections.
+@c
+@c You should have received a copy of the GNU Free Documentation
+@c License along with this program.  If not, see
+@c <http://www.gnu.org/licenses/>.
+@c
+
+@c %**start of header
+@ifclear manual
+@setfilename make-help-build
+@documentencoding UTF-8
+@c @documentlanguage en_US
+@firstparagraphindent insert
+@c @footnotestyle end
+@c @settitle Build
+@end ifclear
+@include release.texi
+@c %**end of header
+
+
+
+
+
+@c --- homepage: Navigation bar;
+@ifset homepage
+@include navigation.texi
+@end ifset
+
+
+
+
+
+@c --- file: Copying notice;
+@c @ifset file
+@c @set FILE make-help-build
+@c @include copying.texi
+@c @insertcopying
+@c @end ifset
+
+
+
+
+
+@ifset help
+@centerchap Build System Help: Make interface
+@end ifset
+
+@ifclear help
+@smallindentedblock
+This particular text can be seen by running @samp{make help-build}.
+@end smallindentedblock
+@end ifclear
+
+After the configuration step@inlineifclear{help, @comma{} as described
+in @ref{Configuration}@comma{}} is complete, it is time to build the package.
+The primary used for this is @samp{all[@var{a}][@var{f}][@var{l}]}.
+Therefore to build all collection and standalone formats, in all
+available languages, invoke @samp{make all} (or simply @samp{make}).
+As explained in @inlineifclear{help, @ref{Goal
+suffixes}}@inlineifset{help, @samp{help-suffixes}}, you can further
+specify the build by using any combination of @emph{aggregate},
+@emph{format} and @emph{language} suffixes.
+
+There are two special @command{make} goals which aid GNU philosophy
+maintainers: @samp{www-gnu[@var{l}]} and @samp{homepage[@var{l}]}.
+The former build all @url{https://www.gnu.org/philosophy/, GNU website
+philosophy section essays}, and the latter the
+@url{https://www.gnu.org/software/philosophy/, homepage of GNU
+philosophy package}.
+
+The silent rules of @command{make} are enabled by default.  Therefore,
+you will see just one line for each file @command{make} builds, since
+the output of recipes is suppressed.  That is a reasonable behavior
+unless you have problems in the build process.  On that case you
+probably will need the full output of @command{make} to be able to
+debug the problem.  To do that at @command{make} time, pass @samp{V=1}
+as an argument to @command{make} when building the targets that causes
+problem.  To disable silent rules at @command{configure} time use the
+configure option @option{--disable-silent-rules}.
+
+
+
+
+
+@c --- homepage: Footer;
+@ifset homepage
+@include footer.texi
+@end ifset

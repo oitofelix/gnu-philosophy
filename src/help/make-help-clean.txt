@@ -1,0 +1,14 @@
+Build System Help: Cleaning
+***************************
+
+   Sometimes, after the building process (see ‘help-build’), it is
+useful to delete all file objects built by ‘make’ invocation which are
+present in the build tree, perhaps because it coincides with the source
+tree and you want to make it like pristine again, or you want to ensure
+every object gets rebuilt after a particular change to the sources or
+build procedure.  The primary used for this is ‘all-clean[A][F][L]’.
+Therefore, to clean all collection and standalone formats, in all
+available languages, invoke ‘make all-clean’.  As explained in
+‘help-suffixes’, you can further specify the cleaning by using any
+combination of _aggregate_, _format_ and _language_ suffixes.
+

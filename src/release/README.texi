@@ -1,0 +1,878 @@
+@c
+@c README.texi -- Description, prerequisites, configuration, build,
+@c                installation, use, distribution, obtainment, contact,
+@c                bug reports, contribution, donation and hacking;
+@c
+@c Copyright (C) 2013, 2014 Bruno Félix Rezende Ribeiro
+@c <oitofelix@gnu.org>
+@c
+@c Permission is granted to copy, distribute and/or modify this
+@c document under the terms of the GNU Free Documentation License,
+@c Version 1.3 or any later version published by the Free Software
+@c Foundation; with no Invariant Sections.
+@c
+@c You should have received a copy of the GNU Free Documentation
+@c License along with this program.  If not, see
+@c <http://www.gnu.org/licenses/>.
+@c
+
+@c %**start of header
+@ifclear manual
+@setfilename README
+@documentencoding UTF-8
+@c @documentlanguage en_US
+@firstparagraphindent insert
+@footnotestyle end
+@settitle README
+@end ifclear
+@include release.texi
+@c %**end of header
+
+
+
+
+
+@c --- Macros;
+
+@c --- --- metaSection
+@macro metaSection{name}
+@ifset file
+@node \name\
+@chapter \name\
+@end ifset
+@ifset manual
+@node \name\
+@section \name\
+@end ifset
+@ifset homepage
+@anchor{\name\}
+@majorheading \name\
+@end ifset
+@end macro
+
+
+
+
+
+@c --- homepage: Navigation bar;
+@ifset homepage
+@include navigation.texi
+
+@majorheading Main
+
+@multitable @columnfractions .1 .1 .1 .1 .1 .1
+@headitem @ref{Download}
+@tab @ref{Contact}
+@tab @ref{Bug reporting}
+@tab @ref{Contributing}
+@tab @ref{Donating}
+@tab @ref{Hacking}
+@end multitable
+@end ifset
+
+
+
+
+
+@c --- file: Copying notice;
+@ifset file
+@set FILE README
+@include copying.texi
+@insertcopying
+@end ifset
+
+
+
+
+
+@c --- file: Table of contents;
+@ifset file
+@sp 1
+@noindent
+--- Table of Contents ---
+@contents
+@sp 2
+@end ifset
+
+
+
+
+
+@c --- file: Preface;
+@ifclear homepage
+@ifset file
+@unnumbered Preface
+@end ifset
+
+This @inlineifset{manual, chapter}@inlineifset{file, file} briefly
+explains for what this package is intended, gives relevant
+considerations regarding dependencies, configuration, build,
+installation and use, describes which are the rules for its
+distribution, how to get a copy of it, how to contact the community,
+how to fill bug reports, how to contribute to the package, how to make
+donations to support its development and how to get started hacking
+the code.  Bear in mind that instructions in this @inlineifset{manual,
+chapter}@inlineifset{file, file} are package-specific; for general and
+in-depth configuration, build and installation instructions refer to
+the file @file{INSTALL} present in the top-level directory of the
+source distribution.  If you have checked out the source tree from the
+CVS repository see @ref{Hacking}.
+
+@ifset file
+For other information about this package you can check the following
+files found in the top level directory of the distribution:
+
+@table @file
+@item NEWS
+User-visible changes since previous versions;
+@item TODO
+Features we want to see implemented someday;
+@item BUGS
+Bugs you must be aware of;
+@item AUTHORS
+List of major contributors;
+@item MAINTAINERS
+List of maintainers;
+@item THANKS
+List of minor contributors;
+@item DONORS
+People who supported the development by donations;
+@item INSTALL
+Generic build and installation instructions;
+@item COPYING
+Notice about articles and essays licenses;
+@item COPYING.DOC
+The documentation license;
+@item ChangeLog
+Detailed list of changes of the source code;
+@end table
+@end ifset
+
+@menu
+* Description::      What this package is all about;
+* Prerequisites::    Package build prerequisites;
+* Configuration::    Influential configuration settings;
+* Make interface::   General concepts about the GNU make interface;
+* Goal suffixes::    Further specifying the action of goal;
+* Build::            Build instructions;
+* Installation::     Install goals and locations;
+* Cleaning::         Deleting non-source objects from build directory;
+* Making a tarball:: Generating a pristine tarball for redistribution;
+* Usage::            Using the essays in other package's documentation;
+* Distribution::     The user's right to modify and redistribute;
+* Getting a copy::   GNU FTP server and CVS;
+* Contact::          Mailing list and IRC;
+* Bug reporting::    Support and bug trackers;
+* Contributing::     Several ways to help program's development;
+* Donating::         Supporting developer's work;
+* Hacking::          Get started with CVS checkout;
+@end menu
+
+For more information about this package you can visit its home page at
+@url{@value{webPage}}.  If you want to receive notifications about new
+releases of this package or important issues related to it, subscribe
+to the mailing list, as described in @ref{Contact}, or subscribe to
+the package atom feed @url{@value{atomFeed}}.
+
+@end ifclear
+
+
+
+
+
+@c --- Description;
+@metaSection Description
+
+@value{package} is the GNU Project's exhaustive collection of articles
+and essays about free software and related matters.  It provides all
+of them @emph{standalone} or @emph{collected} as a huge single book,
+in @emph{Info}, @emph{HTML}, @emph{PDF}, @emph{plain text}, and every
+other format supported by Texinfo, in several different languages.  It
+makes the individual Texinfo source code of any essay readily
+available for inclusion in another package's documentation and also
+implements a way to generate the whole
+@url{https://www.gnu.org/philosophy/, GNU website philosophy section}
+automatically from the Texinfo sources.  Last, but not least, it
+facilitates the future work of the @acronym{FSF, Free Software
+Foundation} in the publication of free software articles collection
+books, like: ``Free Software, Free Society: Selected Essays of Richard
+M. Stallman''.
+
+Some highlighted benefits are:
+@itemize
+@item
+It is more easy to spread GNU philosophy.  The availability of several
+formats means that it is simpler for people to find the desired
+article in a file format that fits their constraints and suits the
+access, redistribution and presentation requirements.
+@item
+Besides its free software components, the GNU system ought to document
+its own philosophy.  It is very natural for users to expect that the
+philosophy and history that inspired the GNU system existence be
+easily accessible within its documentation system.
+@item
+It makes life easier for authors who want to use their package
+documentation to spread the GNU philosophy.  Before it there was no
+easy way to get GNU philosophical articles in an adequate format to
+include in arbitrary documentation; many articles only existed in HTML
+specifically tailored for GNU website, others only in plain text
+format hidden deeply inside package distributions, and a bunch in
+non-portable Texinfo extensively written for exclusive TeX processing.
+@item
+All essays and articles are written in the GNU Project's standard,
+official and hub format: Texinfo.  Making the GNU philosophical
+documents comply with GNU standards assists in uniformity and
+coherence.  For instance, until this package conception it was
+remarkable the almost complete lack of essays in Info, the GNU
+Project's official online documentation format.
+@item
+There is a single place of maintenance for GNU Project's philosophical
+articles and essays.  The upkeep of all GNU Project's philosophy
+documents is optimized since no error must be corrected twice and
+every addition is atomically, and instantaneously, available in every
+supported format, for every intended purpose.
+@end itemize
+
+The maintainers set a clear commitment to not blindly take for granted
+the quality of automatic generated output, and therefore they adapt
+the Texinfo source code for the particularities of each available
+output format, in order to make it look better, but without the
+unmindful and excessive use of back-end specific code.
+
+
+
+
+
+@c --- file, manual: Prerequisites;
+@ifclear homepage
+@metaSection Prerequisites
+
+There are two classes of software prerequisites (or dependencies, if
+you will) to build the GNU philosophy package: required and optional.
+If you are missing a @dfn{required prerequisite} the configuration
+step will fail with an error message stating what package is needed,
+which is its minimal acceptable version, and will point you to where
+you can obtain it.  On the other side, the @dfn{optional
+prerequisites} are needed to perform a task not considered critical
+for the overall build process of the package, thus, although the
+successful build can be accomplished, the resultant build may not have
+all possible features enabled or only is possible to realize partial,
+yet auto-sufficient, builds.  Often, in order to reduce the set of
+programs the user need to have installed to complete a build, the
+maintainers distribute a set of files that are not source files, but
+the result of a pre-build procedure.  In that case, as long as you
+don't modify the original source files, you don't need to worry about
+the software used to compile the source files, as the target object
+files are up-to-date.
+
+
+@subheading Required
+
+@table @asis
+
+@item GNU Make
+Instead of designing this package's build system make-files portable,
+the maintainers have chosen to use a portable make program, namely GNU
+Make.
+
+Version 3.81 or superior is known to work correctly.  Earlier versions
+may work, though.  You can obtain it from
+@url{https://gnu.org/software/make}.
+
+@item GNU Texinfo
+It is highly critical for the build procedure as the entire source
+tree of articles and essays is written in Texinfo language.  However,
+the Info collections, in every available translation language, is
+built by the maintainers, so you can install and use it without
+building anything.
+
+Version 5.0 or superior is required.  You can obtain it from
+@url{https://gnu.org/software/texinfo}.
+
+@end table
+
+
+@subheading Optional
+
+@table @asis
+
+@item PO4A (PO for anything)
+It is required by any localization operation, notably by localized
+builds.  Without it you'll only be able to build from the original
+sources (in English language).
+
+You can obtain it from @url{http://po4a.alioth.debian.org/}.
+Currently a patch needed to process correctly @value{package} Texinfo
+source code is not present in the latest released version, but it's
+already applied in PO4A @abbr{VCS, Version Control System} repository.
+See @inlineifset{manual, @ref{Bugs}}@inlineifset{homepage,
+@url{BUGS.html, bugs you must be aware of}}@inlineifset{file, the file
+@file{BUGS}}.
+
+
+@item GNU Unifont
+It is needed for the rendering of the numerous scripts, in several
+different languages, contained in the essay @cite{Translations of the
+Term ``Free Software''}.  Nevertheless, the scripts are distributed
+pre-rendered for essays in every format, except DVI and PS.
+
+You can obtain it from @url{https://gnu.org/software/unifont/}.  Make
+sure you get the TTF build of it, otherwise the scripts probably won't
+be rendered properly as the result of a bug in ImageMagick program
+@command{convert}.  See @inlineifset{manual,
+@ref{Bugs}}@inlineifset{homepage, @url{BUGS.html, bugs you must be
+aware of}}@inlineifset{file, the file @file{BUGS}}.
+
+
+@item ImageMagick
+It is used to render the scripts with GNU Unifont and also to convert
+some source figures to the appropriate format for inclusion in the
+essays.  As with GNU Unifont, all needed figures are distributed with
+this package, but those needed by DVI and PS essays.
+
+You can obtain it from @url{http://www.imagemagick.org/}.  It is not
+clear which is the minimal acceptable version.  Please, submit a bug
+report if a specific old version of ImageMagick doesn't work properly.
+See @ref{Bug reporting}.
+@end table
+
+@end ifclear
+
+
+
+
+
+@c --- file, manual: Configuration;
+@ifclear homepage
+@metaSection Configuration
+
+The first step in the build process is the configuration.  It is
+performed by a script called @command{configure}, present at the top
+level of the source tree.  That script will guess various
+system-dependent features and characteristics and then setup the build
+system to properly operate underneath the system @command{configure}
+ran.  The files yielded by the build process will be placed into a
+directory hierarchy created by @command{configure}, immediately below
+the directory in which it runs.  Thus, in order to not pollute the
+source tree, as well as assure its integrity, we recommend you invoke
+the script @command{configure} from a directory other than the
+source's.  In this documentation, we denote the source directory
+absolute name, alternatively its name relative to the build directory,
+by @var{srcdir}.
+
+It is possible to manually tune some properties of the build system by
+means of command line switches and environment variables, which are
+discussed in the following paragraphs.
+
+There are some articles, remarkably @cite{Translations of the Term
+``Free Software''}, that contains an invariant set of expressions in
+several different language scripts.  To maximize compatibility and
+coherence among all output formats the expressions are written in
+plain text UTF-8 encoded files which are included in plain text format
+for both aggregate types (collection and standalone), but are rendered
+as @abbr{PNG, Portable Network Graphics} or @abbr{EPS, Encapsulated
+PostScript}, as required by the specific back-end, in order to be
+included or referenced by formats that allow graphical representation.
+To achieve successfully the rendering of all scripts, it is necessary
+an Unicode font that comprises all required glyph.  By default
+@command{configure} script searches the system for GNU Unifont, the
+standard font GNU philosophy build system uses to do such rendering
+task.  To override the default and select another font of your choice
+you can use the @command{configure} option
+@option{--with-font=@var{font-name}} where @var{font-name} is one of
+the names given in the list of available font names obtained by
+
+@example
+@var{srcdir}/configure --with-font=list
+@end example
+
+You can also explicitly specify a font file-name as in:
+
+@example
+@var{srcdir}/configure \
+--with-font=/home/gnu/share/fonts/unifont-6.3.20131020.ttf
+@end example
+
+Notice that there is a bug in ImageMagick program @command{convert}
+that prevents certain font formats from working properly.  See
+@inlineifset{manual, @ref{Bugs}}@inlineifset{homepage, @url{BUGS.html,
+bugs you must be aware of}}@inlineifset{file, the file @file{BUGS}}.
+
+You can override the guesses of @command{configure} script about the
+GNU Texinfo command @command{makeinfo} and the ImageMagick command
+@command{convert} by setting the environment variables @env{MAKEINFO}
+and @env{CONVERT}, respectively.  The guesses about the PO4A utilities
+@command{po4a} and @command{po4a-gettextize} are overridden by the
+environment variables @env{PO4A} and @env{PO4A_GETTEXTIZE},
+respectively.
+
+@end ifclear
+
+
+
+
+
+@c --- file, manual: Make interface;
+@ifclear homepage
+@metaSection Make interface
+
+@include make-help.texi
+
+@end ifclear
+
+
+
+
+
+@c --- file, manual: Goal suffixes;
+@ifclear homepage
+@metaSection Goal suffixes
+
+@include make-help-suffixes.texi
+
+@end ifclear
+
+
+
+
+
+@c --- file, manual: Build;
+@ifclear homepage
+@metaSection Build
+
+@include make-help-build.texi
+
+@end ifclear
+
+
+
+
+
+@c --- file, manual: Installation;
+@ifclear homepage
+@metaSection Installation
+
+@include make-help-install.texi
+
+@end ifclear
+
+
+
+
+
+@c --- file, manual: Cleaning;
+@ifclear homepage
+@metaSection Cleaning
+
+@include make-help-clean.texi
+
+@end ifclear
+
+
+
+
+
+@c --- file, manual: Making a tarball;
+@ifclear homepage
+@metaSection Making a tarball
+
+@include make-help-dist.texi
+
+@end ifclear
+
+
+
+
+
+@c --- file, manual: Usage;
+@ifclear homepage
+@metaSection Usage
+
+All GNU philosophy essays are promptly available for inclusion in
+another package's documentation.  To exemplify how to do it, consider
+the following hypothetical situation: your target documentation main
+file is @file{gnu-3.0/doc/manual.texi} and you want to include the
+original, English version, of @cite{The GNU Project} essay.  Supposing
+GNU philosophy source tree is under @file{philosophy} directory, you
+can find the correspondent essay file in @file{philosophy/src/essays}
+directory named as @file{the-gnu-project.texi}.  As a general rule,
+for an essay, whose title in lowercase, with all non-alphanumeric and
+non-blank characters removed, all blank characters collapsed to a
+single one, and then transliterated to @samp{-}, is @var{essay-title},
+one can find the correspondent Texinfo source as
+@file{philosophy/src/essays/@var{essay-title}}.
+
+After locating the desired essay file, the next step is to copy it
+from the GNU philosophy source tree to the desired target main
+documentation file directory, in this illustration case the following
+command suffices:
+
+@example
+cp @file{philosophy/src/essays/the-gnu-project.texi} @file{gnu-3.0/doc}
+@end example
+
+There is another required file, which is included by every essay file,
+namely @file{essay-header.texi}.  That file contains all aggregate
+type specific settings, the definition of several Texinfo helper
+macros, huge conditional processing, among other things, whose aim is
+to make essay's Texinfo source perfectly portable between the various
+use cases, therefore not requiring the modification of a single line
+of code in the essay file properly.  You must copy it also:
+
+@example
+cp @file{philosophy/src/essay-header.texi} @file{gnu-3.0/doc}
+@end example
+
+Now you are just a couple of changes in your documentation main file
+from achieving the desired goal.  For that end, edit the file
+@file{gnu-3.0/doc/manual.texi} and put somewhere inside its header the
+Texinfo command:
+
+@verbatim
+@set GNUphiThird
+@end verbatim
+
+That will inform @file{essay-header.texi} about our specific use case,
+and thence make the @file{the-gnu-project.texi} essay file to behave
+properly when included.  Now, wherever you want an entry for the essay
+in the documentation main file, you can put an include for the essay
+file, like:
+
+@verbatim
+@node The GNU Project
+@appendix The GNU Project
+@include the-gnu-project.texi
+@end verbatim
+
+If the documentation is supposed to generate also Info files, do not
+forget to put a menu entry for it:
+
+@verbatim
+@menu
+[...]
+GNU philosophy:
+* The GNU Project::
+[...]
+@end menu
+@end verbatim
+
+You are done.  Simple isn't it?
+
+@end ifclear
+
+
+
+
+
+@c --- file, manual: Distribution;
+@ifclear homepage
+@metaSection Distribution
+
+This package may be @dfn{freely redistributed}; this means that
+everyone is free to use it and free to redistribute it under certain
+conditions.  This package is not in the public domain; it is
+copyrighted and there are restrictions on its distribution, but these
+restrictions are designed to permit everything that a good cooperating
+citizen would want to do.  What is not allowed is to try to prevent
+others from further sharing any version of this package that they
+might get from you.
+
+Each essay and article is licensed either under verbatim copying
+license or Creative Commons Attribution-NoDerivs 3.0 United States
+license; which one is described in the beginning of each of them.
+Therefore, while you are allowed to modify the markup and freely
+redistribute this package, granted you preserve the copyright and
+license notices, modified versions of the subject matter text may not
+be made.
+
+For verbatim copying the precise conditions are:
+
+@quotation
+Verbatim copying and distribution are permitted worldwide, without
+royalty, in any medium, provided this notice is preserved.
+@end quotation
+
+For Creative Commons Attribution-NoDerivs 3.0 United States the
+precise conditions can be found at
+@url{http://creativecommons.@/org/@/licenses/@/by-nd/@/3.0/us/}.
+@end ifclear
+
+
+
+
+
+@c --- file, manual: Getting a copy;
+@ifclear homepage
+@metaSection Getting a copy
+
+One way to get a copy of this package is from someone else who has it.
+You need not ask for our permission to do so, or tell any one else;
+just copy it.  You may also receive this package when you buy a
+computer.  Computer manufacturers are free to distribute copies on the
+same terms that apply to everyone else.
+
+If you have access to the Internet, you can get the latest
+distribution version of this package at @url{@value{ftpDir}}.  Please,
+use a mirror if possible; you will be automatically redirected to the
+nearest mirror at @url{@value{ftpMirrorDir}}.
+
+A CVS repository, where the development takes place, is also
+available.  It maintains the full history of modifications of every
+single source file.  You can checkout any given revision of any file
+or get a snapshot of the entire source tree in a particular desired
+state.  Special build tools, as described in @ref{Hacking}, are
+required to build from those checkouts, though.  Notably, to stay up
+to date with the latest developments in the source tree, you can
+anonymously checkout the repository with the following command:
+@example
+cvs -z9 -d:pserver:anonymous@@@value{CVSurl} \
+  co @value{GNUid}
+@end example
+@end ifclear
+
+
+
+
+
+@c --- homepage: Download;
+@ifset homepage
+@anchor{Download}
+@majorheading Download
+
+@strong{The current stable release is @value{version}} (released
+@value{date}).
+
+@noindent
+Here are the compressed sources and a GPG detached signature:
+@example
+@value{ftpTarball}
+@value{ftpTarSign}
+@end example
+
+@noindent
+Use a mirror for higher download bandwidth:
+@example
+@value{ftpMirrorTarball}
+@value{ftpMirrorTarSign}
+@end example
+
+You can find that and earlier releases at a nearby
+@url{@value{ftpMirrorDir}, GNU@tie{}ftp@tie{}mirror}; or if automatic
+redirection does not work use the @url{@value{ftpDir},
+GNU@tie{}main@tie{}ftp@tie{}server}.
+
+The oldest (non-GNU) releases are available from
+@url{@value{ftpOldMirror}, Savannah mirror download area}
+(alternatively @url{@value{ftpOld}, Savannah download area}).  They
+are only of historical interest and are no longer supported.
+
+Use a @file{.sig} file to verify that the corresponding file (without
+the @file{.sig} suffix) is intact.  First, be sure to download both
+the @file{.sig} file and the corresponding tarball.  Then, run a
+command like this:
+
+@example
+gpg --verify @value{tarSign}
+@end example
+
+If that command fails because you don't have the required public key,
+then run this command to import it:
+
+@example
+gpg --recv-keys @value{keyID} --keyserver hkp://keys.gnupg.net
+@end example
+
+@noindent
+and rerun the @samp{gpg --verify} command.
+
+This release is signed by @emph{@value{signer}}.  His key fingerprint
+is @samp{@value{fingerprint}}.
+
+Check the key's authenticity with the command
+@example
+gpg --fingerprint @value{keyID} | sed -n '/^[[:blank:]]\+Key/s/^.*= //p'
+@end example
+
+It must print the following fingerprint:
+@example
+@value{fingerprint}
+@end example
+
+Otherwise something is wrong!  In that case don't use the downloaded
+tarball and contact the developers as described in @ref{Contact}.
+
+A CVS repository, where the development takes place, is also
+available.  To stay up to date with the latest developments in the
+source tree, you can anonymously checkout the repository with the
+following command:
+@example
+cvs -z9 -d:pserver:anonymous@@@value{CVSurl} co @value{GNUid}
+@end example
+@end ifset
+
+
+
+
+
+@c --- Contact
+@metaSection Contact
+
+You can get in touch with other users and the maintainers of this
+package subscribing to the mailing list.  Anyone is welcome to join
+the list; to do so, visit the @url{@value{mailBugWeb},
+@value{mailBugName} web interface}.  You can use this list for all
+discussion, including asking for help and bug reporting, although the
+preferred method for reporting bugs is the dedicated bug tracking web
+interface described in @ref{Bug reporting}.  To post a message to all
+the list members, send email to @email{@value{mailBugAddr}}.  To see
+the collection of prior postings to the list, visit the
+@url{@value{mailBugArch}, @value{mailBugName} archive}.
+
+If you feel somewhat chatty, eager for a somewhat more instantaneous
+response from community, you can join us on our friendly IRC channel:
+@samp{@value{IRCurl}}.
+
+
+
+
+
+@c --- Bug reporting
+@metaSection Bug reporting
+
+If you come across some problem and need help you can contact the
+community as described in @ref{Contact}.  If you think you found a
+bug, but is not quite sure about it, you can instead ask for support
+on our @url{@value{supportTrack}, support tracker}.  We will revise
+your post, advise you and take the appropriate measures.  If you are
+confident you have found a bug, you can submit a bug report directly
+at our @url{@value{bugTrack}, bug tracker}.  Please, when reporting a
+bug include enough information for the maintainers to reproduce the
+problem.
+
+
+
+
+
+@c --- Contributing
+@metaSection Contributing
+
+This package is a collaborative effort and we encourage contributions
+from anyone and everyone --- your help is very much appreciated.  You
+can help in many ways:
+
+@itemize
+@item
+Donate to developers in order to support their work.  See
+@ref{Donating}.
+@item
+Help users in the mailing list and IRC channel.
+@item
+Find and report bugs, even better, fix the bugs you and others find.
+@xref{Bug reporting}.
+@item
+Translate the essays into other languages.
+@item
+Suggest, even better, create a Texinfo source for, new essays and
+articles, that are of free redistribution, in order include them in
+this package.
+@end itemize
+
+You can join the maintainers team to contribute to addition and
+maintenance of articles and essays at the @url{@value{develPage},
+development page}.  To get started hacking see @inlinefmtifelse{html,
+@url{README.html#Hacking, how to hack}, @ref{Hacking}}.
+
+
+
+
+
+@c --- Donating;
+@metaSection Donating
+
+If you find this package useful, please @strong{send a donation} to
+its maintainers to support their work.  If you use this package at
+your workplace, please suggest that the company make a donation.  We
+appreciate contributions of any size -- donations enable us to spend
+more time working on this package, and help cover our infrastructure
+expenses.
+
+If you'd like to make a donation of any value, please send it to the
+following Bitcoin address:
+
+@example
+@value{btcAddr}
+@end example
+
+Since we aren't a tax-exempt organization, we can't offer you a tax
+deduction, but for all donations over 0.05@tie{}BTC, we'd be happy to
+recognize your contribution in the @url{@value{webPage}DONORS.html,
+donors@tie{}page}, the file @file{DONORS} in the top-level directory
+of the source tree and in GNU philosophy collection book's chapter
+``Donors'', for the next release.  In this case, after making the
+donation, send an email to @value{mailPrivAddr} giving your name and
+the amount donated, so we can keep track of people's names and
+respective donation values.
+
+We are also happy to consider making particular improvements or
+changes, or giving specific technical assistance, in return for a
+substantial donation over 0.5@tie{}BTC.  If you would like to discuss
+this possibility, write to us at @email{@value{mailPrivAddr}}.
+
+Another possibility is to pay a software maintenance fee.  Again,
+write to us about this at @email{@value{mailPrivAddr}} to discuss how
+much you want to pay and how much maintenance we can offer in return.
+
+@center @strong{Thanks for your support!}
+@sp 1
+
+
+
+
+
+@c --- Hacking;
+@metaSection Hacking
+
+@noindent
+The development sources are available through CVS at Savannah:
+
+@display
+@value{CVSsavannah}
+@end display
+
+If you are getting the sources from CVS (or change
+@file{configure.ac}), you'll need to have GNU Autoconf, GNU Automake
+and GNU Texinfo installed to (re)build.  All of these programs are
+available from @url{@value{ftp}}.  Their required minimal versions
+are:
+
+@itemize
+@item GNU Autoconf @value{autoconfMinVersion}
+@item GNU Automake @value{automakeMinVersion}
+@item GNU Texinfo @value{texinfoMinVersion}
+@end itemize
+
+@noindent
+This release was bootstrapped with the following versions:
+@itemize
+@item
+GNU Autoconf @value{autoconfVersion}
+@item
+GNU Automake @value{automakeVersion}
+@item
+GNU Texinfo @value{texinfoVersion}
+@end itemize
+
+After getting the CVS sources, and installing the tools above, you can
+run, in the top-level directory of the source tree, @samp{./bootstrap}
+and then @samp{@var{srcdir}/configure} to do a fresh build.  After
+that first time, running @command{make} should suffice.  See file
+@file{INSTALL}.
+
+
+
+
+
+@c --- homepage: Footer;
+@ifset homepage
+@include footer.texi
+@end ifset

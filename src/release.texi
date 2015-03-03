@@ -1,0 +1,132 @@
+@c
+@c release.texi -- Release-specific Texinfo variables;
+@c
+@c Copyright (C) 2010, 2013, 2014 Bruno Félix Rezende Ribeiro
+@c <oitofelix@gnu.org>
+@c
+@c Permission is granted to copy, distribute and/or modify this
+@c document under the terms of the GNU Free Documentation License,
+@c Version 1.3 or any later version published by the Free Software
+@c Foundation; with no Invariant Sections.
+@c
+@c You should have received a copy of the GNU Free Documentation
+@c License along with this program.  If not, see
+@c <http://www.gnu.org/licenses/>.
+@c
+
+@ifclear INCLUDEpackage
+@set INCLUDEpackage
+
+@c --- Basic information;
+@set package GNU philosophy
+@set tarName philosophy
+@set version 0.1.20140214
+@set GNUid philosophy
+@set date February 14, 2014
+@set autoconfVersion 2.69
+@set automakeVersion 1.14.1
+@set texinfoVersion 5.2
+@set autoconfMinVersion 2.60
+@set automakeMinVersion 1.13
+@set texinfoMinVersion 5.0
+
+
+
+
+@c --- Internet resources;
+
+@c --- --- GNU
+@set domain gnu.org
+@set webPage https://www.@value{domain}/software/@value{GNUid}/
+@c --- --- non-GNU
+@c @set domain nongnu.org
+@c @set webpage http://www.@value{domain}/@value{GNUid}/
+
+
+
+@c --- --- Savannah;
+@set atomFeed https://savannah.@value{domain}/news/atom.php?group=@value{GNUid}
+@set develPage https://savannah.@value{domain}/projects/@value{GNUid}/
+@set supportTrack https://savannah.@value{domain}/support/?group=@value{GNUid}
+@set bugTrack https://savannah.@value{domain}/bugs/?group=@value{GNUid}
+
+
+
+@c --- --- Mailing lists;
+
+@c --- --- --- Bug
+@c --- --- --- --- GNU
+@set mailBugName bug-@value{GNUid}
+@c --- --- --- --- non-GNU
+@c @set mailBugName @value{GNUid}-bug
+@set mailBugAddr @value{mailBugName}@@@value{domain}
+@set mailBugWeb https://lists.@value{domain}/mailman/listinfo/@value{mailBugName}/
+@set mailBugArch https://lists.@value{domain}/archive/html/@value{mailBugName}/
+
+@c --- --- --- Private
+@c --- --- --- --- GNU
+@set mailPrivName @value{GNUid}
+@c --- --- --- --- non-GNU
+@c @set mailPrivName @value{GNUid}-support
+@set mailPrivAddr @value{mailPrivName}@@@value{domain}
+@set mailPrivWeb https://lists.@value{domain}/mailman/listinfo/@value{mailPrivName}/
+@set mailPrivArch https://lists.@value{domain}/archive/html/@value{mailPrivName}/
+
+
+
+@c --- --- IRC;
+@set IRCchan @value{GNUid}
+@set IRCserver irc.freenode.net
+@set IRCurl irc://@value{IRCserver}/@value{IRCchan}
+
+@c --- --- FTP;
+@set tarball @value{tarName}-@value{version}.tar.gz
+@set tarSign @value{tarball}.sig
+
+@c --- --- --- GNU
+@set ftp https://ftp.gnu.org/gnu/
+@set ftpMirror http://ftpmirror.gnu.org/
+@set ftpOld http://download.savannah.gnu.org/releases/@value{GNUid}/
+@set ftpOldMirror http://download-mirror.savannah.gnu.org/releases/@value{GNUid}/
+@c --- --- --- non-GNU
+@c @set ftp http://download.savannah.nongnu.org/releases/
+@c @set ftpMirror http://download-mirror.savannah.nongnu.org/releases/
+
+@set ftpDir @value{ftp}@value{GNUid}/
+@set ftpMirrorDir @value{ftpMirror}@value{GNUid}/
+@set ftpTarball @value{ftpDir}@value{tarball}
+@set ftpTarSign @value{ftpDir}@value{tarSign}
+@set ftpMirrorTarball @value{ftpMirrorDir}@value{tarball}
+@set ftpMirrorTarSign @value{ftpMirrorDir}@value{tarSign}
+
+@c --- --- CVS;
+@set CVSsavannah https://savannah.@value{domain}/cvs/?group=@value{GNUid}
+@set CVSserver cvs.savannah.@value{domain}
+@set CVSdir /sources/@value{GNUid}
+@set CVSurl @value{CVSserver}:@value{CVSdir}
+
+
+
+
+
+@c --- GPG;
+@set signer Bruno Félix Rezende Ribeiro
+@set keyID 0x28D618AF
+@set fingerprint 7CB1 208C 7336 56B7 5962  2500 27B9 C6FD 28D6 18AF
+
+
+
+
+
+@c --- Licenses;
+@set progLicenseURL https://www.gnu.org/licenses/gpl.html
+@set docLicenseURL https://www.gnu.org/licenses/fdl.html
+
+
+
+
+
+@c --- Financial;
+@set btcAddr 1CDyAsXCK91hGMJyJjuf28pUSPbzUyn2Vv
+
+@end ifclear

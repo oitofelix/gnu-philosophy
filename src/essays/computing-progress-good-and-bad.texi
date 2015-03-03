@@ -1,0 +1,176 @@
+@c Copyright (C) 2006, 2007 Richard Stallman
+@c
+@c Permission is granted to anyone to make or distribute verbatim copies
+@c of this document, in any medium, provided that the copyright notice and
+@c permission notice are preserved, and that the distributor grants the
+@c recipient permission for further redistribution as permitted by this
+@c notice.
+@c
+@c Modified versions of the subject matter text may not be made.  You
+@c are only allowed to modify the markup.
+
+@include essay-header.texi
+
+@c --- Original publication notice;
+@macro essayPreNotice
+The BBC invited me to write an article for their column series,
+@cite{The Tech Lab,} and this is what I sent them. (It refers to a
+couple of other articles published in that series.) The BBC was
+ultimately unwilling to publish it with a copying-permission notice,
+so I published it on @url{http://gnu.org}, in 2007.
+@end macro
+
+@c --- Copyright notice;
+@macro essayCopyright
+Copyright @copyright{} 2006, 2007 Richard Stallman
+@end macro
+
+@c --- Setup standard essay defaults;
+@essayHeader{computing-progress-good-and-bad,
+Computing ``Progress''; Good and Bad,
+Computing ``Progress'': Good and Bad}
+
+
+
+
+
+@noindent
+@cindex Horowitz, Bradley
+@cindex UK
+@rgindex Big Brother
+@cindex New Labour
+@cindex China
+@cindex Yahoo
+@rgindex proprietary software, spying on users
+Bradley Horowitz of Yahoo proposed here@footnote{Bradley Horowitz,
+``The Tech Lab: Bradley Horowitz,'' @cite{BBC News,}
+29@tie{}June@tie{}2007,
+@url{http://news.@/bbc.@/co.@/uk/@/2/@/hi/@/technology/@/6252716.@/stm}.}
+that every object in our world have a unique number so that your cell
+phone could record everything you do---even which cans you picked up
+while in the supermarket.
+
+If the phone is like today's phones, it will use proprietary software:
+software controlled by the companies that developed it, not by its
+users. Those companies will ensure that your phone makes the
+information it collects about you available to the phone company's
+database (let's call it Big Brother) and probably to other
+companies.
+
+In the UK of the future, as New Labour would have it, those companies
+will surely turn this information over to the police. If your phone
+reports you bought a wooden stick and a piece of poster board, the
+phone company's system will deduce that you may be planning a protest,
+and report you automatically to the police so they can accuse you of
+``terrorism.''
+
+In the UK, it is literally an offense to be suspect---more precisely,
+to possess any object in circumstances that create a ``reasonable
+suspicion'' that you might use it in certain criminal ways. Your
+phone will give the police plenty of opportunities to suspect you so
+they can charge you with having been suspected by them. Similar
+things will happen in China, where Yahoo has already given the
+government all the information it needed to imprison a dissident; it
+subsequently asked for our understanding on the excuse that it was
+``just following orders.''
+
+@rgindex cell phones @emph{(see also both} OpenMoko @emph{and} Apple@emph{)}
+Horowitz would like cell phones to tag information automatically,
+based on knowing when you participate in an event or meeting. That
+means the phone company will also know precisely whom you meet. That
+information will also be interesting to governments, such as those of
+the UK and China, that cut corners on human rights.
+
+I do not much like Horowitz's vision of total surveillance. Rather, I
+envision a world in which our computers never collect, or release, any
+information about us except when we want them to.
+
+@rgindex DRM, call it ``Digital Restrictions Management''
+Nonfree software does other nasty things besides spying; it often
+implements digital handcuffs---features designed to restrict the users
+(also called DRM, for Digital Restrictions Management). These features
+control how you can access, copy, or move the files in your own
+computer.
+
+DRM is a common practice:
+@cindex DRM, and Microsoft
+Microsoft does it,
+@cindex DRM, and Apple
+Apple does it,
+@cindex DRM, and Google
+Google
+does it, even the
+@cindex DRM, and BBC iPlayer
+@cindex iPlayer, BBC @emph{(see also} DRM@emph{)}
+BBC's iPlayer does it. Many governments, taking the
+side of these companies against the public, have made it illegal to
+tell others how to escape from the digital handcuffs. As a result,
+competition does nothing to check the practice: no matter how many
+proprietary alternatives you might have to choose from, they will all
+handcuff you just the same. If the computer knows where you are
+located, it can make DRM even worse: there are companies that would
+like to restrict what you can access based on your present location.
+@rgindex DRM, call it ``Digital Restrictions Management''
+
+My vision of the world is different. I would like to see a world in
+which all the software in our computers --- in our desktop PCs, our
+laptops, our handhelds, our phones --- is under our control and
+respects our freedom. In other words, a world where all software is
+@emph{free} software.
+
+Free software, freedom-respecting software, means that every user of
+the program is free to get the program's source code and change the
+program to do what she wants, and also free to give away or sell
+copies, either exact or modified. This means the users are in
+control. With the users in control of the software, nobody has power
+to impose nasty features on others.
+
+Even if you don't exercise this control yourself, you are part of a
+society where others do. If you are not a programmer, other users of
+the program are. They will probably find and remove any nasty
+features, which might spy on or restrict you, and publish safe
+versions. You will have only to elect to use them---and since
+all other users will prefer them, that will usually happen with no
+effort on your part.
+
+@cindex Stross, Charles
+Charles Stross envisioned computers that permanently record everything
+that we see and hear.@footnote{Charles Stross, ``The Tech Lab: Charles
+Stross,'' @cite{BBC News,} 10@tie{}July@tie{}2007,
+@url{http://news.@/bbc.@/co.@/uk/@/2/@/hi/@/technology/@/6287126.@/stm}.}
+Those records could be very useful, as long as Big Brother doesn't see
+and hear all of them. Today's cell phones are already capable of
+listening to their users without informing them, at the request of the
+police, the phone company, or anyone that knows the requisite
+commands. As long as phones use nonfree software, controlled by its
+developers and not by the users, we must expect this to get
+worse. Only free software enables computer-using citizens to resist
+totalitarian surveillance.
+@rgindex cell phones @emph{(see also both} OpenMoko @emph{and} Apple@emph{)}
+
+@cindex Winer, Dave
+Dave Winer's article@footnote{Dave Winer, ``The Tech Lab: Dave
+Winer,'' @cite{BBC News,} 14@tie{}June@tie{}2007,
+@url{http://news.@/bbc.@/co.@/uk/@/2/@/hi/@/technology/@/6748103.@/stm}.}
+suggested that Mr.
+@cindex Gates, Bill
+Gates should send a copy of
+@cindex Windows, Vista
+@cindex Vista, Windows @emph{(see also both} Windows @emph{and} DRM@emph{)}
+Windows Vista to
+@cindex Alpha Centauri
+Alpha Centauri. I understand the feeling, but sending just one won't
+solve our problem here on Earth. Windows is designed to spy on users
+and restrict them. We should collect all the copies of
+@cindex DRM, and Windows
+Windows, and of
+@cindex DRM, and MacOS
+@cindex MacOS @emph{(see also} DRM@emph{)}
+MacOS and
+@cindex DRM, and BBC iPlayer
+@cindex iPlayer, BBC @emph{(see also} DRM@emph{)}
+iPlayer for the same reason, and send
+them to Alpha Centauri at the slowest possible speed. Or just erase
+them.
+@rgindex Big Brother
+@rgindex proprietary software, spying on users

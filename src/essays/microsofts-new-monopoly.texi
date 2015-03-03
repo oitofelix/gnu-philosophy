@@ -1,0 +1,178 @@
+@c Copyright (C) 2005, 2009 Richard Stallman
+@c
+@c Permission is granted to anyone to make or distribute verbatim copies
+@c of this document, in any medium, provided that the copyright notice and
+@c permission notice are preserved, and that the distributor grants the
+@c recipient permission for further redistribution as permitted by this
+@c notice.
+@c
+@c Modified versions of the subject matter text may not be made.  You
+@c are only allowed to modify the markup.
+
+@include essay-header.texi
+
+@c --- Original publication notice;
+@macro essayPreNotice
+This article was written in July 2005. Microsoft adopted a different
+policy in 2006, so the specific policies described below and the
+specific criticisms of them are only of historical significance.  The
+overall problem remains, however: Microsoft's cunningly worded new
+policy (see
+@url{http://grokdoc.@/net/@/index.@/php/@/EOOXML_objections#Patent_rights_to_implement_the_Ecma_376_specification_have_not_been_granted})
+does not give anyone clear permission to implement OOXML.@*
+
+@noindent
+This essay was originally published on @url{http://gnu.org}, in 2005.
+@end macro
+
+@c --- Copyright notice;
+@macro essayCopyright
+Copyright @copyright{} 2005, 2009 Richard Stallman
+@end macro
+
+@c --- Setup standard essay defaults;
+@essayHeader{microsofts-new-monopoly,
+Microsoft's New Monopoly,
+Microsoft's New Monopoly}
+
+
+
+
+
+@rgindex patents, historical significance of OOXML patent problem @emph{(see also} Microsoft@emph{)}
+@rgindex patents, Microsoft monopoly
+@rgindex Microsoft, monopoly
+
+@noindent
+European legislators who endorse software patents frequently claim
+that those wouldn't affect free software (or ``open
+source''). Microsoft's lawyers are determined to prove they are
+mistaken.
+
+Leaked internal documents in 1998 said that Microsoft considered
+the free software GNU/Linux operating system (referred to therein as
+@cindex ``Linux,'' erroneous use of term @emph{(see also} open source@emph{)}
+``Linux'') as the principal competitor to
+@cindex Windows
+Windows, and spoke
+of using patents and secret file formats to hold us back.
+
+Because Microsoft has so much market power, it can often impose
+new standards at will. It need only patent some minor idea, design
+a file format, programming language, or communication protocol
+based on it, and then pressure users to adopt it. Then we in the
+free software community will be forbidden to provide software that
+does what these users want; they will be locked in to Microsoft,
+and we will be locked out from serving them.
+
+Previously Microsoft tried to get its patented scheme for
+spam blocking adopted as an Internet standard, so as to exclude free
+software from handling email. The standards committee in charge
+rejected the proposal, but Microsoft said it would try to convince
+large
+@cindex ISP (Internet Service Provider)
+ISPs to use the scheme anyway.
+
+@rgindex Word, and treacherous computing @emph{(see also} treacherous computing@emph{)}
+Now Microsoft is planning to try something similar for Word
+files.
+
+Several years ago, Microsoft abandoned its documented format for
+saving documents, and switched to a new format which was secret.
+However, the developers of free software word
+@cindex processors
+processors such as
+@cindex AbiWord
+AbiWord and
+@cindex OpenOffice.org
+OpenOffice.org experimented assiduously for years to
+figure out the format, and now those programs can read most Word
+files. But Microsoft isn't licked yet.
+
+The next version of Microsoft Word will use formats that involve a
+technique that Microsoft claims to hold a patent on. Microsoft offers
+a royalty-free patent license for certain limited purposes, but it is
+so limited that it does not allow free software. You can see the
+license here: @url{http://microsoft.@/com/@/whdc/@/xps/@/xpspatentlic.@/mspx}.
+
+Free software is defined as software that respects four
+fundamental freedoms: (0) freedom to run the software as you wish,
+(1) freedom to study the source code and modify it to do what you
+wish, (2) freedom to make and redistribute copies, and (3) freedom
+to publish modified versions. Only programmers can directly
+exercise freedoms 1 and 3, but all users can exercise freedoms 0
+and 2, and all users benefit from the modifications that
+programmers write and publish.
+
+Distributing an application under Microsoft's patent license
+imposes license terms that prohibit most possible modifications of the
+software. Lacking freedom 3, the freedom to publish modified versions,
+it would not be free software. (I think it could not be ``open
+source'' software either, since that definition is similar; but
+it is not identical, and I cannot speak for the advocates of open
+source.)
+
+@cindex Microsoft, license
+The Microsoft license also requires inclusion of a specific
+statement. That requirement would not in itself prevent the program
+from being free: it is normal for free software to carry license
+notices that cannot be changed, and this statement could be included
+in one of them. The statement is biased and confusing, since it uses
+the term ``intellectual property''; fortunately,
+one is not required to endorse the statement as true or even meaningful, only to
+include it. The software developer could cancel its misleading effect
+with a disclaimer like this: ``The following misleading statement
+has been imposed on us by Microsoft; please be advised that it is
+propaganda. See @url{http://gnu.@/org/@/philosophy/@/not-ipr.@/html} for more
+explanation.''
+
+However, the requirement to include a fixed piece of text is
+actually quite cunning, because anyone who does so has explicitly
+accepted and applied the restrictions of the Microsoft patent
+license. The resulting program is clearly not free software.
+
+@cindex Microsoft, and GPL
+@cindex GPL, and Microsoft license
+Some free software licenses, such as the most popular GNU General
+Public License (GNU GPL), forbid publication of a modified version if it isn't
+free software in the same way. (We call that the ``liberty or
+death'' clause, since it ensures the program will remain free or
+die.) To apply Microsoft's license to a program under the GNU GPL
+would violate the program's license; it would be illegal. Many other
+free software licenses permit nonfree modified versions. It wouldn't
+be illegal to modify such a program and publish the modified version
+under Microsoft's patent license. But that modified version, with its
+modified license, wouldn't be free software.
+
+@rgindex Word, and treacherous computing @emph{(see also} treacherous computing@emph{)}
+Microsoft's patent covering the new Word format is a US patent.
+It doesn't restrict anyone in Europe; Europeans are free to make
+and use software that can read this format. Europeans that develop
+or use software currently enjoy an advantage over Americans:
+Americans can be sued for patent infringement for their software
+activities in the US, but the Europeans cannot be sued for their
+activities in Europe. Europeans can already get US software patents
+and sue Americans, but Americans cannot get European software
+patents if Europe doesn't allow them.
+
+@cindex European Parliament
+All that will change if the European Parliament authorizes
+software patents. Microsoft will be one of thousands of foreign
+software patent holders that will bring their patents over to
+Europe to sue the software developers and computer users there. Of
+the 50,000-odd putatively invalid software patents issued by the
+@cindex European Patent Office
+European Patent Office, around 80 percent do not belong to Europeans. The
+European Parliament should vote to keep these patents invalid, and
+keep Europeans safe.
+
+@essayHeading 2009 Note
+
+The EU directive to allow software patents was rejected, but the
+European Patent Office has continued issuing them and some countries
+treat them as valid.  See @url{http://ffii.org} for more information
+and to participate in the campaign against software patents in Europe.
+@rgindex patents
+@rgindex patents, historical significance of OOXML patent problem @emph{(see also} Microsoft@emph{)}
+@rgindex patents, Microsoft monopoly
+@rgindex Microsoft, monopoly

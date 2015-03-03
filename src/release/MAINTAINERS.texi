@@ -1,0 +1,104 @@
+@c
+@c MAINTAINERS.texi -- List of maintainers through ages;
+@c
+@c Copyright (C) 2010, 2013, 2014 Bruno Félix Rezende Ribeiro
+@c <oitofelix@gnu.org>
+@c
+@c Permission is granted to copy, distribute and/or modify this
+@c document under the terms of the GNU Free Documentation License,
+@c Version 1.3 or any later version published by the Free Software
+@c Foundation; with no Invariant Sections.
+@c
+@c You should have received a copy of the GNU Free Documentation
+@c License along with this program.  If not, see
+@c <http://www.gnu.org/licenses/>.
+@c
+
+@c %**start of header
+@ifclear manual
+@setfilename MAINTAINERS
+@documentencoding UTF-8
+@c @documentlanguage en_US
+@firstparagraphindent insert
+@footnotestyle end
+@settitle MAINTAINERS
+@end ifclear
+@include release.texi
+@c %**end of header
+
+
+
+
+
+@c --- homepage: Navigation bar;
+@ifset homepage
+@include navigation.texi
+@end ifset
+
+
+
+
+
+@c --- file: Copying notice;
+@ifset file
+@set FILE MAINTAINERS
+@include copying.texi
+@insertcopying
+@end ifset
+
+
+
+
+@c --- MAINTAINERS;
+@ifclear manual
+@centerchap Maintainers
+@end ifclear
+
+This @inlineifset{manual, chapter}@inlineifset{file,
+file}@inlineifset{homepage, page} contains a list of those people who
+are the maintainers of this package thorough out the ages.  This
+program would not be what it is today without the invaluable help of
+these people, to whom we would like to say:
+
+@iftex
+@sp 1
+@end iftex
+@center @strong{THANK YOU VERY MUCH!}
+@iftex
+@sp 1
+@end iftex
+
+The names are listed in chronological order of contribution.  Each
+person's contact information, usually email, and a summary of that
+person's contribution is put in per correspondent section.
+
+For the writers of the articles and essays contained in this package,
+see @inlineifset{homepage, @url{AUTHORS.html, the authors
+page}}@inlineifset{file, @file{AUTHORS} file}@inlineifset{manual,
+@ref{Authors}}.
+
+For other external contributions, that does not matter for copyright
+purposes, e.g., bug reports, patch for markup and good ideas, see
+@inlineifset{homepage, @url{THANKS.html, the thanks
+page}}@inlineifset{file, file @file{THANKS}}@inlineifset{manual,
+@ref{Thanks}}.
+
+If you would appreciate your own name listed here, @strong{please
+contribute!}  See @inlineifset{homepage,
+@url{README.html#Contributing, how to contribute}}@inlineifset{file,
+the ``Contributing'' section of the @file{README}
+file}@inlineifset{manual, @ref{Contributing}}.
+
+@table @asis
+@item Bruno Félix Rezende Ribeiro (oitofelix) @email{oitofelix@@gnu.org}
+He is the conceiver and original maintainer of this package.
+@end table
+
+
+
+
+
+@c --- homepage: Footer;
+@ifset homepage
+@include footer.texi
+@end ifset

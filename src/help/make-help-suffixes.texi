@@ -1,0 +1,155 @@
+@c
+@c make-help-suffixes.texi -- Build System Help: Goal suffixes;
+@c
+@c Copyright (C) 2010, 2013, 2014 Bruno Félix Rezende Ribeiro
+@c <oitofelix@gnu.org>
+@c
+@c Permission is granted to copy, distribute and/or modify this
+@c document under the terms of the GNU Free Documentation License,
+@c Version 1.3 or any later version published by the Free Software
+@c Foundation; with no Invariant Sections.
+@c
+@c You should have received a copy of the GNU Free Documentation
+@c License along with this program.  If not, see
+@c <http://www.gnu.org/licenses/>.
+@c
+
+@c %**start of header
+@ifclear manual
+@setfilename make-help-suffixes
+@documentencoding UTF-8
+@c @documentlanguage en_US
+@firstparagraphindent insert
+@c @footnotestyle end
+@c @settitle Goal suffixes
+@end ifclear
+@include release.texi
+@c %**end of header
+
+
+
+
+
+@c --- homepage: Navigation bar;
+@ifset homepage
+@include navigation.texi
+@end ifset
+
+
+
+
+
+@c --- file: Copying notice;
+@c @ifset file
+@c @set FILE make-help-suffixes
+@c @include copying.texi
+@c @insertcopying
+@c @end ifset
+
+
+
+
+
+@ifset help
+@centerchap Build System Help: Goal suffixes
+@end ifset
+
+@ifclear help
+@smallindentedblock
+This particular text can be seen by running @samp{make help-suffixes}.
+@end smallindentedblock
+@end ifclear
+
+Each available goal is comprised of a @dfn{primary}, which gives its
+general and essential meaning --- as @emph{build essays} (@samp{all})
+or @emph{clean the build tree} (@samp{all-clean}) --- and an optional
+set of suffixes which specializes the meaning of the primary they are
+appended to.  There are three different kind of suffixes:
+@emph{aggregate}, @emph{format} and @emph{language}.
+
+The @dfn{aggregate suffix type} specifies which kind of aggregate
+should be acted upon: @emph{collection} or @emph{standalone}.  The
+former gathers all essays in a single document, and the latter puts
+each one on its own document.
+
+The @dfn{format suffix type} specifies an output format, like
+@emph{Info} or @emph{PDF} for the correspondent aggregate.  The valid
+format suffixes are:
+
+@table @samp
+@item info
+GNU Info format
+@item html
+HyperText Markup Language
+@item pdf
+Portable Document Format
+@item dvi
+Device Independent File
+@item ps
+PostScript
+@item txt
+Plain Text
+@item dbk
+Docbook
+@item xml
+Extensible Markup Language
+@end table
+
+The @dfn{language suffix type} allows one to select the translation
+language one wants to act upon.  It's a language code like @samp{en}
+or @samp{pt_BR}.  Currently, the valid language suffixes are:
+
+@table @samp
+@item en
+English
+@end table
+
+All suffixes should be prepended by @samp{-}.  For instance, being
+@samp{all} the primary used to build essays, in order to tell the
+build system to compile a collection in Info format and Brazilian
+Portuguese language, one would use the goal
+@samp{all-collection-info-pt_BR}.
+
+In this help text, when listing the available goals, we denote the
+support for a particular suffix type by the @samp{[@var{a}]},
+@samp{[@var{f}]} and @samp{[@var{l}]} symbols, meaning aggregate,
+format and language suffixes, respectively.  All suffixes are optional
+and you can specify any combination of them, but you must always
+respect that exact ordering.
+
+Omitting a suffix causes the build system to process the correspondent
+goal for all valid suffixes of the omitted type.  For example, the
+goal @samp{all-standalone-pdf-en} is as specific as one can get and it
+tells to build standalone aggregates in PDF format and English
+language.  To be more general one can omit any desired suffix of the
+type one want to generalize upon.  For instance, the goal
+@samp{all-standalone-pdf} builds PDF standalone aggregates for all
+languages, because the language suffix type was omitted.  One could
+omit the format suffix instead, like in @samp{all-standalone-en}, and
+then all the standalone aggregates in all formats, but only for
+English language, would be built.  Analogously, the goal
+@samp{all-standalone} builds standalone for every available language,
+in every supported format, because both suffix were omitted.  Finally,
+@samp{all} is equivalent to @samp{all-collection all-standalone},
+i.e., it builds both aggregate types for every language and format
+available.
+
+If your shell support brace expansion (@pxref{Brace Expansion,,,bash,
+GNU Bash manual})@footnote{If not, time has come to upgrade to
+@url{https://www.gnu.org/software/bash, GNU Bash!}} an useful trick is
+to use it to specify multiple goals combinations by a single
+meta-goal.  For instance, to build Info and PDF collections for all
+available languages one can use the meta-goal
+@samp{all-collection-@{info,pdf@}}.  More powerfully, if one wants to
+build based on those same settings but just for two specified
+languages, let's say English and Brazilian Portuguese, one would
+rather use @samp{all-collection-@{info,pdf@}-@{en,pt_BR@}}.
+
+
+
+
+
+@c --- homepage: Footer;
+@ifset homepage
+@include footer.texi
+@end ifset

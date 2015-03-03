@@ -1,0 +1,131 @@
+@c
+@c BUGS.texi -- Bugs you must be aware of;
+@c
+@c Copyright (C) 2010, 2013, 2014 Bruno Félix Rezende Ribeiro
+@c <oitofelix@gnu.org>
+@c
+@c Permission is granted to copy, distribute and/or modify this
+@c document under the terms of the GNU Free Documentation License,
+@c Version 1.3 or any later version published by the Free Software
+@c Foundation; with no Invariant Sections.
+@c
+@c You should have received a copy of the GNU Free Documentation
+@c License along with this program.  If not, see
+@c <http://www.gnu.org/licenses/>.
+@c
+
+@c %**start of header
+@ifclear manual
+@setfilename BUGS
+@documentencoding UTF-8
+@c @documentlanguage en_US
+@firstparagraphindent insert
+@footnotestyle end
+@settitle BUGS
+@end ifclear
+@include release.texi
+@c %**end of header
+
+
+
+
+
+@c --- homepage: Navigation bar;
+@ifset homepage
+@include navigation.texi
+@end ifset
+
+
+
+
+
+@c --- file: Copying notice;
+@ifset file
+@set FILE BUGS
+@include copying.texi
+@insertcopying
+@end ifset
+
+
+
+
+
+@c --- BUGS;
+@ifclear manual
+@centerchap Bugs
+@end ifclear
+
+This @inlineifset{manual, chapter}@inlineifset{file,
+file}@inlineifset{homepage, page} contains a list of bugs of this
+package, prerequisite software or specific platforms that you must be
+aware of.  If there is a known workaround we describe it here too.  If
+you want to undertake the solution of any of these bugs, we appreciate
+your help; please write to @email{@value{mailBugAddr}} so we can be
+aware that the problem is being addressed, and talk with you how to do
+it best.  @inlineifclear{homepage, It is best to consult the latest
+version of this file in the package source code repository.
+@inlineifset{file, See the sections ``Getting a copy'' and ``Hacking''
+of the @file{README} file}@inlineifset{manual, See @ref{Getting a
+copy} and @ref{Hacking}} for instruction on how to access it.}
+
+For more practical details about getting involved, see
+@inlineifset{manual, @ref{Contributing}}@inlineifset{homepage,
+@url{README.html#Contributing, how to contribute}}@inlineifset{file,
+the section ``Contributing'' in the @file{README} file}.
+
+As well as the issues listed here, there are bug reports --- that you
+might want to be aware of --- at the @url{@value{bugTrack}, bug
+tracker web interface}.  See @inlineifset{homepage,
+@url{README.html#Bug-reporting, how to report a
+bug}}@inlineifset{file, the section ``Bug reporting'' in @file{README}
+file}@inlineifset{manual, @ref{Bug reporting}} for more information.
+
+
+@table @emph
+@item PO4A can't recognize Texinfo 5.2 quotation-like environments
+In PO4A 0.45 the quotation-like Texinfo environments
+@code{smallquotation}, @code{indentedblock}, @code{smallindentedblock}
+and @code{raggedright}, present in Texinfo 5.2, are not registered in
+its Texinfo module, causing @command{po4a-gettextize} to yield errors
+like:
+
+@example
+master.texi:71: (po4a::tex) unmatched end of environment
+@end example
+
+when such environments are found in master documents.  The fix is
+already applied in their @abbr{VCS, Version Control System}
+repository.  You can obtain the required development version running:
+
+@example
+svn checkout svn://scm.alioth.debian.org/svn/po4a/trunk
+@end example
+
+For the specific patch, check:
+@url{https://lists.alioth.debian.org/pipermail/po4a-devel/2014-January/002240.html,
+[Po4a-devel] [PATCH] Register missing Texinfo 5.2 quotation-like
+environments}.
+
+
+@item ImageMagick program @command{convert} treatment of BDF and TTF fonts
+There is a bug in ImageMagick program @command{convert}, which is used
+to perform the rendering of several language scripts, that prevents
+@abbr{BDF, Glyph Bitmap Distribution Format} and @abbr{PCF, Portable
+Compiled Format} formats of GNU Unifont from working properly.  If you
+see messages like @samp{convert: geometry does not contain image}
+probably you are experiencing that bug.  The @abbr{TTF, TrueType}
+format of GNU Unifont is known to work properly.  Therefore, to fix
+such a bug download the TTF build of GNU Unifont from
+@url{http://unifoundry.com/pub/unifont-6.3.20131020/font-builds/unifont-6.3.20131020.ttf.gz}
+and ask the GNU philosophy build system to use it by means of the
+@command{configure} option @option{--with-font}.
+@end table
+
+
+
+
+
+@c --- homepage: Footer;
+@ifset homepage
+@include footer.texi
+@end ifset

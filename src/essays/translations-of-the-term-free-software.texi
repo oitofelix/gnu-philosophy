@@ -1,0 +1,304 @@
+@documentencoding UTF-8
+
+@include essay-header.texi
+
+@c --- Original publication notice;
+@macro essayPreNotice
+The most current list of translations is maintained at
+@url{http://www.@/gnu.@/org/@/philosophy/@/fs-translations.@/html}. Please
+e-mail any additional translations to
+@email{web-translators@@gnu.org}.
+@end macro
+
+@c --- Copyright notice;
+@macro essayCopyright
+@end macro
+
+@c --- Setup standard essay defaults;
+@essayHeader{translations-of-the-term-free-software,
+Translations of the Term ``Free Software'',
+Translations of the Term ``Free Software''}
+
+
+
+
+
+@rgindex ``free software,'' unambiguous translations of
+This is a list of recommended unambiguous translations of the
+term ``free software''.
+
+We also provide translations of “gratis software” in a separate column
+to show how to make the contrast in various languages.
+
+If you know a correction or addition to the list, please email it to
+@email{web-translators@@gnu.org}.  Please stick to UTF-8 in your
+message.  Thanks.
+
+The parenthesized phrases in Latin letters after some of the entries
+are transliterations (with vowels added where relevant).  Please send
+any corrections or additions to those, too.
+
+@macro freeSoftware{code, translit}
+@image{philosophy-figures/tottfs/free/\code\}@*\translit\
+@end macro
+
+@macro gratisSoftware{code, translit}
+@image{philosophy-figures/tottfs/gratis/\code\}@*\translit\
+@end macro
+
+@multitable @columnfractions .05 .2 .4 .35
+@headitem Code @tab Name @tab Free Software @tab Gratis Software
+
+@item af
+@tab Afrikaans
+@tab @freeSoftware{af,}
+
+@item ar
+@tab Arabic
+@tab @freeSoftware{ar, (barmagiyat ḥorrah)}
+
+@item be
+@tab Belarusian
+@tab @freeSoftware{be, (svabodnae pragramnae@*zabes'pjachen'ne)}
+
+@item bg
+@tab Bulgarian
+@tab @freeSoftware{bg, (svoboden softuer)}
+@tab @gratisSoftware{bg, (bezplaten softuer)}
+
+@item bn
+@tab Bengali
+@tab @freeSoftware{bn, (swadhin software)}
+
+@item ca
+@tab Catalan
+@tab @freeSoftware{ca,}
+@tab @gratisSoftware{ca,}
+
+@item cs
+@tab Czech
+@tab @freeSoftware{cs,}
+@tab @gratisSoftware{cs,}
+
+@item cy
+@tab Welsh
+@tab @freeSoftware{cy,}
+
+@item da
+@tab Danish
+@tab @freeSoftware{da,}
+
+@item de
+@tab German
+@tab @freeSoftware{de,}
+@tab @gratisSoftware{de,}
+
+@item el
+@tab Greek
+@tab @freeSoftware{el, (eleuthero logismiko)}
+
+@item eo
+@tab Esperanto
+@tab @freeSoftware{eo,}
+
+@item es
+@tab Spanish
+@tab @freeSoftware{es,}
+@tab @gratisSoftware{es,}
+
+@item et
+@tab Estonian
+@tab @freeSoftware{et,}
+@tab @gratisSoftware{et,}
+
+@item fa
+@tab Persian (Farsi)
+@tab @freeSoftware{fa, (nrmafzar azad)}
+
+@item fi
+@tab Finnish
+@tab @freeSoftware{fi,}
+
+@item fr
+@tab French
+@tab @freeSoftware{fr,}
+@tab @gratisSoftware{fr,}
+
+@item ga
+@tab Irish
+@tab @freeSoftware{ga,}
+
+@item he
+@tab Hebrew
+@tab @freeSoftware{he, (tochna chofshit)}
+
+@item hi
+@tab Hindi
+@tab @freeSoftware{hi, (mukt software)}
+@tab @gratisSoftware{hi, (muft software)}
+
+@item hr
+@tab Croatian
+@tab @freeSoftware{hr,}
+@tab @gratisSoftware{hr,}
+
+@item hu
+@tab Hungarian
+@tab @freeSoftware{hu,}
+
+@item hy
+@tab Armenian
+@tab @freeSoftware{hy, (azat tsragir/tsragrer)}
+
+@item ia
+@tab Interlingua
+@tab @freeSoftware{ia,}
+
+@item id
+@tab Indonesian
+@tab @freeSoftware{id,}
+
+@item io
+@tab Ido
+@tab @freeSoftware{io,}
+
+@item is
+@tab Icelandic
+@tab @freeSoftware{is,}
+
+@item it
+@tab Italian
+@tab @freeSoftware{it,}
+@tab @gratisSoftware{it,}
+
+@item ja
+@tab Japanese
+@tab @freeSoftware{ja, (jiyuu software)}
+@tab @gratisSoftware{ja, (muryou software)}
+
+@item ko
+@tab Korean
+@tab @freeSoftware{ko, (ja-yu software)}
+
+@item lt
+@tab Lithuanian
+@tab @freeSoftware{lt,}
+@tab @gratisSoftware{lt,}
+
+@item mk
+@tab Macedonian
+@tab @freeSoftware{mk, (sloboden softver)}
+@tab @gratisSoftware{mk, (besplaten softver)}
+
+@item ml
+@tab Malayalam
+@tab @freeSoftware{ml, (svatantrasophṯṯveyar)}
+
+@item ms
+@tab Malay
+@tab @freeSoftware{ms,}
+
+@item nl
+@tab Dutch
+@tab @freeSoftware{nl,}
+@tab @gratisSoftware{nl,}
+
+@item no
+@tab Norwegian
+@tab @freeSoftware{no,}
+
+@item pl
+@tab Polish
+@tab @freeSoftware{pl,}
+@tab @gratisSoftware{pl,}
+
+@item pt
+@tab Portuguese
+@tab @freeSoftware{pt,}
+@tab @gratisSoftware{pt,}
+
+@item ro
+@tab Romanian
+@tab @freeSoftware{ro,}
+@tab @gratisSoftware{ro,}
+
+@item ru
+@tab Russian
+@tab @freeSoftware{ru, (svobodnie programmi)}
+@tab @gratisSoftware{ru, (besplatnie programmi)}
+
+@item sc
+@tab Sardinian
+@tab @freeSoftware{sc,}
+
+@item si
+@tab Sinhala
+@tab @freeSoftware{si, (nidahas mṛdukāṅga)}
+
+@item sk
+@tab Slovak
+@tab @freeSoftware{sk,}
+
+@item sl
+@tab Slovenian
+@tab @freeSoftware{sl,}
+
+@item sq
+@tab Albanian
+@tab @freeSoftware{sq,}
+@tab @gratisSoftware{sq,}
+
+@item sr
+@tab Serbian
+@tab @freeSoftware{sr, (slobodni softver)}
+@tab @gratisSoftware{sr, (besplatni softver)}
+
+@item sv
+@tab Swedish
+@tab @freeSoftware{sv,}
+
+@item sw
+@tab Swahili
+@tab @freeSoftware{sw,}
+
+@item ta
+@tab Tamil
+@tab @freeSoftware{ta, (kaṭṭaṟṟa meṉpoñaḷ)}
+
+@item th
+@tab Thai
+@tab @freeSoftware{th, (sofotwerseri)}
+
+@item tl
+@tab Tagalog/@*Filipino
+@tab @freeSoftware{tl,}
+
+@item tr
+@tab Turkish
+@tab @freeSoftware{tr,}
+
+@item uk
+@tab Ukrainian
+@tab @freeSoftware{uk, (vil'ne prohramne@*zabezpechennja)}
+
+@item vi
+@tab Vietnamese
+@tab @freeSoftware{vi,}
+
+@item zh-@*cn
+@tab Chinese@*(Simplified)
+@tab @freeSoftware{zh-cn, (zi-you ruan-jian)}
+@tab @gratisSoftware{zh-cn,}
+
+@item zh-@*tw
+@tab Chinese (Traditional)
+@tab @freeSoftware{zh-tw, (zih-yo)}
+@tab @gratisSoftware{zh-tw,}
+
+@item zu
+@tab Zulu
+@tab @freeSoftware{zu,}
+
+@end multitable
+
+@rgindex ``free software,'' unambiguous translations of

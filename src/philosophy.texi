@@ -1,0 +1,547 @@
+\input texinfo @c -*-texinfo-*-
+@c Copyright (C) 2002, 2010, 2013, 2014 Free Software Foundation, Inc.
+@c
+@c Permission is granted to anyone to make or distribute verbatim copies
+@c of this document, in any medium, provided that the copyright notice and
+@c permission notice are preserved, and that the distributor grants the
+@c recipient permission for further redistribution as permitted by this
+@c notice.
+@c
+@c Modified versions of the subject matter text may not be made.  You
+@c are only allowed to modify the markup.
+
+@include release.texi
+
+@c %**start of header
+@set manual
+@set GNUphiCollection
+@setfilename philosophy.info
+@documentencoding UTF-8
+@settitle @value{package}
+@c %**end of header
+
+
+
+
+
+@copying
+@noindent
+@value{package} is the GNU Project's exhaustive collection of articles
+and essays about free software and related matters.
+
+@iftex
+@sp 1
+@end iftex
+Copyright @copyright{} 2002, 2010, 2013, 2014 Free Software Foundation, Inc.
+@quotation
+Verbatim copying and distribution of this entire book are permitted
+worldwide, without royalty, in any medium, provided this notice is
+preserved.  Permission is granted to copy and distribute translations
+of this book from the original English into another language provided
+the translation has been approved by the Free Software Foundation and
+the copyright notice and this permission notice are preserved on all
+copies.
+@end quotation
+@end copying
+
+
+
+
+
+@titlepage
+@title @value{package}
+@subtitle Edition @value{version} (@value{date})
+@subtitle GNU Project
+@vskip 0pt plus 1filll
+@insertcopying
+@end titlepage
+
+@headings off
+@everyheading  @thischapter @| @| @thistitle
+@everyfooting  @| @thispage @|
+
+
+
+
+
+@dircategory @value{package}
+@direntry
+* @value{package}: (@value{tarName}). GNU Project's exhaustive
+collection of articles and essays about free software and related
+matters.
+@end direntry
+
+
+
+
+
+
+@ifnottex
+@node Top
+@top @value{package}
+@insertcopying
+
+@menu
+Package Information:
+* Overview::   Description, prerequisites, configuration, build,
+                installation, use, distribution, obtainment, contact,
+                bug reports, contribution, donation and hacking;
+* Release::    Information specifically relevant for the current release;
+
+Part I: The GNU Project and Free Software
+* The Free Software Definition::
+* The GNU Project::
+* The Initial Announcement of the GNU Operating System::
+* The GNU Manifesto::
+* Why Software Should Not Have Owners::
+* Why Software Should Be Free::
+* Why Schools Should Exclusively Use Free Software::
+* Releasing Free Software If You Work at a University::
+* Why Free Software Needs Free Documentation::
+* Selling Free Software::
+* The Free Software Song::
+
+Part II: What's in a Name?
+* What's in a Name?::
+* Categories of Free and Nonfree Software::
+* Why Open Source Misses the Point of Free Software::
+* Did You Say ``Intellectual Property''?  It's a Seductive Mirage: Did You Say ``Intellectual Property''?.
+* Words to Avoid (or Use with Care) Because They Are Loaded or Confusing: Words to Avoid.
+
+Part III: Copyright, Copyleft
+* The Right to Read; A Dystopian Short Story::
+* Misinterpreting Copyright---A Series of Errors::
+* Science Must Push Copyright Aside::
+* Freedom---or Copyright::
+* What Is Copyleft?::
+* Copyleft; Pragmatic Idealism::
+
+Part IV: Software Patents: Danger to Programmers
+* Anatomy of a Trivial Patent::
+* Software Patents and Literary Patents::
+* The Danger of Software Patents::
+* Microsoft's New Monopoly::
+
+Part V: The Licenses
+* Introduction to the Licenses::
+* GNU General Public License::
+* Why Upgrade to GPLv3::
+* GNU Lesser General Public License::
+* GNU Free Documentation License::
+
+Part VI: Traps and Challenges
+* Can You Trust Your Computer?::
+* Who Does That Server Really Serve?::
+* Free but Shackled; The Java Trap::
+* The JavaScript Trap::
+* The X Window System Trap::
+* The Problem Is Software Controlled by Its Developer::
+* We Can Put an End to Word Attachments::
+* Thank You, Larry McVoy: Thank You Larry McVoy.
+
+Part VII: An Assessment and a Look Ahead
+* Computing ``Progress''; Good and Bad: Computing ``Progress''; Good and Bad.
+* Avoiding Ruinous Compromises::
+* Overcoming Social Inertia::
+* Freedom or Power?::
+
+Appendices:
+* A Note on Software::
+* Translations of the Term ``Free Software'': Translations of the Term ``Free Software''.
+* Index::
+@end menu
+@end ifnottex
+
+
+
+
+
+@tex
+\gdef\putwordShortTOC{Contents}
+@end tex
+@ifplaintext
+@noindent
+--- Table of Contents ---
+@sp 1
+@end ifplaintext
+@ifnothtml
+@shortcontents
+@end ifnothtml
+@ifplaintext
+@sp 1
+@end ifplaintext
+
+
+
+
+@macro insertEssay{file, node, title}
+@node \node\
+@unnumbered \title\
+@include \file\.texi
+@end macro
+
+
+
+
+
+@c --- Package Information
+
+
+@c --- Overview;
+@node Overview
+@chapter Overview
+@include README.texi
+
+
+
+
+
+
+
+@c --- Release;
+@node Release
+@chapter Release
+
+In this chapter one can find information that are specific to the
+current release or subject to change between releases.  It is
+presented the features this package acquired over time, problems that
+affects its overall usage and what possibly could happen to it --- by
+our wishes --- in the future.  Last but not least, people whose
+contribution for this package are noteworthy are acknowledged.
+
+@menu
+Present and Future:
+* News::     User-visible changes since previous versions;
+* To do::    Features we want to see implemented someday;
+* Bugs::     Bugs you must be aware of;
+
+People:
+* Authors::  The philosophical writers;
+* Maintainers:: List of the maintainers throughout ages;
+* Thanks::   Minor contributors;
+* Donors::   People who supported the development by donations;
+@end menu
+
+
+
+
+
+
+@c --- News;
+@page
+@node News
+@section News
+@include NEWS.texi
+
+
+
+
+
+@c --- To do;
+@page
+@node To do
+@section To do
+@include TODO.texi
+
+
+
+
+
+@c --- Bugs;
+@page
+@node Bugs
+@section Bugs
+@include BUGS.texi
+
+
+
+
+
+@c --- Authors;
+@page
+@node Authors
+@section Authors
+@include AUTHORS.texi
+
+
+
+
+
+@c --- Maintainers;
+@page
+@node Maintainers
+@section Maintainers
+@include MAINTAINERS.texi
+
+
+
+
+
+@c --- Thanks;
+@page
+@node Thanks
+@section Thanks
+@include THANKS.texi
+
+
+
+
+
+@c --- Donors;
+@page
+@node Donors
+@section Donors
+@include DONORS.texi
+
+
+
+
+
+@c --- Part I: The GNU Project and Free Software
+@part Part I:@* The GNU Project and Free Software
+
+@insertEssay{the-free-software-definition,
+The Free Software Definition,
+The Free Software Definition}
+
+@insertEssay{the-gnu-project,
+The GNU Project,
+The GNU Project}
+
+@insertEssay{the-initial-announcement-of-the-gnu-operating-system,
+The Initial Announcement of the GNU Operating System,
+The Initial Announcement of the GNU@tie{}Operating@tie{}System}
+
+@insertEssay{the-gnu-manifesto,
+The GNU Manifesto,
+The GNU Manifesto}
+
+@insertEssay{why-software-should-not-have-owners,
+Why Software Should Not Have Owners,
+Why Software Should Not Have Owners}
+
+@insertEssay{why-software-should-be-free,
+Why Software Should Be Free,
+Why Software Should Be Free}
+
+@insertEssay{why-schools-should-exclusively-use-free-software,
+Why Schools Should Exclusively Use Free Software,
+Why Schools Should Exclusively Use Free@tie{}Software}
+
+@insertEssay{releasing-free-software-if-you-work-at-a-university,
+Releasing Free Software If You Work at a University,
+Releasing Free Software If You Work at a@tie{}University}
+
+@insertEssay{why-free-software-needs-free-documentation,
+Why Free Software Needs Free Documentation,
+Why Free Software Needs Free@tie{}Documentation}
+
+@insertEssay{selling-free-software,
+Selling Free Software,
+Selling Free Software}
+
+@insertEssay{the-free-software-song,
+The Free Software Song,
+The Free Software Song}
+
+
+
+
+
+@c --- Part II: What's in a Name?
+@part Part II:@* What's in a Name?
+
+@insertEssay{whats-in-a-name,
+What's in a Name?,
+What's in a Name?}
+
+@insertEssay{categories-of-free-and-nonfree-software,
+Categories of Free and Nonfree Software,
+Categories of Free and Nonfree Software}
+
+@insertEssay{why-open-source-misses-the-point-of-free-software,
+Why Open Source Misses the Point of Free Software,
+Why Open Source Misses the Point of Free Software}
+
+@insertEssay{did-you-say-intellectual-property-its-a-seductive-mirage,
+Did You Say ``Intellectual Property''?,
+Did You Say ``Intellectual Property''?  It's a Seductive Mirage}
+
+@insertEssay{words-to-avoid-or-use-with-care-because-they-are-loaded-or-confusing,
+Words to Avoid,
+Words to Avoid (or Use with Care) Because They Are Loaded or Confusing}
+
+
+
+
+
+@c --- Part III: Copyright, Copyleft
+@part Part III:@* Copyright, Copyleft
+
+@insertEssay{the-right-to-read-a-dystopian-short-story,
+The Right to Read; A Dystopian Short Story,
+The Right to Read: A@tie{}Dystopian@tie{}Short@tie{}Story}
+
+@insertEssay{misinterpreting-copyright-a-series-of-errors,
+Misinterpreting Copyright---A Series of Errors,
+Misinterpreting Copyright---A Series of@tie{}Errors}
+
+@insertEssay{science-must-push-copyright-aside,
+Science Must Push Copyright Aside,
+Science Must Push Copyright Aside}
+
+@insertEssay{freedom-or-copyright,
+Freedom---or Copyright,
+Freedom---or Copyright}
+
+@insertEssay{what-is-copyleft,
+What Is Copyleft?,
+What Is Copyleft?}
+
+@insertEssay{copyleft-pragmatic-idealism,
+Copyleft; Pragmatic Idealism,
+Copyleft: Pragmatic Idealism}
+
+
+
+
+
+@c --- Part IV: Software Patents: Danger to Programmers
+@part Part IV:@* Software Patents: Danger to Programmers
+
+@insertEssay{anatomy-of-a-trivial-patent,
+Anatomy of a Trivial Patent,
+Anatomy of a Trivial Patent}
+
+@insertEssay{software-patents-and-literary-patents,
+Software Patents and Literary Patents,
+Software Patents and Literary Patents}
+
+@insertEssay{the-danger-of-software-patents,
+The Danger of Software Patents,
+The Danger of Software Patents}
+
+@insertEssay{microsofts-new-monopoly,
+Microsoft's New Monopoly,
+Microsoft's New Monopoly}
+
+
+
+
+
+@c --- Part V: The Licenses
+@part Part V:@* The Licenses
+
+@insertEssay{introduction-to-the-licenses,
+Introduction to the Licenses,
+Introduction to the Licenses}
+
+@insertEssay{gnu-general-public-license,
+GNU General Public License,
+GNU General Public License}
+
+@insertEssay{why-upgrade-to-gplv3,
+Why Upgrade to GPLv3,
+Why Upgrade to GPLv3}
+
+@insertEssay{gnu-lesser-general-public-license,
+GNU Lesser General Public License,
+GNU Lesser General Public License}
+
+@insertEssay{gnu-free-documentation-license,
+GNU Free Documentation License,
+GNU Free Documentation License}
+
+
+
+
+
+@c --- Part VI: Traps and Challenges
+@part Part VI:@* Traps and Challenges
+
+@insertEssay{can-you-trust-your-computer,
+Can You Trust Your Computer?,
+Can You Trust Your Computer?}
+
+@insertEssay{who-does-that-server-really-serve,
+Who Does That Server Really Serve?,
+Who Does That Server Really Serve?}
+
+@insertEssay{free-but-shackled-the-java-trap,
+Free but Shackled; The Java Trap,
+Free but Shackled: The Java Trap}
+
+@insertEssay{the-javascript-trap,
+The JavaScript Trap,
+The JavaScript Trap}
+
+@insertEssay{the-x-window-system-trap,
+The X Window System Trap,
+The X Window System Trap}
+
+@insertEssay{the-problem-is-software-controlled-by-its-developer,
+The Problem Is Software Controlled by Its Developer,
+The Problem Is Software Controlled by Its@tie{}Developer}
+
+@insertEssay{we-can-put-an-end-to-word-attachments,
+We Can Put an End to Word Attachments,
+We Can Put an End to Word Attachments}
+
+@insertEssay{thank-you-larry-mcvoy,
+Thank You Larry McVoy,
+Thank You@comma{} Larry McVoy}
+
+
+
+
+
+@c --- Part VII: An Assessment and a Look Ahead
+@part Part VII:@* An Assessment and a Look Ahead
+
+@insertEssay{computing-progress-good-and-bad,
+Computing ``Progress''; Good and Bad,
+Computing ``Progress'': Good and Bad}
+
+@insertEssay{avoiding-ruinous-compromises,
+Avoiding Ruinous Compromises,
+Avoiding Ruinous Compromises}
+
+@insertEssay{overcoming-social-inertia,
+Overcoming Social Inertia,
+Overcoming Social Inertia}
+
+@insertEssay{freedom-or-power,
+Freedom or Power?,
+Freedom or Power?}
+
+
+
+
+
+@c --- Appendices;
+@part Appendices
+
+@insertEssay{a-note-on-software,
+A Note on Software,
+A Note on Software}
+
+@insertEssay{translations-of-the-term-free-software,
+Translations of the Term ``Free Software'',
+Translations of the Term ``Free Software''}
+
+
+
+
+
+@c --- Index;
+@node Index
+@unnumbered Index
+
+@printindex cp
+
+
+
+
+
+@c --- END;
+@bye

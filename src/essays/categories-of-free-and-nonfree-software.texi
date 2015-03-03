@@ -1,0 +1,512 @@
+@c Copyright (C) 1996, 1997, 1998, 2001, 2006, 2007, 2009, 2010
+@c               Free Software Foundation, Inc.
+@c
+@c Permission is granted to anyone to make or distribute verbatim copies
+@c of this document, in any medium, provided that the copyright notice and
+@c permission notice are preserved, and that the distributor grants the
+@c recipient permission for further redistribution as permitted by this
+@c notice.
+@c
+@c Modified versions of the subject matter text may not be made.  You
+@c are only allowed to modify the markup.
+
+@include essay-header.texi
+
+@c --- Original publication notice;
+@macro essayPreNotice
+This list was originally published on @url{http://gnu.org}, in 1996.
+@end macro
+
+@c --- Copyright notice;
+@macro essayCopyright
+Copyright @copyright{} 1996, 1997, 1998, 2001, 2006, 2007, 2009, 2010
+Free Software Foundation, Inc.
+@end macro
+
+@c --- Setup standard essay defaults;
+@set file categories-of-free-and-nonfree-software
+@essayHeader{@value{file},
+Categories of Free and Nonfree Software,
+Categories of Free and Nonfree Software}
+
+
+
+
+
+@rgindex call to action, use correct terminology @emph{(see also} terminology@emph{)}
+@noindent
+@center @image{philosophy-figures/categories-of-free-and-nonfree-software-diagram,, 3in}
+
+@smallquotation
+@emph{This diagram, originally by Chao-Kuei and updated by several
+others since, explains the different categories of software. It's
+available at @url{http://gnu.@/org/@/philosophy/@/categories.html} as
+a Scalable Vector Graphic and as an XFig document, under the terms of
+any of the GNU GPL v2 or later, the GNU FDL v1.2 or later, or the
+Creative Commons Attribution-Share Alike v2.0 or later. To view a copy
+of the Creative Commons license, visit
+@url{http://creativecommons.@/org/@/licenses/@/by-sa/@/2.0}, or send a
+letter to Creative Commons, 171@tie{}Second Street, Suite@tie{}300,
+San Francisco, California@tie{}94105, USA.}
+@end smallquotation
+@sp 1
+
+
+
+
+
+@essayHeading Free Software
+
+@rgindex software, free @emph{(see also} free software@emph{)}
+@rgindex free software @emph{(see also} free software, four freedoms, citizen values, selling, @emph{and} software@emph{)}
+
+Free software is software that comes with permission for anyone to
+use, copy, and/or distribute, either verbatim or with modifications,
+either gratis or for a fee. In particular, this means that source code
+must be available. ``If it's not source, it's not software.'' This is
+a simplified description; see also the full definition
+(@essayCite{the-free-software-definition,
+The Free Software Definition, The Free Software Definition}).
+
+If a program is free, then it can potentially be included in a free
+operating system such as GNU, or free versions of the GNU/Linux
+system.
+
+There are many different ways to make a program free---many questions
+of detail, which could be decided in more than one way and still make
+the program free. Some of the possible variations are described
+below. For information on specific free software licenses, see the
+license list page, at
+@url{http://gnu.@/org/@/licenses/@/license-list.html}.
+
+Free software is a matter of freedom, not price. But proprietary
+software companies typically use the term ``free software'' to refer
+to price. Sometimes they mean that you can obtain a binary copy at no
+charge; sometimes they mean that a copy is bundled with a computer
+that you are buying, and the price includes both. Either way, it has
+nothing to do with what we mean by free software in the GNU Project.
+
+Because of this potential confusion, when a software company says its
+product is free software, always check the actual distribution terms
+to see whether users really have all the freedoms that free software
+implies. Sometimes it really is free software; sometimes it isn't.
+
+Many languages have two separate words for ``free'' as in freedom and
+``free'' as in zero price. For example, French has ``libre'' and
+``gratuit.'' Not so English; there is a word ``gratis'' that refers
+unambiguously to price, but no common adjective that refers
+unambiguously to freedom. So if you are speaking another language, we
+suggest you translate ``free'' into your language to make it
+clearer. See our list of translations of the term ``free software''
+into various other languages
+(@essayCite{translations-of-the-term-free-software,
+Translations of the Term ``Free Software'',
+Translations of the Term ``Free Software''}).
+
+Free software is often more reliable than nonfree software.
+@rgindex software, free @emph{(see also} free software@emph{)}
+@rgindex free software @emph{(see also} free software, four freedoms, citizen values, selling, @emph{and} software@emph{)}
+
+
+
+
+
+@essayHeading Open Source Software
+
+@cindex software, open source @emph{(see also} open source software@emph{)}
+@cindex open source software @emph{(see also} software@emph{)}
+
+The term ``open source'' software is used by some people to mean more
+or less the same category as free software. It is not exactly the same
+class of software: they accept some licenses that we consider too
+restrictive, and there are free software licenses they have not
+accepted. However, the differences in extension of the category are
+small: nearly all free software is open source, and nearly all open
+source software is free.
+@cindex free software, essential difference between open source and
+@cindex open source, essential difference between free software and
+
+We prefer the term ``free software'' because it refers to
+freedom---something that the term ``open source'' does not do.
+
+
+
+
+
+@essayHeading Public Domain Software
+
+@rgindex software, public domain @emph{(see also} public domain software@emph{)}
+@rgindex public domain software @emph{(see also} software@emph{)}
+@rgindex copyright, public domain software and @emph{(see also} public domain software@emph{)}
+
+Public domain software is software that is not copyrighted. If the
+source code is in the public domain, that is a special case of
+noncopylefted free software, which means that some copies or modified
+versions may not be free at all.
+
+In some cases, an executable program can be in the public domain but
+the source code is not available. This is not free software, because
+free software requires accessibility of source code.  Meanwhile, most
+free software is not in the public domain; it is copyrighted, and the
+copyright holders have legally given permission for everyone to use it
+in freedom, using a free software license.
+
+Sometimes people use the term ``public domain'' in a loose fashion to
+mean ``free'' or ``available gratis.'' However, ``public domain'' is a
+legal term and means, precisely, ``not copyrighted.'' For clarity, we
+recommend using ``public domain'' for that meaning only, and using
+other terms to convey the other meanings.
+
+Under the
+@cindex copyright, Berne Convention
+@cindex Berne Convention @emph{(see also} copyright@emph{)}
+Berne Convention, which most countries have signed, anything written
+down is automatically copyrighted. This includes programs. Therefore,
+if you want a program you have written to be in the public domain, you
+must take some legal steps to disclaim the copyright on it; otherwise,
+the program is copyrighted.
+@rgindex software, public domain @emph{(see also} public domain software@emph{)}
+@rgindex public domain software @emph{(see also} software@emph{)}
+@rgindex copyright, public domain software and @emph{(see also} public domain software@emph{)}
+
+
+
+
+
+@essayHeading Copylefted Software
+
+@cindex software, copylefted @emph{(see also} copylefted software@emph{)}
+@cindex copylefted software @emph{(see also} software@emph{)}
+
+Copylefted software is free software whose distribution terms ensure
+that all copies of all versions carry more or less the same
+distribution terms. This means, for instance, that copyleft licenses
+generally disallow others to add additional requirements to the
+software (though a limited set of safe added requirements can be
+allowed) and require making source code available. This shields the
+program, and its modified versions, from some of the common ways of
+making a program proprietary.
+
+Some copyleft licenses, such as GPL version@tie{}3, block other
+means of turning software proprietary, such as tivoization.
+
+In the GNU Project, we copyleft almost all the software we write,
+because our goal is to give @emph{every} user the freedoms implied by
+the term ``free software.'' See the essay @essayCite{what-is-copyleft,
+What Is Copyleft?, What Is Copyleft?} for more explanation of how
+copyleft works and why we use it.
+
+@cindex copyleft, and GPL
+
+Copyleft is a general concept; to copyleft an actual program,
+you need to use a specific set of distribution terms. There are many
+possible ways to write copyleft distribution terms, so in principle
+there can be many copyleft free software licenses. However, in actual
+practice nearly all copylefted software uses the GNU General Public
+License. Two different copyleft licenses are usually ``incompatible,''
+which means it is illegal to merge the code using one license with the
+code using the other license; therefore, it is good for the community
+if people use a single copyleft license.
+
+
+
+
+
+@essayHeading Noncopylefted Free Software
+
+@rgindex software, noncopylefted free @emph{(see also} noncopylefted free software@emph{)}
+@rgindex noncopylefted free software @emph{(see also} software@emph{)}
+Noncopylefted free software comes from the author with permission to
+redistribute and modify, and also to add additional restrictions to
+it.
+
+If a program is free but not copylefted, then some copies or modified
+versions may not be free at all. A software company can compile the
+program, with or without modifications, and distribute the executable
+file as a proprietary software product.
+
+@rgindex X Window System
+@rgindex X Consortium @emph{(see also} Open Group, @emph{its successor)}
+@rgindex X11 licenses
+The X Window System illustrates this. The X Consortium releases X11
+with distribution terms that make it noncopylefted free software. If
+you wish, you can get a copy which has those distribution terms and is
+free. However, there are nonfree versions as well, and there are (or
+at least were) popular workstations and PC graphics boards for which
+nonfree versions are the only ones that work. If you are using this
+hardware, X11 is not free software for you. The developers of X11 even
+made X11 nonfree for a while; they were able to do this because others
+had contributed their code under the same noncopyleft license.
+
+@rgindex X Window System
+@rgindex X Consortium @emph{(see also} Open Group, @emph{its successor)}
+@rgindex X11 licenses
+@rgindex software, noncopylefted free @emph{(see also} noncopylefted free software@emph{)}
+@rgindex noncopylefted free software @emph{(see also} software@emph{)}
+
+
+
+
+
+@essayHeading Lax Permissive Licensed Software
+
+@cindex lax permissive licensed software
+@cindex software, lax permissive licensed
+Lax permissive licenses include the
+@cindex X11 licenses
+X11 license and the two
+@cindex BSD licenses @emph{(see also both} ``BSD-style'' @emph{and} GPL@emph{)}
+BSD licenses. These licenses permit almost any use of the code,
+including distributing proprietary binaries with or without changing
+the source code.
+
+
+
+
+
+@essayHeading GPL-Covered Software
+
+@cindex software, GPL-covered @emph{(see also} GPL-covered software@emph{)}
+@cindex GPL, GPL-covered software @emph{(see also} software@emph{)}
+@cindex GPL-covered software @emph{(see also} software@emph{)}
+The GNU GPL (General Public License) is one specific set of
+distribution terms for copylefting a program. The GNU Project uses it
+as the distribution terms for most GNU software.
+
+To equate free software with GPL-covered software is therefore an
+error.
+
+
+
+
+
+@essayHeading The GNU Operating System
+
+@cindex software, GNU operating system @emph{(see also} GNU@emph{)}
+@cindex GNU, GNU operating system @emph{(see also both} software @emph{and} GNU@emph{)}
+
+The GNU operating system is the Unix-like operating system, which is
+entirely free software, that we in the GNU Project have developed
+since 1984.
+
+@cindex @TeX{}
+A Unix-like operating system consists of many programs. The GNU system
+includes all the GNU software, as well as many other packages, such as
+the X Window System and @TeX{}, which are not GNU software.
+
+@cindex Hurd, GNU
+@cindex GNU, GNU Hurd
+@cindex kernel, GNU Hurd
+The first test release of the complete GNU system was in 1996. This
+includes the GNU Hurd, our kernel, developed since 1990. In 2001 the
+GNU system (including the GNU Hurd) began working fairly reliably, but
+the Hurd still lacks some important features, so it is not widely
+used. Meanwhile, the GNU/Linux system, an offshoot of the GNU
+operating system which uses Linux as the kernel instead of the GNU
+Hurd, has been a great success since the 90s.
+
+Since the purpose of GNU is to be free, every single component in the
+GNU operating system has to be free software. They don't all have to
+be copylefted, however; any kind of free software is legally suitable
+to include if it helps meet technical goals. And it isn't necessary
+for all the components to be GNU software, individually. GNU can and
+does include noncopylefted free software such as the X Window System
+that were developed by other projects.
+
+
+
+
+
+@essayHeading GNU Programs
+
+@cindex software, GNU programs @emph{(see also} GNU programs@emph{)}
+@cindex GNU, GNU programs @emph{(see also} software@emph{)}
+
+``GNU programs'' is equivalent to GNU software. A program Foo is a GNU
+program if it is GNU software. We also sometimes say it is a ``GNU
+package.''
+
+
+
+
+
+@essayHeading GNU Software
+
+@rgindex software, GNU@emph{(see also} GNU software@emph{)}
+@rgindex GNU @emph{(see also both} software @emph{and} GNU@emph{)}
+GNU software is software that is released under the auspices of the
+GNU Project. If a program is GNU software, we also say that it is a
+GNU program or a GNU package. The README or manual of a GNU package
+should say it is one; also, the Free Software Directory identifies all
+GNU packages.
+
+Most GNU software is copylefted, but not all; however, all GNU
+software must be free software.
+
+@cindex FSF, software development
+@cindex FSF, copyright on software
+Some GNU software was written by staff of the Free Software
+Foundation, but most GNU software comes from many volunteers. (Some of
+these volunteers are paid by companies or universities, but they are
+volunteers for us.) Some contributed software is copyrighted by the
+Free Software Foundation; some is copyrighted by the contributors who
+wrote it.
+@rgindex software, GNU@emph{(see also} GNU software@emph{)}
+@rgindex GNU @emph{(see also both} software @emph{and} GNU@emph{)}
+
+
+
+
+
+@essayHeading Nonfree Software
+
+@cindex software, nonfree @emph{(see also} nonfree software@emph{)}
+@cindex nonfree software @emph{(see also} software@emph{)}
+Nonfree software is any software that is not free.  Its use,
+redistribution or modification is prohibited, or requires you to ask
+for permission, or is restricted so much that you effectively can't do
+it freely.
+
+
+
+
+
+@essayHeading Proprietary Software
+
+@cindex software, proprietary @emph{(see also} proprietary software@emph{)}
+@cindex proprietary software @emph{(see also} software@emph{)}
+Proprietary software is another name for nonfree software.  In the
+past we subdivided nonfree software into ``semifree software,'' which
+could be modified and redistributed noncommercially, and ``proprietary
+software,'' which could not be. But we have dropped that distinction
+and now use ``proprietary software'' as synonymous with nonfree
+software.
+
+@cindex FSF, on installing proprietary software
+The Free Software Foundation follows the rule that we cannot install
+any proprietary program on our computers except temporarily for the
+specific purpose of writing a free replacement for that very
+program. Aside from that, we feel there is no possible excuse for
+installing a proprietary program.
+
+For example, we felt justified in installing Unix on our computer in
+the 1980s, because we were using it to write a free replacement for
+Unix. Nowadays, since free operating systems are available, the excuse
+is no longer applicable; we do not use any nonfree operating systems,
+and any new computer we install must run a completely free operating
+system.
+
+We don't insist that users of GNU, or contributors to GNU, have to
+live by this rule. It is a rule we made for ourselves. But we hope you
+will follow it too, for your freedom's sake.
+
+
+
+
+
+@essayHeading Freeware
+
+@cindex software, freeware @emph{(see also} freeware@emph{)}
+@cindex ``freeware,'' erroneous use of term
+The term ``freeware'' has no clear accepted definition, but it is
+commonly used for packages which permit redistribution but not
+modification (and their source code is not available). These packages
+are @emph{not} free software, so please don't use ``freeware'' to
+refer to free software.
+
+
+
+
+
+@essayHeading Shareware
+
+@rgindex software, shareware
+@rgindex shareware @emph{(see also} software@emph{)}
+Shareware is software which comes with permission for people to
+redistribute copies, but says that anyone who continues to use a copy
+is @emph{required} to pay a license fee.
+
+Shareware is not free software, or even semifree. There are two
+reasons it is not:
+
+@itemize
+
+@item
+For most shareware, source code is not available; thus, you cannot
+modify the program at all.
+
+@item
+Shareware does not come with permission to make a copy and install it
+without paying a license fee, not even for individuals engaging in
+nonprofit activity. (In practice, people often disregard the
+distribution terms and do this anyway, but the terms don't permit it.)
+
+@end itemize
+@rgindex software, shareware
+@rgindex shareware @emph{(see also} software@emph{)}
+
+
+
+
+
+@essayHeading Private Software
+
+@cindex software, private
+@cindex private software @emph{(see also} software@emph{)}
+@cindex development, private software
+Private or custom software is software developed for one user
+(typically an organization or company). That user keeps it and uses
+it, and does not release it to the public either as source code or as
+binaries.
+
+A private program is free software in a trivial sense if its sole user
+has full rights to it.
+
+In general we do not believe it is wrong to develop a program and not
+release it. There are occasions when a program is so useful that
+withholding it from release is treating humanity badly.  However, most
+programs are not that important, so not releasing them is not
+particularly harmful. Thus, there is no conflict between the
+development of private or custom software and the principles of the
+free software movement.
+
+Nearly all employment for programmers is in development of custom
+software; therefore most programming jobs are, or could be, done in a
+way compatible with the free software movement.
+
+
+
+
+
+@essayHeading Commercial Software
+
+@cindex software, commercial @emph{(see also} commercial software@emph{)}
+@cindex commercial software @emph{(see also} software@emph{)}
+@cindex commercial software, to be distinguished from proprietary software
+@cindex proprietary software, to be distinguished from commercial software
+@cindex development, commercial software
+Commercial software is software being developed by a business which
+aims to make money from the use of the software. ``Commercial'' and
+``proprietary'' are not the same thing! Most commercial software is
+proprietary, but there is commercial free software, and there is
+noncommercial nonfree software.
+
+@cindex GNU, GNU Ada compiler
+@cindex Ada compiler, GNU
+For example, GNU Ada is developed by a company. It is always
+distributed under the terms of the GNU GPL, and every copy is free
+software; but its developers sell support contracts. When their
+salesmen speak to prospective customers, sometimes the customers say,
+``We would feel safer with a commercial compiler.'' The salesmen
+reply, ``GNU Ada @emph{is} a commercial compiler; it happens to be
+free software.''
+
+For the GNU Project, the emphasis is in the other order: the important
+thing is that GNU Ada is free software; whether it is commercial is
+just a detail. However, the additional development of GNU Ada that
+results from its being commercial is definitely beneficial.
+
+Please help spread the awareness that free commercial software is
+possible. You can do this by making an effort not to say
+``commercial'' when you mean ``proprietary.''
+@rgindex call to action, use correct terminology @emph{(see also} terminology@emph{)}

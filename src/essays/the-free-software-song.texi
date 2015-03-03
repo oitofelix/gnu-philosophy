@@ -1,0 +1,53 @@
+@c Copyright (C) 2010 Richard Stallman
+@c
+@c Permission is granted to anyone to make or distribute verbatim copies
+@c of this document, in any medium, provided that the copyright notice and
+@c permission notice are preserved, and that the distributor grants the
+@c recipient permission for further redistribution as permitted by this
+@c notice.
+@c
+@c Modified versions of the subject matter text may not be made.  You
+@c are only allowed to modify the markup.
+
+@include essay-header.texi
+
+@c --- Original publication notice;
+@macro essayPreNotice
+This song is in a rhythm of 7/8; those unaccustomed to odd rhythms
+often take the unevenness to be a mistake. The meter can be analyzed
+into three subgroups as slow-quick-quick or 3-2-2. Such meters in
+Bulgarian music can often be stretched, and some musicians analyze
+this song as 3-2-3 instead; however, the last ``3'' is not as long as
+the first. Yves Moreau, who collected and taught the dance, endorses
+the rhythm of 7.
+@iftex
+@sp 1
+@end iftex
+Richard Stallman wrote the lyrics in 1991.
+@end macro
+
+@c --- Copyright notice;
+@macro essayCopyright
+Copyright @copyright{} 2010 Richard Stallman@*
+@end macro
+
+@c --- Setup standard essay defaults;
+@essayHeader{the-free-software-song,
+The Free Software Song,
+The Free Software Song}
+
+
+
+
+
+@cindex Stallman, Richard
+@cindex ``Free Software Song''
+@cindex ``Sadi moma bela loza''
+@cindex hackers
+The lyrics of ``The Free Software Song'' are sung to the melody of the
+Bulgarian folk song ``Sadi moma bela loza.'' To listen to a recording
+of the piece accompanied by Bulgarian instruments played in
+traditional style, please visit
+@url{http://gnu.@/org/@/music/@/FreeSWSong.@/ogg}.
+@sp 1
+@center @image{philosophy-figures/the-free-software-song-score,,3.5in}
