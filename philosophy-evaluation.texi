@@ -287,11 +287,11 @@ effective, and the users benefit from consistency and clearness.
 As an example of the prompt benefits of the documentation integration
 concept: the GNU philosophy package home page is already done, because
 its documentation is already done.  You can check it at
-@url{http://oitofelix.github.io/gnu-philosophy/homepage/}.  Be
-aware that the server side includes are all missing, so there is no
+@url{http://oitofelix.github.io/gnu-philosophy/homepage/README.html}.
+Be aware that the server side includes are all missing, so there is no
 CSS being processed, and therefore the page looks raw.  However, the
-homepage is complete, in the sense that that very homepage, if put
-under gnu.org domain, would look pretty like the GNU ccd2cue one.
+homepage is complete, in the sense that that very homepage, if put under
+gnu.org domain, would look pretty like the GNU ccd2cue one.
 
 If the GNU project is interested in the application of this concept in
 a large scale, by suggesting it in the @cite{GNU Coding Standards} or
