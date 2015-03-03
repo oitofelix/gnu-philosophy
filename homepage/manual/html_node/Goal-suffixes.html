@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- GNU philosophy is the GNU Project's exhaustive collection of articles
+and essays about free software and related matters.
+
+Copyright (C) 2002, 2010, 2013, 2014 Free Software Foundation, Inc.
+Verbatim copying and distribution of this entire book are permitted
+worldwide, without royalty, in any medium, provided this notice is
+preserved.  Permission is granted to copy and distribute translations
+of this book from the original English into another language provided
+the translation has been approved by the Free Software Foundation and
+the copyright notice and this permission notice are preserved on all
+copies. -->
+<!-- Created by GNU Texinfo 5.2, http://www.gnu.org/software/texinfo/ -->
+<head>
+<title>GNU philosophy: Goal suffixes</title>
+
+<meta name="description" content="GNU philosophy: Goal suffixes">
+<meta name="keywords" content="GNU philosophy: Goal suffixes">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="index.html#Top" rel="start" title="Top">
+<link href="Index.html#Index" rel="index" title="Index">
+<link href="Overview.html#Overview" rel="up" title="Overview">
+<link href="Build.html#Build" rel="next" title="Build">
+<link href="Make-interface.html#Make-interface" rel="prev" title="Make interface">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.indentedblock {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smallindentedblock {margin-left: 3.2em; font-size: smaller}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style:oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nocodebreak {white-space:nowrap}
+span.nolinebreak {white-space:nowrap}
+span.roman {font-family:serif; font-weight:normal}
+span.sansserif {font-family:sans-serif; font-weight:normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en" bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#800080" alink="#FF0000">
+<a name="Goal-suffixes"></a>
+<div class="header">
+<p>
+Next: <a href="Build.html#Build" accesskey="n" rel="next">Build</a>, Previous: <a href="Make-interface.html#Make-interface" accesskey="p" rel="prev">Make interface</a>, Up: <a href="Overview.html#Overview" accesskey="u" rel="up">Overview</a> &nbsp; [<a href="Index.html#Index" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<a name="Goal-suffixes-1"></a>
+<h3 class="section">1.5 Goal suffixes</h3>
+
+
+
+
+
+
+
+&#12;
+
+
+
+
+&#12;
+
+
+
+
+&#12;
+
+<div class="smallindentedblock">
+<p>This particular text can be seen by running &lsquo;<samp>make help-suffixes</samp>&rsquo;.
+</p></div>
+
+<p>Each available goal is comprised of a <em>primary</em>, which gives its
+general and essential meaning &mdash; as <em>build essays</em> (&lsquo;<samp>all</samp>&rsquo;)
+or <em>clean the build tree</em> (&lsquo;<samp>all-clean</samp>&rsquo;) &mdash; and an optional
+set of suffixes which specializes the meaning of the primary they are
+appended to.  There are three different kind of suffixes:
+<em>aggregate</em>, <em>format</em> and <em>language</em>.
+</p>
+<p>The <em>aggregate suffix type</em> specifies which kind of aggregate
+should be acted upon: <em>collection</em> or <em>standalone</em>.  The
+former gathers all essays in a single document, and the latter puts
+each one on its own document.
+</p>
+<p>The <em>format suffix type</em> specifies an output format, like
+<em>Info</em> or <em>PDF</em> for the correspondent aggregate.  The valid
+format suffixes are:
+</p>
+<dl compact="compact">
+<dt>&lsquo;<samp>info</samp>&rsquo;</dt>
+<dd><p>GNU Info format
+</p></dd>
+<dt>&lsquo;<samp>html</samp>&rsquo;</dt>
+<dd><p>HyperText Markup Language
+</p></dd>
+<dt>&lsquo;<samp>pdf</samp>&rsquo;</dt>
+<dd><p>Portable Document Format
+</p></dd>
+<dt>&lsquo;<samp>dvi</samp>&rsquo;</dt>
+<dd><p>Device Independent File
+</p></dd>
+<dt>&lsquo;<samp>ps</samp>&rsquo;</dt>
+<dd><p>PostScript
+</p></dd>
+<dt>&lsquo;<samp>txt</samp>&rsquo;</dt>
+<dd><p>Plain Text
+</p></dd>
+<dt>&lsquo;<samp>dbk</samp>&rsquo;</dt>
+<dd><p>Docbook
+</p></dd>
+<dt>&lsquo;<samp>xml</samp>&rsquo;</dt>
+<dd><p>Extensible Markup Language
+</p></dd>
+</dl>
+
+<p>The <em>language suffix type</em> allows one to select the translation
+language one wants to act upon.  It&rsquo;s a language code like &lsquo;<samp>en</samp>&rsquo;
+or &lsquo;<samp>pt_BR</samp>&rsquo;.  Currently, the valid language suffixes are:
+</p>
+<dl compact="compact">
+<dt>&lsquo;<samp>en</samp>&rsquo;</dt>
+<dd><p>English
+</p></dd>
+</dl>
+
+<p>All suffixes should be prepended by &lsquo;<samp>-</samp>&rsquo;.  For instance, being
+&lsquo;<samp>all</samp>&rsquo; the primary used to build essays, in order to tell the
+build system to compile a collection in Info format and Brazilian
+Portuguese language, one would use the goal
+&lsquo;<samp>all-collection-info-pt_BR</samp>&rsquo;.
+</p>
+<p>In this help text, when listing the available goals, we denote the
+support for a particular suffix type by the &lsquo;<samp>[<var>a</var>]</samp>&rsquo;,
+&lsquo;<samp>[<var>f</var>]</samp>&rsquo; and &lsquo;<samp>[<var>l</var>]</samp>&rsquo; symbols, meaning aggregate,
+format and language suffixes, respectively.  All suffixes are optional
+and you can specify any combination of them, but you must always
+respect that exact ordering.
+</p>
+<p>Omitting a suffix causes the build system to process the correspondent
+goal for all valid suffixes of the omitted type.  For example, the
+goal &lsquo;<samp>all-standalone-pdf-en</samp>&rsquo; is as specific as one can get and it
+tells to build standalone aggregates in PDF format and English
+language.  To be more general one can omit any desired suffix of the
+type one want to generalize upon.  For instance, the goal
+&lsquo;<samp>all-standalone-pdf</samp>&rsquo; builds PDF standalone aggregates for all
+languages, because the language suffix type was omitted.  One could
+omit the format suffix instead, like in &lsquo;<samp>all-standalone-en</samp>&rsquo;, and
+then all the standalone aggregates in all formats, but only for
+English language, would be built.  Analogously, the goal
+&lsquo;<samp>all-standalone</samp>&rsquo; builds standalone for every available language,
+in every supported format, because both suffix were omitted.  Finally,
+&lsquo;<samp>all</samp>&rsquo; is equivalent to &lsquo;<samp>all-collection all-standalone</samp>&rsquo;,
+i.e., it builds both aggregate types for every language and format
+available.
+</p>
+<p>If your shell support brace expansion (see <a href="http://www.gnu.org/software/bash/manual/html_node/Brace-Expansion.html#Brace-Expansion">Brace Expansion</a> in <cite>GNU Bash manual</cite>)<a name="DOCF1" href="#FOOT1"><sup>1</sup></a> an useful trick is
+to use it to specify multiple goals combinations by a single
+meta-goal.  For instance, to build Info and PDF collections for all
+available languages one can use the meta-goal
+&lsquo;<samp>all-collection-{info,pdf}</samp>&rsquo;.  More powerfully, if one wants to
+build based on those same settings but just for two specified
+languages, let&rsquo;s say English and Brazilian Portuguese, one would
+rather use &lsquo;<samp>all-collection-{info,pdf}-{en,pt_BR}</samp>&rsquo;.
+</p>
+
+
+
+&#12;
+
+
+
+
+
+&#12;
+<div class="footnote">
+<hr>
+<h4 class="footnotes-heading">Footnotes</h4>
+
+<h3><a name="FOOT1" href="#DOCF1">(1)</a></h3>
+<p>If not, time has come to upgrade to
+<a href="https://www.gnu.org/software/bash">GNU Bash!</a></p>
+</div>
+<hr>
+<div class="header">
+<p>
+Next: <a href="Build.html#Build" accesskey="n" rel="next">Build</a>, Previous: <a href="Make-interface.html#Make-interface" accesskey="p" rel="prev">Make interface</a>, Up: <a href="Overview.html#Overview" accesskey="u" rel="up">Overview</a> &nbsp; [<a href="Index.html#Index" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

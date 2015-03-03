@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- GNU philosophy is the GNU Project's exhaustive collection of articles
+and essays about free software and related matters.
+
+Copyright (C) 2002, 2010, 2013, 2014 Free Software Foundation, Inc.
+Verbatim copying and distribution of this entire book are permitted
+worldwide, without royalty, in any medium, provided this notice is
+preserved.  Permission is granted to copy and distribute translations
+of this book from the original English into another language provided
+the translation has been approved by the Free Software Foundation and
+the copyright notice and this permission notice are preserved on all
+copies. -->
+<!-- Created by GNU Texinfo 5.2, http://www.gnu.org/software/texinfo/ -->
+<head>
+<title>GNU philosophy: Installation</title>
+
+<meta name="description" content="GNU philosophy: Installation">
+<meta name="keywords" content="GNU philosophy: Installation">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="index.html#Top" rel="start" title="Top">
+<link href="Index.html#Index" rel="index" title="Index">
+<link href="Overview.html#Overview" rel="up" title="Overview">
+<link href="Cleaning.html#Cleaning" rel="next" title="Cleaning">
+<link href="Build.html#Build" rel="prev" title="Build">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.indentedblock {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smallindentedblock {margin-left: 3.2em; font-size: smaller}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style:oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nocodebreak {white-space:nowrap}
+span.nolinebreak {white-space:nowrap}
+span.roman {font-family:serif; font-weight:normal}
+span.sansserif {font-family:sans-serif; font-weight:normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en" bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#800080" alink="#FF0000">
+<a name="Installation"></a>
+<div class="header">
+<p>
+Next: <a href="Cleaning.html#Cleaning" accesskey="n" rel="next">Cleaning</a>, Previous: <a href="Build.html#Build" accesskey="p" rel="prev">Build</a>, Up: <a href="Overview.html#Overview" accesskey="u" rel="up">Overview</a> &nbsp; [<a href="Index.html#Index" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<a name="Installation-1"></a>
+<h3 class="section">1.7 Installation</h3>
+
+
+
+
+
+
+
+&#12;
+
+
+
+
+&#12;
+
+
+
+
+&#12;
+
+<div class="smallindentedblock">
+<p>This particular text can be seen by running &lsquo;<samp>make help-install</samp>&rsquo;.
+</p></div>
+
+<p>After the building process (see <a href="Build.html#Build">Build</a>), comes the last
+step: the installation of the package.  The primary used for this is
+&lsquo;<samp>all-install[<var>a</var>][<var>f</var>][<var>l</var>]</samp>&rsquo;.  Therefore, to install
+all collection and standalone formats, in all available languages,
+invoke &lsquo;<samp>make all-install</samp>&rsquo;.  As explained in <a href="Goal-suffixes.html#Goal-suffixes">Goal suffixes</a>, you can
+further specify the installation by using any combination of
+<em>aggregate</em>, <em>format</em> and <em>language</em> suffixes.  Notice
+that invoking the installation of an aggregate type, output format or
+translation language not already built will automatically trigger its
+build before installation.
+</p>
+<p>The <a href="https://www.gnu.org/philosophy/">GNU website philosophy
+section essays</a> and the <a href="https://www.gnu.org/software/philosophy/">homepage of GNU philosophy package</a> cannot be installed, but are
+available in the directories (relative to the build top directory)
+<samp>essays/src/www/www-gnu</samp> and <samp>essays/src/www/homepage</samp>.
+</p>
+<p>The installation puts the built essays documents into the directory
+</p>
+<div class="example">
+<pre class="example"><var>docdir</var>/<var>language</var>/<var>aggregate</var>/<var>format</var>
+</pre></div>
+
+<p>where <var>docdir</var>, <var>language</var>, <var>aggregate</var> and <var>format</var>,
+are the <em>documentation directory</em>, which can be specified with
+the script <code>configure</code> option <samp>--docdir</samp> and defaults
+to <samp>/usr/local/share/doc/philosophy</samp>, the <em>translation
+language</em>, &lsquo;<samp>en</samp>&rsquo; for the original essays, <em>aggregate type</em>
+and <em>output format</em>.
+</p>
+<p>Naturally, there are a goal to uninstall the package almost analogous
+to its installation counterpart:
+&lsquo;<samp>all-uninstall[<var>a</var>][<var>f</var>][<var>l</var>]</samp>&rsquo;.  Obviously, it will
+not trigger the build and installation before the removal of the
+selected set of essays.
+</p>
+
+
+
+&#12;
+
+
+
+
+
+&#12;
+
+
+
+</body>
+</html>

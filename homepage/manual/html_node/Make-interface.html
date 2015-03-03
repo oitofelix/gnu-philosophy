@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- GNU philosophy is the GNU Project's exhaustive collection of articles
+and essays about free software and related matters.
+
+Copyright (C) 2002, 2010, 2013, 2014 Free Software Foundation, Inc.
+Verbatim copying and distribution of this entire book are permitted
+worldwide, without royalty, in any medium, provided this notice is
+preserved.  Permission is granted to copy and distribute translations
+of this book from the original English into another language provided
+the translation has been approved by the Free Software Foundation and
+the copyright notice and this permission notice are preserved on all
+copies. -->
+<!-- Created by GNU Texinfo 5.2, http://www.gnu.org/software/texinfo/ -->
+<head>
+<title>GNU philosophy: Make interface</title>
+
+<meta name="description" content="GNU philosophy: Make interface">
+<meta name="keywords" content="GNU philosophy: Make interface">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="index.html#Top" rel="start" title="Top">
+<link href="Index.html#Index" rel="index" title="Index">
+<link href="Overview.html#Overview" rel="up" title="Overview">
+<link href="Goal-suffixes.html#Goal-suffixes" rel="next" title="Goal suffixes">
+<link href="Configuration.html#Configuration" rel="prev" title="Configuration">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.indentedblock {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smallindentedblock {margin-left: 3.2em; font-size: smaller}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style:oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nocodebreak {white-space:nowrap}
+span.nolinebreak {white-space:nowrap}
+span.roman {font-family:serif; font-weight:normal}
+span.sansserif {font-family:sans-serif; font-weight:normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en" bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#800080" alink="#FF0000">
+<a name="Make-interface"></a>
+<div class="header">
+<p>
+Next: <a href="Goal-suffixes.html#Goal-suffixes" accesskey="n" rel="next">Goal suffixes</a>, Previous: <a href="Configuration.html#Configuration" accesskey="p" rel="prev">Configuration</a>, Up: <a href="Overview.html#Overview" accesskey="u" rel="up">Overview</a> &nbsp; [<a href="Index.html#Index" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<a name="Make-interface-1"></a>
+<h3 class="section">1.4 Make interface</h3>
+
+
+
+
+
+
+
+&#12;
+
+
+
+
+&#12;
+
+
+
+
+&#12;
+
+<div class="smallindentedblock">
+<p>This particular text can be seen by running &lsquo;<samp>make help</samp>&rsquo;.
+</p></div>
+
+<p>As soon as the <code>configure</code> script finishes its execution, the
+build system is instantiated so you can use the command <code>make</code>
+to tell the build system what task you want done.  In order to do that
+you can run &lsquo;<samp>make <var>goal</var></samp>&rsquo;, where <var>goal</var> is one of the
+supported goals.  Actually, <code>make</code> accepts an arbitrary list
+of goals at once, separated by blanks, in which case it will strive to
+accomplish each of them.
+</p>
+<p>This package&rsquo;s build system has a help mechanism which will assist you
+through the build and installation process, as well as instruct you
+about all relevant goals.  Throughout its help documentation you are
+pointed to specific help topics &mdash; denoted by &lsquo;<samp>help-<var>topic</var></samp>&rsquo;
+&mdash; which you can visualize by running &lsquo;<samp>make help-<var>topic</var></samp>&rsquo;,
+where <var>topic</var> is the topic at hand.
+</p>
+<p>This package has a somewhat different set of make goals and rules one
+would expect from an ordinary GNU software package.  The help
+documentation describes the most general function of each available
+goal, whose meaning often can be further specialized by the use of
+suffixes.  See &lsquo;<samp>help-suffixes</samp>&rsquo;.  You can obtain further help in
+the following topics.
+</p>
+<dl compact="compact">
+<dt>&lsquo;<samp>help-build</samp>&rsquo;</dt>
+<dd><p>Building;
+</p></dd>
+<dt>&lsquo;<samp>help-install</samp>&rsquo;</dt>
+<dd><p>Installation;
+</p></dd>
+<dt>&lsquo;<samp>help-clean</samp>&rsquo;</dt>
+<dd><p>Cleaning;
+</p></dd>
+<dt>&lsquo;<samp>help-dist</samp>&rsquo;</dt>
+<dd><p>Distribution;
+</p></dd>
+</dl>
+
+
+
+
+&#12;
+
+
+
+
+
+&#12;
+
+
+
+</body>
+</html>

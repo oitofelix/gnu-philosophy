@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- GNU philosophy is the GNU Project's exhaustive collection of articles
+and essays about free software and related matters.
+
+Copyright (C) 2002, 2010, 2013, 2014 Free Software Foundation, Inc.
+Verbatim copying and distribution of this entire book are permitted
+worldwide, without royalty, in any medium, provided this notice is
+preserved.  Permission is granted to copy and distribute translations
+of this book from the original English into another language provided
+the translation has been approved by the Free Software Foundation and
+the copyright notice and this permission notice are preserved on all
+copies. -->
+<!-- Created by GNU Texinfo 5.2, http://www.gnu.org/software/texinfo/ -->
+<head>
+<title>GNU philosophy: Free but Shackled; The Java Trap</title>
+
+<meta name="description" content="GNU philosophy: Free but Shackled; The Java Trap">
+<meta name="keywords" content="GNU philosophy: Free but Shackled; The Java Trap">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="index.html#Top" rel="start" title="Top">
+<link href="Index.html#Index" rel="index" title="Index">
+<link href="index.html#Top" rel="up" title="Top">
+<link href="The-JavaScript-Trap.html#The-JavaScript-Trap" rel="next" title="The JavaScript Trap">
+<link href="Who-Does-That-Server-Really-Serve_003f.html#Who-Does-That-Server-Really-Serve_003f" rel="prev" title="Who Does That Server Really Serve?">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.indentedblock {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smallindentedblock {margin-left: 3.2em; font-size: smaller}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style:oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nocodebreak {white-space:nowrap}
+span.nolinebreak {white-space:nowrap}
+span.roman {font-family:serif; font-weight:normal}
+span.sansserif {font-family:sans-serif; font-weight:normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en" bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#800080" alink="#FF0000">
+<a name="Free-but-Shackled_003b-The-Java-Trap"></a>
+<div class="header">
+<p>
+Next: <a href="The-JavaScript-Trap.html#The-JavaScript-Trap" accesskey="n" rel="next">The JavaScript Trap</a>, Previous: <a href="Who-Does-That-Server-Really-Serve_003f.html#Who-Does-That-Server-Really-Serve_003f" accesskey="p" rel="prev">Who Does That Server Really Serve?</a>, Up: <a href="index.html#Top" accesskey="u" rel="up">Top</a> &nbsp; [<a href="Index.html#Index" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<a name="Free-but-Shackled_003a-The-Java-Trap"></a>
+<h2 class="unnumbered">Free but Shackled: The Java Trap</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<blockquote class="smallquotation">
+<blockquote class="smallquotation">
+<p>Since this article was first published, on 12&nbsp;April&nbsp;2004,
+Sun has relicensed most of its Java platform reference implementation
+under the GNU General Public License, and there is now a free
+development environment for Java. Thus, the Java language as such is
+no longer a trap.
+</p>
+<p>You must be careful, however, because not every Java platform is
+free. Sun continues distributing an executable Java platform which is
+nonfree, and other companies do so too.
+</p>
+<p>The free environment for Java is called IcedTea; the source code Sun
+freed is included in that. So that is the one you should use. Many
+GNU/Linux distributions come with IcedTea, but some include nonfree
+Java platforms.
+</p>
+<p>To reliably ensure your Java programs run fine in a free environment,
+you need to develop them using IcedTea. Theoretically the Java
+platforms should be compatible, but they are not compatible 100 percent.
+</p>
+<p>In addition, there are nonfree programs with &ldquo;Java&rdquo; in their name,
+such as JavaFX, and there are nonfree Java packages you might find
+tempting but need to reject. So check the licenses of whatever
+packages you plan to use. If you use Swing, make sure to use the free
+version, which comes with IcedTea.
+</p>
+<p>Aside from those Java specifics, the general issue described here
+remains important, because any nonfree library or programming platform
+can cause a similar problem. We must learn a lesson from the history
+of Java, so we can avoid other traps in the future.
+</p></blockquote>
+
+<p>This essay was first published on <a href="http://gnu.org">http://gnu.org</a>, in 2004.
+</p>
+
+<p>Copyright &copy; 2004, 2006, 2010 Richard Stallman
+</p>
+<blockquote>
+<p>Verbatim copying and distribution of this entire chapter are
+permitted worldwide, without royalty, in any medium, provided this
+notice is preserved.
+</p></blockquote>
+
+
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&#12;
+<a name="index-traps_002c-nonfree-libraries-2"></a>
+<a name="index-libraries-_0028comp_002e_0029_002c-as-traps-1"></a>
+<a name="index-Java-2"></a>
+<a name="index-Sun-Microsystems-2"></a>
+<a name="index-Swing-library"></a>
+<a name="index-JavaFX"></a>
+<a name="index-IcedTea-_0028see-also-Java_0029"></a>
+<p>If your program is free software, it is basically ethical&mdash;but
+there is a trap you must be on guard for. Your program, though in
+itself free, may be restricted by nonfree software that it depends
+on. Since the problem is most prominent today for Java programs, we
+call it the Java Trap.
+</p>
+<p>A program is free software if its users have certain crucial
+freedoms. Roughly speaking, they are: the freedom to run the program,
+the freedom to study and change the source, the freedom to
+redistribute the source and binaries, and the freedom to publish
+improved versions. (See <a href="The-Free-Software-Definition.html#The-Free-Software-Definition">The Free Software Definition</a>.) Whether any given program in source form is free software
+depends solely on the meaning of its license.
+</p>
+<a name="index-traps_002c-nonfree-dependencies"></a>
+<p>Whether the program can be used in the Free World, used by people
+who mean to live in freedom, is a more complex question. This is not
+determined by the program&rsquo;s own license alone, because no program
+works in isolation. Every program depends on other programs. For
+instance, a program needs to be compiled or interpreted, so it depends
+on a compiler or interpreter. If compiled into byte code, it depends
+on a byte-code interpreter. Moreover, it needs libraries in order to
+run, and it may also invoke other separate programs that run in other
+processes. All of these programs are dependencies. Dependencies may
+be necessary for the program to run at all, or they may be necessary
+only for certain features. Either way, all or part of the program
+cannot operate without the dependencies.
+</p>
+<p>If some of a program&rsquo;s dependencies are nonfree, this means that all
+or part of the program is unable to run in an entirely free
+system&mdash;it is unusable in the Free World. Sure, we could redistribute
+the program and have copies on our machines, but that&rsquo;s not much good
+if it won&rsquo;t run. That program is free software, but it is effectively
+shackled by its nonfree dependencies.
+</p>
+<p>This problem can occur in any kind of software, in any language. For
+instance, a free program that only runs on Microsoft
+<a name="index-Windows-3"></a>
+Windows is clearly useless in the Free World. But software that runs
+on GNU/Linux can also be useless if it depends on other nonfree
+software. In the past,
+<a name="index-Motif-_0028see-also-LessTif_0029-3"></a>
+Motif (before we had
+<a name="index-LessTif-_0028see-also-Motif_0029-3"></a>
+LessTif) and
+<a name="index-Qt-3"></a>
+Qt (before its developers made it free software) were major causes of
+this problem. Most 3D video cards work fully only with nonfree
+drivers, which also cause this problem. But the major source of this
+problem today is Java, because people who write free software often
+feel Java is sexy. Blinded by their attraction to the language, they
+overlook the issue of dependencies and fall into the Java Trap.
+</p>
+<a name="index-GNU_002c-GCJ"></a>
+<a name="index-GNU_002c-GNU-Classpath"></a>
+<p>Sun&rsquo;s implementation of Java is nonfree. The standard Java libraries
+are nonfree also. We do have free implementations of Java, such as the
+GNU Compiler for Java (GCJ) and GNU Classpath, but they don&rsquo;t support
+all the features yet. We are still catching up.
+</p>
+<p>If you develop a Java program on Sun&rsquo;s Java platform, you are liable
+to use Sun-only features without even noticing. By the time you find
+this out, you may have been using them for months, and redoing the
+work could take more months. You might say, &ldquo;It&rsquo;s too much work to
+start over.&rdquo; Then your program will have fallen into the Java Trap;
+it will be unusable in the Free World.
+</p>
+<p>The reliable way to avoid the Java Trap is to have only a free
+implementation of Java on your system. Then if you use a Java feature
+or library that free software does not yet support, you will find out
+straightaway, and you can rewrite that code immediately.
+</p>
+<p>Sun continues to develop additional &ldquo;standard&rdquo; Java libraries, and
+nearly all of them are nonfree; in many cases, even a library&rsquo;s
+specification is a trade secret, and Sun&rsquo;s latest license for these
+specifications prohibits release of anything less than a full
+implementation of the specification. (See
+<a href="http://jcp.org/aboutJava/communityprocess/JSPA2.pdf">http://jcp.org/aboutJava/communityprocess/JSPA2.pdf</a>
+and
+<a href="http://jcp.org/aboutJava/communityprocess/final/jsr129/j2me_pb-1_0-fr-spec-license.html">http://jcp.org/aboutJava/communityprocess/final/jsr129/j2me_pb-1_0-fr-spec-license.html</a>
+for examples.)
+<a name="index-Sun-Microsystems-3"></a>
+</p>
+<p>Fortunately, that specification license does permit releasing an
+implementation as free software; others who receive the library can be
+allowed to change it and are not required to adhere to the
+specification. But the requirement has the effect of prohibiting the
+use of a collaborative development model to produce the free
+implementation. Use of that model would entail publishing incomplete
+versions, something those who have read the spec are not allowed to
+do.
+</p>
+<p>In the early days of the free software movement, it was impossible
+to avoid depending on nonfree programs. Before we had the GNU C
+compiler, every
+<a name="index-C-programs-2"></a>
+C program (free or not) depended on a nonfree C
+compiler. Before we had the
+<a name="index-GNU_002c-GNU-C-Library-3"></a>
+GNU C library, every program depended on a
+nonfree
+<a name="index-C-library-6"></a>
+<a name="index-libraries-_0028comp_002e_0029_002c-C-6"></a>
+C library. Before we had Linux, the first free kernel, every
+program depended on a nonfree kernel. Before we had BASH, every
+shell
+script had to be interpreted by a nonfree shell. It was inevitable
+that our first programs would initially be hampered by these
+dependencies, but we accepted this because our plan included rescuing
+them subsequently. Our overall goal, a self-hosting
+<a name="index-GNU-_0028see-also-both-software-and-GNU_0029-6"></a>
+GNU operating
+system, included free replacements for all those dependencies; if we
+reached the goal, all our programs would be rescued. Thus it happened:
+with the GNU/Linux system, we can now run these programs on free
+platforms.
+</p>
+<p>The situation is different today. We now have powerful free
+operating systems and many free programming tools. Whatever job you
+want to do, you can do it on a free platform; there is no need to
+accept a nonfree dependency even temporarily. The main reason people
+fall into the trap today is because they are not thinking about
+it. The easiest solution to the problem is to teach people to
+recognize it and not fall into it.
+</p>
+<p>To keep your Java code safe from the Java Trap, install a free Java
+development environment and use it. More generally, whatever language
+you use, keep your eyes open, and check the free status of programs
+your code depends on. The easiest way to verify that a program is free
+is by looking for it in the Free Software Directory
+(<a href="http://fsf.org/directory">http://fsf.org/directory</a>). If a program is not in the
+directory, you can check its license(s) against the list of free
+software licenses
+(<a href="http://gnu.org/licenses/license-list.html">http://gnu.org/licenses/license-list.html</a>).
+</p>
+<p>We are trying to rescue the trapped Java programs, so if you like
+the Java language, we invite you to help in developing GNU
+Classpath. Trying your programs with the GCJ Compiler and GNU
+Classpath, and reporting any problems you encounter in classes already
+implemented, is also useful. However, finishing GNU Classpath will
+take time; if more nonfree libraries continue to be added, we may
+never have all the latest ones. So please don&rsquo;t put your free software
+in shackles. When you write an application program today, write it to
+run on free facilities from the start.
+<a name="index-libraries-_0028comp_002e_0029_002c-as-traps-2"></a>
+<a name="index-traps_002c-nonfree-libraries-3"></a>
+<a name="index-Java-3"></a>
+<a name="index-GNU_002c-GCJ-1"></a>
+<a name="index-traps_002c-nonfree-dependencies-1"></a>
+<a name="index-GNU_002c-GNU-Classpath-1"></a>
+</p>
+<hr>
+<div class="header">
+<p>
+Next: <a href="The-JavaScript-Trap.html#The-JavaScript-Trap" accesskey="n" rel="next">The JavaScript Trap</a>, Previous: <a href="Who-Does-That-Server-Really-Serve_003f.html#Who-Does-That-Server-Really-Serve_003f" accesskey="p" rel="prev">Who Does That Server Really Serve?</a>, Up: <a href="index.html#Top" accesskey="u" rel="up">Top</a> &nbsp; [<a href="Index.html#Index" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+Translations of the Term “Free Software”
+****************************************
+
+The most current list of translations is maintained at
+<http://www.gnu.org/philosophy/fs-translations.html>.  Please e-mail any
+additional translations to <web-translators@gnu.org>.
+
+This document is part of GNU philosophy, the GNU Project’s exhaustive
+collection of articles and essays about free software and related
+matters.
+
+     Verbatim copying and distribution of this entire document are
+     permitted worldwide, without royalty, in any medium, provided this
+     notice is preserved.
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+   This is a list of recommended unambiguous translations of the term
+“free software”.
+
+   We also provide translations of “gratis software” in a separate
+column to show how to make the contrast in various languages.
+
+   If you know a correction or addition to the list, please email it to
+<web-translators@gnu.org>.  Please stick to UTF-8 in your message.
+Thanks.
+
+   The parenthesized phrases in Latin letters after some of the entries
+are transliterations (with vowels added where relevant).  Please send
+any corrections or additions to those, too.
+
+Code Name           Free Software                 Gratis Software
+                                                  
+----------------------------------------------------------------------------
+af   Afrikaans      vrye sagteware
+                    
+ar   Arabic         برمجيات حرة
+                    (barmagiyat ḥorrah)
+                    
+be   Belarusian     свабоднае праграмнае
+                    забесьпячэньне
+                    (svabodnae pragramnae
+                    zabes’pjachen’ne)
+                    
+bg   Bulgarian      свободен софтуер              безплатен софтуер
+                    (svoboden softuer)            (bezplaten softuer)
+                                                  
+bn   Bengali        স্বাধীন সফটওয়্যার
+                    (swadhin software)
+                    
+ca   Catalan        programari lliure             programari gratuït
+                                                  
+cs   Czech          svobodný software             bezplatný software
+                                                  
+cy   Welsh          meddalwedd rydd
+                    
+da   Danish         fri software /
+                    frit programmel
+                    
+de   German         freie Software                Gratis-Software /
+                                                  Kostenlose Software
+                                                  
+el   Greek          ελεύθερο λογισμικό
+                    (eleuthero logismiko)
+                    
+eo   Esperanto      libera programaro /
+                    programo
+                    
+es   Spanish        software libre                software gratuito
+                                                  
+et   Estonian       vaba tarkvara                 tasuta tarkvara
+                                                  
+fa   Persian        نرمافزارِ آزاد
+     (Farsi)        (nrmafzar azad)
+                    
+fi   Finnish        vapaa ohjelmisto
+                    
+fr   French         logiciel libre                logiciel gratuit
+                                                  
+ga   Irish          bog earraí saoire
+                    
+he   Hebrew         תוכנה חופשית
+                    (tochna chofshit)
+                    
+hi   Hindi          मुक्त सॉफ्टवेयर                    मुफ़्त सॉफ्टवेयर
+                    (mukt software)               (muft software)
+                                                  
+hr   Croatian       slobodan softver              besplatan softver
+                                                  
+hu   Hungarian      szabad szoftver
+                    
+hy   Armenian       ազատ ծրագիր/ծրագրեր
+                    (azat tsragir/tsragrer)
+                    
+ia   Interlingua    libere programmage /
+                    libere programmario
+                    
+id   Indonesian     perangkat lunak bebas
+                    
+io   Ido            libera programaro
+                    
+is   Icelandic      frjáls hugbúnaður
+                    
+it   Italian        software libero               software gratuito
+                                                  
+ja   Japanese       自由ソフトウェア              無料ソフトウェア
+                    (jiyuu software)              (muryou software)
+                                                  
+ko   Korean         자유 소프트웨어
+                    (ja-yu software)
+                    
+lt   Lithuanian     laisva programinė įranga      nemokama programinė įranga
+                                                  
+mk   Macedonian     слободен софтвер              бесплатен софтвер
+                    (sloboden softver)            (besplaten softver)
+                                                  
+ml   Malayalam      സ്വതന്ത്രസോഫ്റ്റ്വെയര്
+                    (svatantrasophṯṯveyar)
+                    
+ms   Malay          perisian bebas
+                    
+nl   Dutch          vrije software                gratis software
+                                                  
+no   Norwegian      fri programvare
+                    
+pl   Polish         wolne oprogramowanie          darmowe oprogramowanie
+                                                  
+pt   Portuguese     software livre                software gratuito
+                                                  
+ro   Romanian       programe libere               programe gratuite
+                                                  
+ru   Russian        свободные программы           бесплатные программы
+                    (svobodnie programmi)         (besplatnie programmi)
+                                                  
+sc   Sardinian      software liberu
+                    
+si   Sinhala        නිදහස් මෘදුකාංග
+                    (nidahas mṛdukāṅga)
+                    
+sk   Slovak         slobodný softvér
+                    
+sl   Slovenian      prosto programje
+                    
+sq   Albanian       software i lirë               software falas
+                                                  
+sr   Serbian        слободни софтвер              бесплатни софтвер
+                    (slobodni softver)            (besplatni softver)
+                                                  
+sv   Swedish        fri programvara /
+                    fri mjukvara
+                    
+sw   Swahili        Programu huru za Kompyuta
+                    
+ta   Tamil          கட்டற்ற மென்பொருள்
+                    (kaṭṭaṟṟa meṉpoñaḷ)
+                    
+th   Thai           ซอฟต์แวร์เสรี
+                    (sofotwerseri)
+                    
+tl   Tagalog/       malayang software
+     Filipino       
+tr   Turkish        özgür yazılım
+                    
+uk   Ukrainian      вільне програмне
+                    забезпечення
+                    (vil’ne prohramne
+                    zabezpechennja)
+                    
+vi   Vietnamese     phần mềm tự do
+                    
+zh-  Chinese        自由软件                      免费软件
+cn   (Simplified)   (zi-you ruan-jian)            
+zh-  Chinese        自由軟體                      免費軟體
+tw   (Traditional)  (zih-yo)                      
+zu   Zulu           Isoftware Ekhululekile
+                    
+

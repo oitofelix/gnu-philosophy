@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- GNU philosophy is the GNU Project's exhaustive collection of articles
+and essays about free software and related matters.
+
+Copyright (C) 2002, 2010, 2013, 2014 Free Software Foundation, Inc.
+Verbatim copying and distribution of this entire book are permitted
+worldwide, without royalty, in any medium, provided this notice is
+preserved.  Permission is granted to copy and distribute translations
+of this book from the original English into another language provided
+the translation has been approved by the Free Software Foundation and
+the copyright notice and this permission notice are preserved on all
+copies. -->
+<!-- Created by GNU Texinfo 5.2, http://www.gnu.org/software/texinfo/ -->
+<head>
+<title>GNU philosophy: The X Window System Trap</title>
+
+<meta name="description" content="GNU philosophy: The X Window System Trap">
+<meta name="keywords" content="GNU philosophy: The X Window System Trap">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="index.html#Top" rel="start" title="Top">
+<link href="Index.html#Index" rel="index" title="Index">
+<link href="index.html#Top" rel="up" title="Top">
+<link href="The-Problem-Is-Software-Controlled-by-Its-Developer.html#The-Problem-Is-Software-Controlled-by-Its-Developer" rel="next" title="The Problem Is Software Controlled by Its Developer">
+<link href="The-JavaScript-Trap.html#The-JavaScript-Trap" rel="prev" title="The JavaScript Trap">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.indentedblock {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smallindentedblock {margin-left: 3.2em; font-size: smaller}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style:oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nocodebreak {white-space:nowrap}
+span.nolinebreak {white-space:nowrap}
+span.roman {font-family:serif; font-weight:normal}
+span.sansserif {font-family:sans-serif; font-weight:normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en" bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#800080" alink="#FF0000">
+<a name="The-X-Window-System-Trap"></a>
+<div class="header">
+<p>
+Next: <a href="The-Problem-Is-Software-Controlled-by-Its-Developer.html#The-Problem-Is-Software-Controlled-by-Its-Developer" accesskey="n" rel="next">The Problem Is Software Controlled by Its Developer</a>, Previous: <a href="The-JavaScript-Trap.html#The-JavaScript-Trap" accesskey="p" rel="prev">The JavaScript Trap</a>, Up: <a href="index.html#Top" accesskey="u" rel="up">Top</a> &nbsp; [<a href="Index.html#Index" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<a name="The-X-Window-System-Trap-1"></a>
+<h2 class="unnumbered">The X Window System Trap</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<blockquote class="smallquotation">
+<p>This essay was originally published on <a href="http://gnu.org">http://gnu.org</a>, in 1998.
+</p>
+
+<p>Copyright &copy; 1998, 1999, 2009 Richard Stallman
+</p>
+<blockquote>
+<p>Verbatim copying and distribution of this entire chapter are
+permitted worldwide, without royalty, in any medium, provided this
+notice is preserved.
+</p></blockquote>
+
+
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&#12;
+<a name="index-traps_002c-X-Window-System"></a>
+<a name="index-X-Window-System-5"></a>
+<a name="index-developers_002c-to-copyleft-or-not-to-copyleft_003f"></a>
+
+<p>To copyleft or not to copyleft? That is one of the major
+controversies in the free software community. The idea of copyleft is
+that we should fight fire with fire&mdash;that we should use copyright
+to make sure our code stays free. The GNU General Public License (GNU
+GPL) is one example of a copyleft license.
+</p>
+<p>Some free software developers prefer noncopyleft distribution.
+Noncopyleft licenses such as the
+<a name="index-XFree86-license"></a>
+XFree86 and
+<a name="index-BSD-licenses-_0028see-also-both-_0060_0060BSD_002dstyle_0027_0027-and-GPL_0029-2"></a>
+BSD licenses are based on the idea
+of never saying no to anyone&mdash;not even to someone who seeks to
+use your work as the basis for restricting other people. Noncopyleft
+licensing does nothing wrong, but it misses the opportunity to
+actively protect our freedom to change and redistribute software. For
+that, we need copyleft.
+</p>
+<a name="index-copylefted-software-_0028see-also-software_0029-3"></a>
+<a name="index-copyleft_002c-X-Consortium-opposition-to"></a>
+<a name="index-X-Consortium-_0028see-also-Open-Group_002c-its-successor_0029-3"></a>
+<p>For many years, the X Consortium was the chief opponent of copyleft.
+It exerted both moral suasion and pressure to discourage free software
+developers from copylefting their programs. It used moral suasion by
+suggesting that it is not nice to say no. It used pressure through
+its rule that copylefted software could not be in the X Distribution.
+</p>
+<p>Why did the X Consortium adopt this policy? It had to do with their
+conception of success. The X Consortium defined success as
+popularity&mdash;specifically, getting computer companies to use the X
+Window System. This definition put the computer companies in the
+driver&rsquo;s seat: whatever they wanted, the X Consortium had to help
+them get it.
+</p>
+<p>Computer companies normally distribute proprietary software. They
+wanted free software developers to donate their work for such use. If
+they had asked for this directly, people would have laughed. But the
+X Consortium, fronting for them, could present this request as an
+unselfish one. &ldquo;Join us in donating our work to proprietary software
+developers,&rdquo; they said, suggesting that this is a noble form of
+self-sacrifice. &ldquo;Join us in achieving popularity,&rdquo; they said,
+suggesting that it was not even a sacrifice.
+</p>
+<p>But self-sacrifice is not the issue: tossing away the defense that
+copyleft provides, which protects the freedom of the whole community,
+is sacrificing more than yourself. Those who granted the X
+Consortium&rsquo;s request entrusted the community&rsquo;s future to the goodwill
+of the X Consortium.
+</p>
+<a name="index-X11R6_002e4-1"></a>
+<p>This trust was misplaced. In its last year, the X Consortium made a
+plan to restrict the forthcoming X11R6.4 release so that it would not
+be free software. They decided to start saying no, not only to
+proprietary software developers, but to our community as well.
+</p>
+<p>There is an irony here. If you said yes when the X Consortium asked
+you not to use copyleft, you put the X Consortium in a position to
+license and restrict its version of your program, along with the
+code for the core of X.
+</p>
+<p>The X Consortium did not carry out this plan. Instead it closed down
+and transferred X development to the Open Group, whose staff are now
+carrying out a similar plan. To give them credit, when I asked them
+to release X11R6.4 under the GNU GPL in parallel with their planned
+restrictive license, they were willing to consider the idea. (They
+were firmly against staying with the old
+<a name="index-X11-licenses-1"></a>
+X11 distribution terms.)
+Before they said yes or no to this proposal, it had already failed for
+another reason: the
+<a name="index-XFree86-1"></a>
+XFree86 group followed the X Consortium&rsquo;s old
+policy, and will not accept copylefted software.
+<a name="index-copylefted-software-_0028see-also-software_0029-4"></a>
+</p>
+<p>In September 1998, several months after X11R6.4 was released with
+nonfree distribution terms, the Open Group reversed its decision and
+rereleased it under the same noncopyleft free software license that
+was used for X11R6.3. Thus, the Open Group therefore eventually did
+what was right, but that does not alter the general issue.
+<a name="index-X11R6_002e4-2"></a>
+</p>
+<p>Even if the X Consortium and the Open Group had never planned to
+restrict X, someone else could have done it. Noncopylefted software
+is vulnerable from all directions; it lets anyone make a nonfree
+version dominant, if he will invest sufficient resources to add
+significantly important features using proprietary code. Users who
+choose software based on technical characteristics, rather than on
+freedom, could easily be lured to the nonfree version for short-term
+convenience.
+</p>
+<p>The X Consortium and Open Group can no longer exert moral suasion by
+saying that it is wrong to say no. This will make it easier to decide
+to copyleft your X-related software.
+<a name="index-X-Consortium-_0028see-also-Open-Group_002c-its-successor_0029-4"></a>
+<a name="index-copyleft_002c-X-Consortium-opposition-to-1"></a>
+</p>
+<p>When you work on the core of X, on programs such as the X server,
+Xlib, and Xt, there is a practical reason not to use copyleft. The
+<a name="index-X_002eorg"></a>
+X.org group does an important job for the community in maintaining
+these programs, and the benefit of copylefting our changes would be
+less than the harm done by a fork in development. So it is better to
+work with them, and not copyleft our changes on these programs.
+Likewise for utilities such as
+<a name="index-xset"></a>
+<code>xset</code> and
+<a name="index-xrdb"></a>
+<code>xrdb</code>, which are close to the
+core of X and do not need major improvements. At least we know that
+the X.org group has a firm commitment to developing these programs as
+free software.
+</p>
+<p>The issue is different for programs outside the core of X:
+applications, window managers, and additional libraries and widgets.
+There is no reason not to copyleft them, and we should copyleft them.
+</p>
+<p>In case anyone feels the pressure exerted by the criteria for
+inclusion in the X distributions, the
+<a name="index-GNU_002c-GNU-Project-7"></a>
+GNU Project will undertake to
+publicize copylefted packages that work with X. If you would like to
+copyleft something, and you worry that its omission from the X
+distribution will impede its popularity, please ask us to help.
+</p>
+<a name="index-call-to-action_002c-resist-illusory-temptations-of-proprietary-software"></a>
+<p>At the same time, it is better if we do not feel too much need for
+popularity. When a businessman tempts you with &ldquo;more
+popularity,&rdquo; he may try to convince you that his use of your
+program is crucial to its success. Don&rsquo;t believe it! If your program
+is good, it will find many users anyway; you don&rsquo;t need to feel
+desperate for any particular users, and you will be stronger if you do
+not. You can get an indescribable sense of joy and freedom by
+responding, &ldquo;Take it or leave it&mdash;that&rsquo;s no skin off my
+back.&rdquo; Often the businessman will turn around and accept the
+program with copyleft, once you call the bluff.
+</p>
+<a name="index-call-to-action_002c-copyleft-your-software"></a>
+<p>Friends, free software developers, don&rsquo;t repeat old mistakes! If we
+do not copyleft our software, we put its future at the mercy of anyone
+equipped with more resources than scruples. With copyleft, we can
+defend freedom, not just for ourselves, but for our whole
+community.
+<a name="index-developers_002c-to-copyleft-or-not-to-copyleft_003f-1"></a>
+<a name="index-X-Window-System-6"></a>
+<a name="index-traps_002c-X-Window-System-1"></a>
+</p>
+<hr>
+<div class="header">
+<p>
+Next: <a href="The-Problem-Is-Software-Controlled-by-Its-Developer.html#The-Problem-Is-Software-Controlled-by-Its-Developer" accesskey="n" rel="next">The Problem Is Software Controlled by Its Developer</a>, Previous: <a href="The-JavaScript-Trap.html#The-JavaScript-Trap" accesskey="p" rel="prev">The JavaScript Trap</a>, Up: <a href="index.html#Top" accesskey="u" rel="up">Top</a> &nbsp; [<a href="Index.html#Index" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

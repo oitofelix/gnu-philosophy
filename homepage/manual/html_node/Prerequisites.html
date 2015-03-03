@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- GNU philosophy is the GNU Project's exhaustive collection of articles
+and essays about free software and related matters.
+
+Copyright (C) 2002, 2010, 2013, 2014 Free Software Foundation, Inc.
+Verbatim copying and distribution of this entire book are permitted
+worldwide, without royalty, in any medium, provided this notice is
+preserved.  Permission is granted to copy and distribute translations
+of this book from the original English into another language provided
+the translation has been approved by the Free Software Foundation and
+the copyright notice and this permission notice are preserved on all
+copies. -->
+<!-- Created by GNU Texinfo 5.2, http://www.gnu.org/software/texinfo/ -->
+<head>
+<title>GNU philosophy: Prerequisites</title>
+
+<meta name="description" content="GNU philosophy: Prerequisites">
+<meta name="keywords" content="GNU philosophy: Prerequisites">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="index.html#Top" rel="start" title="Top">
+<link href="Index.html#Index" rel="index" title="Index">
+<link href="Overview.html#Overview" rel="up" title="Overview">
+<link href="Configuration.html#Configuration" rel="next" title="Configuration">
+<link href="Description.html#Description" rel="prev" title="Description">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.indentedblock {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smallindentedblock {margin-left: 3.2em; font-size: smaller}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style:oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nocodebreak {white-space:nowrap}
+span.nolinebreak {white-space:nowrap}
+span.roman {font-family:serif; font-weight:normal}
+span.sansserif {font-family:sans-serif; font-weight:normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en" bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#800080" alink="#FF0000">
+<a name="Prerequisites"></a>
+<div class="header">
+<p>
+Next: <a href="Configuration.html#Configuration" accesskey="n" rel="next">Configuration</a>, Previous: <a href="Description.html#Description" accesskey="p" rel="prev">Description</a>, Up: <a href="Overview.html#Overview" accesskey="u" rel="up">Overview</a> &nbsp; [<a href="Index.html#Index" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<a name="Prerequisites-1"></a>
+<h3 class="section">1.2 Prerequisites</h3>
+
+<p>There are two classes of software prerequisites (or dependencies, if
+you will) to build the GNU philosophy package: required and optional.
+If you are missing a <em>required prerequisite</em> the configuration
+step will fail with an error message stating what package is needed,
+which is its minimal acceptable version, and will point you to where
+you can obtain it.  On the other side, the <em>optional
+prerequisites</em> are needed to perform a task not considered critical
+for the overall build process of the package, thus, although the
+successful build can be accomplished, the resultant build may not have
+all possible features enabled or only is possible to realize partial,
+yet auto-sufficient, builds.  Often, in order to reduce the set of
+programs the user need to have installed to complete a build, the
+maintainers distribute a set of files that are not source files, but
+the result of a pre-build procedure.  In that case, as long as you
+don&rsquo;t modify the original source files, you don&rsquo;t need to worry about
+the software used to compile the source files, as the target object
+files are up-to-date.
+</p>
+
+<a name="Required"></a>
+<h4 class="subheading">Required</h4>
+
+<dl compact="compact">
+<dt>GNU Make</dt>
+<dd><p>Instead of designing this package&rsquo;s build system make-files portable,
+the maintainers have chosen to use a portable make program, namely GNU
+Make.
+</p>
+<p>Version 3.81 or superior is known to work correctly.  Earlier versions
+may work, though.  You can obtain it from
+<a href="https://gnu.org/software/make">https://gnu.org/software/make</a>.
+</p>
+</dd>
+<dt>GNU Texinfo</dt>
+<dd><p>It is highly critical for the build procedure as the entire source
+tree of articles and essays is written in Texinfo language.  However,
+the Info collections, in every available translation language, is
+built by the maintainers, so you can install and use it without
+building anything.
+</p>
+<p>Version 5.0 or superior is required.  You can obtain it from
+<a href="https://gnu.org/software/texinfo">https://gnu.org/software/texinfo</a>.
+</p>
+</dd>
+</dl>
+
+
+<a name="Optional"></a>
+<h4 class="subheading">Optional</h4>
+
+<dl compact="compact">
+<dt>PO4A (PO for anything)</dt>
+<dd><p>It is required by any localization operation, notably by localized
+builds.  Without it you&rsquo;ll only be able to build from the original
+sources (in English language).
+</p>
+<p>You can obtain it from <a href="http://po4a.alioth.debian.org/">http://po4a.alioth.debian.org/</a>.
+Currently a patch needed to process correctly GNU philosophy Texinfo
+source code is not present in the latest released version, but it&rsquo;s
+already applied in PO4A <abbr title="Version Control System">VCS</abbr> (Version Control System) repository.
+See <a href="Bugs.html#Bugs">Bugs</a>.
+</p>
+
+</dd>
+<dt>GNU Unifont</dt>
+<dd><p>It is needed for the rendering of the numerous scripts, in several
+different languages, contained in the essay <cite>Translations of the
+Term &ldquo;Free Software&rdquo;</cite>.  Nevertheless, the scripts are distributed
+pre-rendered for essays in every format, except DVI and PS.
+</p>
+<p>You can obtain it from <a href="https://gnu.org/software/unifont/">https://gnu.org/software/unifont/</a>.  Make
+sure you get the TTF build of it, otherwise the scripts probably won&rsquo;t
+be rendered properly as the result of a bug in ImageMagick program
+<code>convert</code>.  See <a href="Bugs.html#Bugs">Bugs</a>.
+</p>
+
+</dd>
+<dt>ImageMagick</dt>
+<dd><p>It is used to render the scripts with GNU Unifont and also to convert
+some source figures to the appropriate format for inclusion in the
+essays.  As with GNU Unifont, all needed figures are distributed with
+this package, but those needed by DVI and PS essays.
+</p>
+<p>You can obtain it from <a href="http://www.imagemagick.org/">http://www.imagemagick.org/</a>.  It is not
+clear which is the minimal acceptable version.  Please, submit a bug
+report if a specific old version of ImageMagick doesn&rsquo;t work properly.
+See <a href="Bug-reporting.html#Bug-reporting">Bug reporting</a>.
+</p></dd>
+</dl>
+
+
+
+
+
+&#12;
+<hr>
+<div class="header">
+<p>
+Next: <a href="Configuration.html#Configuration" accesskey="n" rel="next">Configuration</a>, Previous: <a href="Description.html#Description" accesskey="p" rel="prev">Description</a>, Up: <a href="Overview.html#Overview" accesskey="u" rel="up">Overview</a> &nbsp; [<a href="Index.html#Index" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

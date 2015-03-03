@@ -1,0 +1,298 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- 
+
+
+
+
+
+
+This essay was originally published on http://gnu.org, in 2008.
+
+
+This document is part of GNU philosophy, the GNU Project's exhaustive
+collection of articles and essays about free software and related
+matters.
+
+Copyright (C) 2008, 2009 Richard Stallman
+
+
+This document is licensed under the Creative Commons
+Attribution-NoDerivs 3.0 United States License. To view a copy of
+this license, visit
+http://creativecommons.org/licenses/by-nd/3.0/us/ or
+send a letter to Creative Commons, 171 Second Street,
+Suite 300, San Francisco, California 94105, USA.
+
+
+
+
+ -->
+<!-- Created by GNU Texinfo 5.2, http://www.gnu.org/software/texinfo/ -->
+<head>
+<title>Avoiding Ruinous Compromises</title>
+
+<meta name="description" content="Avoiding Ruinous Compromises">
+<meta name="keywords" content="Avoiding Ruinous Compromises">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="#Top" rel="start" title="Top">
+<link href="dir.html#Top" rel="up" title="(dir)">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.indentedblock {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smallindentedblock {margin-left: 3.2em; font-size: smaller}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style:oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nocodebreak {white-space:nowrap}
+span.nolinebreak {white-space:nowrap}
+span.roman {font-family:serif; font-weight:normal}
+span.sansserif {font-family:sans-serif; font-weight:normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en" bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#800080" alink="#FF0000">
+
+
+
+
+
+
+
+<a name="Top"></a>
+<a name="Avoiding-Ruinous-Compromises"></a>
+<h1 class="top">Avoiding Ruinous Compromises</h1>
+
+
+
+
+
+
+
+<blockquote class="smallquotation">
+<p>This essay was originally published on <a href="http://gnu.org">http://gnu.org</a>, in 2008.
+</p>
+
+<p>This document is part of GNU philosophy, the GNU Project&rsquo;s exhaustive
+collection of articles and essays about free software and related
+matters.
+</p>
+<p>Copyright &copy; 2008, 2009 Richard Stallman
+</p>
+
+<blockquote>
+<p>This document is licensed under the Creative Commons
+Attribution-NoDerivs&nbsp;3.0 United States License. To view a copy of
+this license, visit
+<a href="http://creativecommons.org/licenses/by-nd/3.0/us/">http://creativecommons.org/licenses/by-nd/3.0/us/</a> or
+send a letter to Creative Commons, 171&nbsp;Second Street,
+Suite&nbsp;300, San Francisco, California&nbsp;94105, USA.
+</p></blockquote>
+
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+&#12;
+<a name="index-GNU-_0028see-also-both-software-and-GNU_0029"></a>
+<a name="index-FSF_002c-how-you-can-help"></a>
+<a name="index-GNU_002c-how-you-can-help"></a>
+<a name="index-call-to-action_002c-donate"></a>
+<a name="index-compromises_002c-avoiding-ruinous"></a>
+<p>The free software movement aims for a social change: to make
+all software free so that all software users are free and can be part
+of a community of cooperation. Every nonfree program gives its
+developer unjust power over the users. Our goal is to put an end to
+that injustice.
+</p>
+<p>The road to freedom is a long road. It will take many steps and many
+years to reach a world in which it is normal for software users to
+have freedom. Some of these steps are hard, and require sacrifice.
+Some of them become easier if we make compromises with people that
+have different goals.
+</p>
+<a name="index-GPL_002c-patent_002dprovisions-compromise"></a>
+<a name="index-compromises_002c-GPL-patent-provisions"></a>
+<p>Thus, the Free Software Foundation makes compromises&mdash;even major ones. For instance, we made
+compromises in the patent provisions of version 3 of the GNU General
+Public License (GNU GPL) so that major companies would contribute
+to and distribute GPLv3-covered software and thus bring some patents
+under the effect of these provisions.
+</p>
+<a name="index-LGPL_002c-as-compromise"></a>
+<a name="index-compromises_002c-LGPL-and"></a>
+<a name="index-libraries-_0028comp_002e_0029_002c-LGPL-and"></a>
+<p>The Lesser GPL&rsquo;s purpose is a compromise: we use it on certain chosen
+free libraries to permit their use in nonfree programs because we
+think that legally prohibiting this would only drive developers to
+proprietary libraries instead. We accept and install code in
+<a name="index-GNU_002c-GNU-programs-_0028see-also-software_0029"></a>
+GNU
+programs to make them work together with common nonfree programs, and
+we document and publicize this in ways that encourage users of the
+latter to install the former, but not vice versa. We support specific
+campaigns we agree with, even when we don&rsquo;t fully agree with the
+groups behind them.
+</p>
+<p>But we reject certain compromises even though many others in our
+community are willing to make them. For instance,
+we endorse only the GNU/Linux distributions that have policies not to
+include nonfree software or lead users to install it. To endorse
+nonfree distributions would be a ruinous compromise.
+</p>
+<p>Compromises are ruinous if they would work against our aims in the
+long term. That can occur either at the level of ideas or at the
+level of actions.
+</p>
+<a name="index-citizen-values_002c-consumer-values-v_002e"></a>
+<p>At the level of ideas, ruinous compromises are those that reinforce
+the premises we seek to change. Our goal is a world in which software
+users are free, but as yet most computer users do not even recognize
+freedom as an issue. They have taken up &ldquo;consumer&rdquo; values, which
+means they judge any program only on practical characteristics such as
+price and convenience.
+</p>
+<a name="index-Carnegie_002c-Dale"></a>
+<p>Dale Carnegie&rsquo;s classic self-help book, <cite>How to Win Friends and
+Influence People,</cite> advises that the most effective way to
+persuade someone to do something is to present arguments that appeal
+to his values. There are ways we can appeal to the consumer values
+typical in our society. For instance, free software obtained gratis
+can save the user money. Many free programs are convenient and
+reliable, too. Citing those practical benefits has succeeded in
+persuading many users to adopt various free programs, some of which
+are now quite successful.
+</p>
+<a name="index-_0060_0060open-source_002c_0027_0027-consumer-values-and"></a>
+<p>If getting more people to use some free programs is as far as you
+aim to go, you might decide to keep quiet about the concept of
+freedom, and focus only on the practical advantages that make sense
+in terms of consumer values. That&rsquo;s what the term &ldquo;open
+source&rdquo; and its associated rhetoric do.
+</p>
+<p>That approach can get us only part way to the goal of freedom. People
+who use free software only because it is convenient will stick with it
+only as long as it is convenient. And they will see no reason not to
+use convenient proprietary programs along with it.
+</p>
+<p>The philosophy of open source presupposes and appeals to consumer
+values, and this affirms and reinforces them. That&rsquo;s why we
+do not support open source.
+</p>
+<a name="index-citizen-values_002c-convenience-v_002e"></a>
+<p>To establish a free community fully and lastingly, we need to do
+more than get people to use some free software. We need to spread the
+idea of judging software (and other things) on &ldquo;citizen
+values,&rdquo; based on whether it respects users&rsquo; freedom and
+community, not just in terms of convenience. Then people will not
+fall into the trap of a proprietary program baited by an attractive,
+convenient feature.
+</p>
+<p>To promote citizen values, we have to talk about them and show how
+they are the basis of our actions. We must reject the Dale Carnegie
+compromise that would influence their actions by endorsing their
+consumer values.
+<a name="index-citizen-values_002c-consumer-values-v_002e-1"></a>
+</p>
+<p>This is not to say we cannot cite practical advantage at all&mdash;we can
+and we do. It becomes a problem only when the practical advantage steals
+the scene and pushes freedom into the background. Therefore,
+when we cite the practical advantages of free software, we reiterate
+frequently that those are just <em>additional, secondary</em> reasons
+to prefer it.
+</p>
+<p>It&rsquo;s not enough to make our words accord with our ideals; our
+actions have to accord with them too. So we must also avoid
+compromises that involve doing or legitimizing the things we aim to
+stamp out.
+</p>
+<p>For instance, experience shows that you can attract some users to
+GNU/Linux if you include some nonfree programs. This could mean a
+cute nonfree application that will catch some user&rsquo;s eye, or a nonfree
+programming platform such as
+<a name="index-Java"></a>
+Java (formerly) or the Flash runtime
+(still), or a nonfree device driver that enables support for certain
+hardware models.
+</p>
+<p>These compromises are tempting, but they undermine the goal. If you
+distribute nonfree software, or steer people towards it, you will find
+it hard to say, &ldquo;Nonfree software is an injustice, a social problem,
+and we must put an end to it.&rdquo; And even if you do continue to say
+those words, your actions will undermine them.
+</p>
+<p>The issue here is not whether people should be <em>able</em> or
+<em>allowed</em> to install nonfree software; a general-purpose system
+enables and allows users to do whatever they wish. The issue is
+whether we guide users towards nonfree software. What they do on
+their own is their responsibility; what we do for them, and what we
+direct them towards, is ours. We must not direct the users towards
+proprietary software as if it were a solution, because proprietary
+software is the problem.
+</p>
+<a name="index-citizen-values_002c-distortion-of"></a>
+<p>A ruinous compromise is not just a bad influence on others. It can
+distort your own values, too, through cognitive dissonance. If you
+have certain values, but your actions imply other, conflicting values,
+you are likely to change your values or your actions so as to resolve
+the contradiction. Thus, projects that argue only from practical
+advantages, or direct people toward some nonfree software, nearly
+always shy away from even <em>suggesting</em> that nonfree software is
+unethical. For their participants, as well as for the public, they
+reinforce consumer values. We must reject these compromises if we
+wish to keep our values straight.
+</p>
+<a name="index-call-to-action_002c-uphold-citizen-values-publicly"></a>
+<a name="index-call-to-action_002c-beware-of-ruinous-compromises"></a>
+<a name="index-FSF_002c-resources"></a>
+<a name="index-citizen-values_002c-publicly-upholding"></a>
+<p>If you want to move to free software without compromising the goal of
+freedom, look at the FSF&rsquo;s resources area. It lists hardware and
+machine configurations that work with free software, totally free
+GNU/Linux distros to install, and thousands of free software packages
+that work in a 100 percent free software environment. If you want to
+help the community stay on the road to freedom, one important way is
+to publicly uphold citizen values. When people are discussing what is
+good or bad, or what to do, cite the values of freedom and community
+and argue from them.
+</p>
+<p>A road that lets you go faster is no improvement if it leads to the
+wrong place. Compromise is essential to achieve an ambitious goal,
+but beware of compromises that lead away from the goal.
+<a name="index-compromises_002c-avoiding-ruinous-1"></a>
+</p><hr>
+
+
+
+</body>
+</html>

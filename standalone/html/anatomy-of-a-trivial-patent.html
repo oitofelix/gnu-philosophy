@@ -1,0 +1,354 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- 
+
+
+
+
+
+
+This essay was originally published on http://gnu.org, in 2006.
+
+
+This document is part of GNU philosophy, the GNU Project's exhaustive
+collection of articles and essays about free software and related
+matters.
+
+Copyright (C) 2006 Richard Stallman
+
+Verbatim copying and distribution of this entire document are
+permitted worldwide, without royalty, in any medium, provided this
+notice is preserved.
+
+
+
+
+
+ -->
+<!-- Created by GNU Texinfo 5.2, http://www.gnu.org/software/texinfo/ -->
+<head>
+<title>Anatomy of a Trivial Patent</title>
+
+<meta name="description" content="Anatomy of a Trivial Patent">
+<meta name="keywords" content="Anatomy of a Trivial Patent">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="#Top" rel="start" title="Top">
+<link href="dir.html#Top" rel="up" title="(dir)">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.indentedblock {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smallindentedblock {margin-left: 3.2em; font-size: smaller}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style:oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nocodebreak {white-space:nowrap}
+span.nolinebreak {white-space:nowrap}
+span.roman {font-family:serif; font-weight:normal}
+span.sansserif {font-family:sans-serif; font-weight:normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en" bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#800080" alink="#FF0000">
+
+
+
+
+
+
+
+<a name="Top"></a>
+<a name="Anatomy-of-a-Trivial-Patent"></a>
+<h1 class="top">Anatomy of a Trivial Patent</h1>
+
+
+
+
+
+
+
+<blockquote class="smallquotation">
+<p>This essay was originally published on <a href="http://gnu.org">http://gnu.org</a>, in 2006.
+</p>
+
+<p>This document is part of GNU philosophy, the GNU Project&rsquo;s exhaustive
+collection of articles and essays about free software and related
+matters.
+</p>
+<p>Copyright &copy; 2006 Richard Stallman
+</p>
+<blockquote>
+<p>Verbatim copying and distribution of this entire document are
+permitted worldwide, without royalty, in any medium, provided this
+notice is preserved.
+</p></blockquote>
+
+
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+&#12;
+<a name="index-patents_002c-a-trivial-patent"></a>
+<p>Programmers are well aware that many of the existing software patents cover
+laughably obvious ideas. Yet the patent system&rsquo;s defenders often
+argue that these ideas are nontrivial, obvious only in hindsight. And
+it is surprisingly difficult to defeat them in debate. Why is
+that?
+</p>
+<p>One reason is that any idea can be made to look complex when analyzed
+to death. Another reason is that these trivial ideas often look
+quite complex as described in the patents themselves. The patent
+system&rsquo;s defenders can point to the complex description and say,
+&ldquo;How can anything this complex be obvious?&rdquo;
+</p>
+<p>I will use an example to show you how. Here&rsquo;s claim number one
+from US patent number 5,963,916, applied for in October 1996:
+</p>
+<blockquote class="smallquotation">
+<p>1. A method for enabling a remote user to preview a portion of a pre-recorded music product from a network web site containing pre-selected portions of different pre-recorded music products, using a computer, a computer display and a telecommunications link between the remote user&rsquo;s computer and the network web site, the method comprising the steps of:
+</p>
+<ul>
+<li> using the remote user&rsquo;s computer to establish a telecommunications link to the network web site wherein the network web site comprises (i) a central host server coupled to a communications network for retrieving and transmitting the pre-selected portion of the pre-recorded music product upon request by a remote user and (ii) a central storage device for storing pre-selected portions of a plurality of different pre-recorded music products;
+
+</li><li> transmitting user identification data from the remote user&rsquo;s computer to the central host server thereby allowing the central host server to identify and track the user&rsquo;s progress through the network web site;
+
+</li><li> choosing at least one pre-selected portion of the pre-recorded music products from the central host server;
+
+</li><li> receiving the chosen pre-selected portion of the pre-recorded products; and
+
+</li><li> interactively previewing the received chosen pre-selected portion of the pre-recorded music product.
+
+</li></ul>
+</blockquote>
+
+<p>That sure looks like a complex system, right? Surely it took a
+real clever guy to think of this? No, but it took cleverness to make
+it seem so complex. Let&rsquo;s analyze where the complexity comes
+from:
+</p>
+<blockquote class="smallquotation">
+
+<p>1. A method for enabling a remote user to preview a portion of a pre-recorded music product from a network web site containing pre-selected portions
+</p>
+</blockquote>
+<p>That states the principal part of their idea. They put selections
+from certain pieces of music on a server so a user can listen to
+them.
+</p>
+<blockquote class="smallquotation">
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of different pre-recorded music products,
+</p>
+</blockquote>
+<p>This emphasizes their server stores selections from more than one
+piece of music.
+</p>
+<p>It is a basic principle of computer science is that if a computer
+can do a thing once, it can do that thing many times, on different
+data each time. Many patents pretend that applying this principle to
+a specific case makes an &ldquo;invention.&rdquo;
+</p>
+<blockquote class="smallquotation">
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;using a computer, a com-<br>puter display and a telecommunications link between the remote user&rsquo;s computer and the network web site,
+</p>
+</blockquote>
+<p>This says they are using a server on a network.
+</p><blockquote class="smallquotation">
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the method comprising the steps of:
+</p><ul>
+<li> using the remote user&rsquo;s computer to establish a telecommunications
+link to the network web site
+</li></ul>
+</blockquote>
+<p>This says that the user connects to the server over the network.
+(That&rsquo;s the way one uses a server.)
+</p><blockquote class="smallquotation">
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wherein the network web site comprises<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(i) a central host server
+coupled to a communications network
+</p>
+</blockquote>
+
+
+<p>This informs us that the server is on the net. (That is typical of
+servers.)
+</p>
+<blockquote class="smallquotation">
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for re-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;trieving and transmitting the pre-selected portion of the pre-recorded<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;music product upon request by a remote user
+</p>
+</blockquote>
+<p>This repeats the general idea stated in the first two lines.
+</p>
+<blockquote class="smallquotation">
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and (ii) a central stor-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;age device for storing pre-selected portions of a plurality of different<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pre-recorded music products;
+</p>
+</blockquote>
+<p>They have decided to put a hard disk (or equivalent) in their
+computer and store the music samples on that. Ever since around 1980,
+this has been the normal way to store anything on a computer for rapid
+access.
+</p>
+<p>Note how they emphasize once again the fact that they can store
+more than one selection on this disk. Of course, every file system
+will let you store more than one file.
+</p>
+<blockquote class="smallquotation">
+
+<ul>
+<li> transmitting user identification data from the remote user&rsquo;s computer to the central host server thereby allowing the central host server to identify and track the user&rsquo;s progress through the network web site;
+
+</li></ul>
+
+</blockquote>
+<p>This says that they keep track of who you are and what you
+access&mdash;a common (though nasty) thing for web servers to do. I
+believe it was common already in 1996.
+</p>
+<blockquote class="smallquotation">
+
+<ul>
+<li> choosing at least one pre-selected portion of the pre-recorded music products from the central host server;
+
+</li></ul>
+
+</blockquote>
+<p>In other words, the user clicks to say which link to follow. That
+is typical for web servers; if they had found another way to do it,
+that might have been an invention.
+</p>
+<blockquote class="smallquotation">
+
+<ul>
+<li> receiving the chosen pre-selected portion of the
+pre-recorded products; and
+
+</li></ul>
+
+</blockquote>
+<p>When you follow a link, your browser reads the contents. This is
+typical behavior for a web browser.
+</p>
+<blockquote class="smallquotation">
+
+<ul>
+<li> interactively previewing the received chosen pre-selected
+portion of the pre-recorded music product.
+
+</li></ul>
+
+</blockquote>
+<p>This says that your browser plays the music for you. (That is what
+many browsers do, when you follow a link to an audio file.)
+</p>
+<p>Now you see how they padded this claim to make it into a complex
+idea: they combined their own idea (stated in two lines of text) with
+important aspects of what computers, networks, web servers, and web
+browsers do. This adds up to the so-called invention
+for which they received the patent.
+</p>
+<p>This example is typical of software patents. Even the occasional
+patent whose idea is nontrivial has the same sort of added
+complication.
+</p>
+<p>Now look at a subsequent claim:
+</p>
+<blockquote class="smallquotation">
+
+<p>3. The method of [149]claim 1 wherein the central memory device comprises a plurality of compact disc-read only memory (CD-ROMs).
+</p>
+</blockquote>
+<p>What they are saying here is, &ldquo;Even if you don&rsquo;t think that
+claim 1 is really an invention, using CD-ROMs to store the data makes
+it an invention for sure. An average system designer would never have
+thought of storing data on a CD.&rdquo;
+</p>
+<p>Now look at the next claim:
+</p>
+<blockquote class="smallquotation">
+
+<a name="index-RAID-array"></a>
+<p>4. The method of [150]claim 1 wherein the central memory device comprises a RAID array drive.
+</p>
+</blockquote>
+<p>A RAID array is a group of disks set up to work like one big disk,
+with the special feature that, even if one of the disks in the array
+has a failure and stops working, all the data are still available on
+the other disks in the group. Such arrays have been commercially
+available since long before 1996, and are a standard way of storing
+data for high availability. But these brilliant inventors have
+patented the use of a RAID array for this particular purpose.
+</p>
+<p>Trivial as it is, this patent would not necessarily be found
+legally invalid if there is a lawsuit about it. Not only the US
+Patent Office but the courts as well tend to apply a very low standard
+when judging whether a patent is &ldquo;unobvious.&rdquo; This patent
+might pass muster, according to them.
+</p>
+<p>What&rsquo;s more, the courts are reluctant to overrule the Patent
+Office, so there is a better chance of getting a patent overturned if
+you can show a court prior art that the Patent Office did not
+consider. If the courts are willing to entertain a higher standard in
+judging unobviousness, it helps to save the prior art for them. Thus,
+the proposals to &ldquo;make the system work better&rdquo; by
+providing the Patent Office with a better database of prior art could
+instead make things worse.
+</p>
+<p>It is very hard to make a patent system behave reasonably; it is a
+complex bureaucracy and tends to follow its structural imperatives
+regardless of what it is &ldquo;supposed&rdquo; to do. The only
+practical way to get rid of the many obvious patents on software
+features and business practices is to get rid of all patents in those
+fields. Fortunately, that would be no loss: the unobvious patents in
+the software field do no good either. What software patents do is put
+software developers and users under threat.
+</p>
+<p>The patent system is supposed, intended, to promote progress, and
+those who benefit from software patents ask us to believe without
+question that they do have that effect. But programmers&rsquo; experience
+shows otherwise. New theoretical analysis shows that this is no
+paradox. (See
+<a href="http://researchoninnovation.org/patent.pdf">http://researchoninnovation.org/patent.pdf</a>.) There is no
+reason why society should expose software developers and users to the
+danger of software patents.
+</p>
+<a name="index-patents_002c-a-trivial-patent-1"></a>
+<hr>
+
+
+
+</body>
+</html>

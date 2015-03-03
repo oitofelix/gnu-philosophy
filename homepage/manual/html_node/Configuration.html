@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- GNU philosophy is the GNU Project's exhaustive collection of articles
+and essays about free software and related matters.
+
+Copyright (C) 2002, 2010, 2013, 2014 Free Software Foundation, Inc.
+Verbatim copying and distribution of this entire book are permitted
+worldwide, without royalty, in any medium, provided this notice is
+preserved.  Permission is granted to copy and distribute translations
+of this book from the original English into another language provided
+the translation has been approved by the Free Software Foundation and
+the copyright notice and this permission notice are preserved on all
+copies. -->
+<!-- Created by GNU Texinfo 5.2, http://www.gnu.org/software/texinfo/ -->
+<head>
+<title>GNU philosophy: Configuration</title>
+
+<meta name="description" content="GNU philosophy: Configuration">
+<meta name="keywords" content="GNU philosophy: Configuration">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="index.html#Top" rel="start" title="Top">
+<link href="Index.html#Index" rel="index" title="Index">
+<link href="Overview.html#Overview" rel="up" title="Overview">
+<link href="Make-interface.html#Make-interface" rel="next" title="Make interface">
+<link href="Prerequisites.html#Prerequisites" rel="prev" title="Prerequisites">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.indentedblock {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smallindentedblock {margin-left: 3.2em; font-size: smaller}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style:oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nocodebreak {white-space:nowrap}
+span.nolinebreak {white-space:nowrap}
+span.roman {font-family:serif; font-weight:normal}
+span.sansserif {font-family:sans-serif; font-weight:normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en" bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#800080" alink="#FF0000">
+<a name="Configuration"></a>
+<div class="header">
+<p>
+Next: <a href="Make-interface.html#Make-interface" accesskey="n" rel="next">Make interface</a>, Previous: <a href="Prerequisites.html#Prerequisites" accesskey="p" rel="prev">Prerequisites</a>, Up: <a href="Overview.html#Overview" accesskey="u" rel="up">Overview</a> &nbsp; [<a href="Index.html#Index" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<a name="Configuration-1"></a>
+<h3 class="section">1.3 Configuration</h3>
+
+<p>The first step in the build process is the configuration.  It is
+performed by a script called <code>configure</code>, present at the top
+level of the source tree.  That script will guess various
+system-dependent features and characteristics and then setup the build
+system to properly operate underneath the system <code>configure</code>
+ran.  The files yielded by the build process will be placed into a
+directory hierarchy created by <code>configure</code>, immediately below
+the directory in which it runs.  Thus, in order to not pollute the
+source tree, as well as assure its integrity, we recommend you invoke
+the script <code>configure</code> from a directory other than the
+source&rsquo;s.  In this documentation, we denote the source directory
+absolute name, alternatively its name relative to the build directory,
+by <var>srcdir</var>.
+</p>
+<p>It is possible to manually tune some properties of the build system by
+means of command line switches and environment variables, which are
+discussed in the following paragraphs.
+</p>
+<p>There are some articles, remarkably <cite>Translations of the Term
+&ldquo;Free Software&rdquo;</cite>, that contains an invariant set of expressions in
+several different language scripts.  To maximize compatibility and
+coherence among all output formats the expressions are written in
+plain text UTF-8 encoded files which are included in plain text format
+for both aggregate types (collection and standalone), but are rendered
+as <abbr title="Portable Network Graphics">PNG</abbr> (Portable Network Graphics) or <abbr title="Encapsulated
+PostScript">EPS</abbr> (Encapsulated
+PostScript), as required by the specific back-end, in order to be
+included or referenced by formats that allow graphical representation.
+To achieve successfully the rendering of all scripts, it is necessary
+an Unicode font that comprises all required glyph.  By default
+<code>configure</code> script searches the system for GNU Unifont, the
+standard font GNU philosophy build system uses to do such rendering
+task.  To override the default and select another font of your choice
+you can use the <code>configure</code> option
+<samp>--with-font=<var>font-name</var></samp> where <var>font-name</var> is one of
+the names given in the list of available font names obtained by
+</p>
+<div class="example">
+<pre class="example"><var>srcdir</var>/configure --with-font=list
+</pre></div>
+
+<p>You can also explicitly specify a font file-name as in:
+</p>
+<div class="example">
+<pre class="example"><var>srcdir</var>/configure \
+--with-font=/home/gnu/share/fonts/unifont-6.3.20131020.ttf
+</pre></div>
+
+<p>Notice that there is a bug in ImageMagick program <code>convert</code>
+that prevents certain font formats from working properly.  See
+<a href="Bugs.html#Bugs">Bugs</a>.
+</p>
+<p>You can override the guesses of <code>configure</code> script about the
+GNU Texinfo command <code>makeinfo</code> and the ImageMagick command
+<code>convert</code> by setting the environment variables <code>MAKEINFO</code>
+and <code>CONVERT</code>, respectively.  The guesses about the PO4A utilities
+<code>po4a</code> and <code>po4a-gettextize</code> are overridden by the
+environment variables <code>PO4A</code> and <code>PO4A_GETTEXTIZE</code>,
+respectively.
+</p>
+
+
+
+
+&#12;
+<hr>
+<div class="header">
+<p>
+Next: <a href="Make-interface.html#Make-interface" accesskey="n" rel="next">Make interface</a>, Previous: <a href="Prerequisites.html#Prerequisites" accesskey="p" rel="prev">Prerequisites</a>, Up: <a href="Overview.html#Overview" accesskey="u" rel="up">Overview</a> &nbsp; [<a href="Index.html#Index" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

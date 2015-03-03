@@ -1,0 +1,496 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- GNU philosophy is the GNU Project's exhaustive collection of articles
+and essays about free software and related matters.
+
+Copyright (C) 2002, 2010, 2013, 2014 Free Software Foundation, Inc.
+Verbatim copying and distribution of this entire book are permitted
+worldwide, without royalty, in any medium, provided this notice is
+preserved.  Permission is granted to copy and distribute translations
+of this book from the original English into another language provided
+the translation has been approved by the Free Software Foundation and
+the copyright notice and this permission notice are preserved on all
+copies. -->
+<!-- Created by GNU Texinfo 5.2, http://www.gnu.org/software/texinfo/ -->
+<head>
+<title>GNU philosophy: Who Does That Server Really Serve?</title>
+
+<meta name="description" content="GNU philosophy: Who Does That Server Really Serve?">
+<meta name="keywords" content="GNU philosophy: Who Does That Server Really Serve?">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="index.html#Top" rel="start" title="Top">
+<link href="Index.html#Index" rel="index" title="Index">
+<link href="index.html#Top" rel="up" title="Top">
+<link href="Free-but-Shackled_003b-The-Java-Trap.html#Free-but-Shackled_003b-The-Java-Trap" rel="next" title="Free but Shackled; The Java Trap">
+<link href="Can-You-Trust-Your-Computer_003f.html#Can-You-Trust-Your-Computer_003f" rel="prev" title="Can You Trust Your Computer?">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.indentedblock {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smallindentedblock {margin-left: 3.2em; font-size: smaller}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style:oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nocodebreak {white-space:nowrap}
+span.nolinebreak {white-space:nowrap}
+span.roman {font-family:serif; font-weight:normal}
+span.sansserif {font-family:sans-serif; font-weight:normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en" bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#800080" alink="#FF0000">
+<a name="Who-Does-That-Server-Really-Serve_003f"></a>
+<div class="header">
+<p>
+Next: <a href="Free-but-Shackled_003b-The-Java-Trap.html#Free-but-Shackled_003b-The-Java-Trap" accesskey="n" rel="next">Free but Shackled; The Java Trap</a>, Previous: <a href="Can-You-Trust-Your-Computer_003f.html#Can-You-Trust-Your-Computer_003f" accesskey="p" rel="prev">Can You Trust Your Computer?</a>, Up: <a href="index.html#Top" accesskey="u" rel="up">Top</a> &nbsp; [<a href="Index.html#Index" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<a name="Who-Does-That-Server-Really-Serve_003f-1"></a>
+<h2 class="unnumbered">Who Does That Server Really Serve?</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<blockquote class="smallquotation">
+<p>This essay was originally published in the online edition of the
+<cite>Boston Review,</cite> on 8&nbsp;March&nbsp;2010, under the title
+&ldquo;What Does That Server Really Serve?&rdquo;
+</p>
+
+<p>Copyright (C) 2010 Richard Stallman
+</p>
+<blockquote>
+<p>Verbatim copying and distribution of this entire chapter are
+permitted worldwide, without royalty, in any medium, provided this
+notice is preserved.
+</p></blockquote>
+
+
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&#12;
+<a name="index-Software-as-a-Service-_0028SaaS_0029-_0028see-also-SaaS_0029"></a>
+
+
+
+
+&#12;
+<a name="Background_003a-How-Proprietary-Software-Takes-Away-Your-Freedom"></a>
+<h3 class="heading">Background: How Proprietary Software Takes Away Your Freedom</h3>
+
+<a name="index-spyware"></a>
+<a name="index-SaaS_002c-as-distinguished-from-proprietary-software"></a>
+<a name="index-proprietary-software_002c-as-distinguished-from-SaaS"></a>
+<p>Digital technology can give you freedom; it can also take your freedom
+away. The first threat to our control over our computing came from
+<em>proprietary software</em>: software that the users cannot control
+because the
+<a name="index-ownership_002c-and-users_0027-freedom-2"></a>
+owner (a company such as
+<a name="index-Apple-_0028see-also-DRM_0029-2"></a>
+Apple or Microsoft) controls
+it. The owner often takes advantage of this unjust power by inserting
+malicious features such as spyware, back doors, and
+<a name="index-DRM_002c-call-it-_0060_0060Digital-Restrictions-Management_0027_0027-2"></a>
+Digital
+Restrictions Management (DRM) (referred to as &ldquo;Digital Rights
+Management&rdquo; in their propaganda).
+</p>
+<p>Our solution to this problem is developing <em>free software</em> and
+rejecting proprietary software. Free software means that you, as a
+user, have four essential freedoms: (0)&nbsp;to run the program as you
+wish, (1)&nbsp;to study and change the source code so it does what you
+wish, (2)&nbsp;to redistribute exact copies, and (3)&nbsp;to
+redistribute copies of your modified versions. (See
+<a href="The-Free-Software-Definition.html#The-Free-Software-Definition">The Free Software Definition</a>.)
+</p>
+<p>With free software, we, the users, take back control of our
+computing. Proprietary software still exists, but we can exclude it
+from our lives and many of us have done so. However, we now face a
+new threat to our control over our computing: Software as a Service.
+For our freedom&rsquo;s sake, we have to reject that too.
+</p>
+
+
+
+&#12;
+<a name="How-Software-as-a-Service-Takes-Away-Your-Freedom"></a>
+<h3 class="heading">How Software as a Service Takes Away Your Freedom</h3>
+
+<p>Software as a Service (SaaS) means that someone sets up a network
+server that does certain computing tasks&mdash;running spreadsheets,
+word processing, translating text into another language,
+etc.&mdash;then invites users to do their computing on that server.
+Users send their data to the server, which does their computing on the
+data thus provided, then sends the results back or acts on them
+directly.
+</p>
+<p>These servers wrest control from the users even more inexorably
+than proprietary software. With proprietary software, users typically
+get an executable file but not the source code. That makes it hard
+for programmers to study the code that is running, so it&rsquo;s hard to
+determine what the program really does, and hard to change it.
+</p>
+<p>With SaaS, the users do not have even the executable file: it is on
+the server, where the users can&rsquo;t see or touch it. Thus it is
+impossible for them to ascertain what it really does, and impossible
+to change it.
+</p>
+<p>Furthermore, SaaS automatically leads to harmful consequences
+equivalent to the malicious features of certain proprietary software.
+For instance, some proprietary programs are &ldquo;spyware&rdquo;: the
+program sends out data about users&rsquo; computing activities. Microsoft
+<a name="index-Windows_002c-SaaS-and"></a>
+Windows sends information about users&rsquo; activities to Microsoft.
+<a name="index-Windows-Media-Player-_0028see-also-both-DRM-and-treacherous-computing_0029-1"></a>
+Windows Media Player and
+<a name="index-RealPlayer-_0028see-also-DRM_0029"></a>
+RealPlayer report what each user watches or
+listens to.
+</p>
+
+<p>Unlike proprietary software, SaaS does not require covert code to
+obtain the user&rsquo;s data. Instead, users must send their data to the
+server in order to use it. This has the same effect as spyware: the
+server operator gets the data. He gets it with no special effort, by
+the nature of SaaS.
+</p>
+<a name="index-proprietary-software_002c-spying-on-users"></a>
+<p>Some proprietary programs can mistreat users under remote command.
+For instance,
+<a name="index-Windows_002c-SaaS-and-1"></a>
+Windows has a back door with which Microsoft can
+forcibly change any software on the machine. The
+<a name="index-Amazon-1"></a>
+Amazon
+<a name="index-Kindle-_0028see-also-Swindle_0029-1"></a>
+Kindle e-book
+reader (whose name suggests it&rsquo;s intended to burn people&rsquo;s books) has
+an Orwellian back door that Amazon used in 2009
+to remotely delete Kindle copies of
+<a name="index-Orwell_002c-George-1"></a>
+Orwell&rsquo;s books
+<a name="index-1984_002c-George-Orwell-1"></a>
+<cite>1984</cite> and
+<a name="index-Animal-Farm_002c-George-Orwell"></a>
+<cite>Animal Farm</cite> which the users had purchased from Amazon.<a name="DOCF50" href="#FOOT50"><sup>50</sup></a>
+</p>
+<p>SaaS inherently gives the server operator the power to change the
+software in use, or the users&rsquo; data being operated on. Once again, no
+special code is needed to do this.
+</p>
+<p>Thus, SaaS is equivalent to total spyware and a gaping wide back
+door, and gives the server operator unjust power over the user. We
+can&rsquo;t accept that.
+<a name="index-spyware-1"></a>
+</p>
+
+
+
+&#12;
+<a name="Untangling-the-SaaS-Issue-from-the-Proprietary-Software-Issue"></a>
+<h3 class="heading">Untangling the SaaS Issue from the Proprietary Software Issue</h3>
+
+<p>SaaS and proprietary software lead to similar harmful results, but
+the causal mechanisms are different. With proprietary software, the
+cause is that you have and use a copy which is difficult or illegal to
+change. With SaaS, the cause is that you use a copy you don&rsquo;t
+have.
+</p>
+<p>These two issues are often confused, and not only by accident. Web
+developers use the vague term &ldquo;web application&rdquo; to lump
+the server software together with programs run on your machine in your
+browser. Some web pages install nontrivial or even large
+<a name="index-JavaScript"></a>
+JavaScript
+programs temporarily into your browser without informing
+you. When these JavaScript
+programs are nonfree, they are as bad as any other nonfree
+software. Here, however, we are concerned with the problem of the
+server software itself.
+</p>
+<a name="index-ownership_002c-servers-and-software"></a>
+<p>Many free software supporters assume that the problem of SaaS will
+be solved by developing free software for servers. For the server
+operator&rsquo;s sake, the programs on the server had better be free; if
+they are proprietary, their owners have power over the server. That&rsquo;s
+unfair to the operator, and doesn&rsquo;t help you at all. But if the
+programs on the server are free, that doesn&rsquo;t protect you <em>as the
+server&rsquo;s user</em> from the effects of SaaS. They give freedom to the
+operator, but not to you.
+</p>
+<p>Releasing the server software source code does benefit the
+community: suitably skilled users can set up similar servers, perhaps
+changing the software. But none of these servers would give you
+control over computing you do on it, unless it&rsquo;s <em>your</em> server.
+The rest would all be SaaS. SaaS always subjects you to the power of
+the server operator, and the only remedy is, <em>Don&rsquo;t use SaaS!</em>
+Don&rsquo;t use someone else&rsquo;s server to do your own computing on data
+provided by you.
+<a name="index-SaaS_002c-as-distinguished-from-proprietary-software-1"></a>
+<a name="index-proprietary-software_002c-as-distinguished-from-SaaS-1"></a>
+</p>
+
+
+
+&#12;
+<a name="Distinguishing-SaaS-from-Other-Network-Services"></a>
+<h3 class="heading">Distinguishing SaaS from Other Network Services</h3>
+
+<a name="index-SaaS_002c-as-distinguished-from-other-network-services"></a>
+<p>Does condemning SaaS mean rejecting all network servers? Not at
+all. Most servers do not raise this issue, because the job you do
+with them isn&rsquo;t your own computing except in a trivial sense.
+</p>
+<p>The original purpose of web servers wasn&rsquo;t to do computing for you,
+it was to publish information for you to access. Even today this is
+what most web sites do, and it doesn&rsquo;t pose the SaaS problem, because
+accessing someone&rsquo;s published information isn&rsquo;t a matter of doing your
+own computing. Neither is publishing your own materials via a blog
+site or a microblogging service such as
+<a name="index-Twitter"></a>
+Twitter or
+<a name="index-identi_002eca"></a>
+identi.ca. The same goes for
+communication not meant to be private, such as chat groups. Social
+networking can extend into SaaS; however, at root it is just a method
+of communication and publication, not SaaS. If you use the service
+for minor editing of what you&rsquo;re going to communicate, that is not a
+significant issue.
+</p>
+<p>Services such as search engines collect data from around the web
+and let you examine it. Looking through their collection of data
+isn&rsquo;t your own computing in the usual sense&mdash;you didn&rsquo;t provide
+that collection&mdash;so using such a service to search the web is not
+SaaS. (However, using someone else&rsquo;s search engine to implement a
+search facility for your own site <em>is</em> SaaS.)
+</p>
+<a name="index-SaaS_002c-e_002dcommerce-and"></a>
+<a name="index-e_002dcommerce"></a>
+<p>E-commerce is not SaaS, because the computing isn&rsquo;t solely yours;
+rather, it is done jointly for you and another party. So there&rsquo;s no
+particular reason why you alone should expect to control that
+computing. The real issue in e-commerce is whether you trust the
+other party with your money and personal information.
+</p>
+<a name="index-SaaS_002c-joint-projects-and"></a>
+<p>Using a joint project&rsquo;s servers isn&rsquo;t SaaS because the computing
+you do in this way isn&rsquo;t yours personally. For instance, if you edit
+pages on
+<a name="index-Wikipedia-1"></a>
+Wikipedia, you are not doing your own computing; rather, you
+are collaborating in Wikipedia&rsquo;s computing.
+</p>
+<p>Wikipedia controls its own servers, but groups can face the problem
+of SaaS if they do their group activities on someone else&rsquo;s server.
+<a name="index-SaaS_002c-development-hosting-sites-and"></a>
+Fortunately, development hosting sites such as
+<a name="index-SaaS_002c-Savannah-and"></a>
+<a name="index-Savannah"></a>
+Savannah and
+<a name="index-SaaS_002c-SourceForge-and"></a>
+<a name="index-SourceForge-1"></a>
+SourceForge don&rsquo;t pose the SaaS problem, because what groups do there
+is mainly publication and public communication, rather than their own
+private computing.
+</p>
+<a name="index-SaaS_002c-multiplayer-games"></a>
+<a name="index-games_002c-SaaS-and-multiplayer"></a>
+<p>Multiplayer games are a group activity carried out on someone
+else&rsquo;s server, which makes them SaaS. But where the data involved is
+just the state of play and the score, the worst wrong the operator
+might commit is favoritism. You might well ignore that risk, since it
+seems unlikely and very little is at stake. On the other hand, when
+the game becomes more than just a game, the issue changes.
+</p>
+<a name="index-Google-Docs"></a>
+<a name="index-SaaS_002c-Google-Docs-as-example-of"></a>
+<p>Which online services are SaaS? Google Docs is a clear example.
+Its basic activity is editing, and Google encourages people to use it
+for their own editing; this is SaaS. It offers the added feature of
+collaborative editing, but adding participants doesn&rsquo;t alter the fact
+that editing on the server is SaaS. (In addition, Google Docs is
+unacceptable because it installs a large nonfree
+<a name="index-JavaScript-1"></a>
+JavaScript program
+into the users&rsquo; browsers.) If using a service for communication or
+collaboration requires doing substantial parts of your own computing
+with it too, that computing is SaaS even if the communication is
+not.
+</p>
+<a name="index-SaaS_002c-sites-offering-multiple-services_002c-including"></a>
+<p>Some sites offer multiple services, and if one is not SaaS, another
+may be SaaS. For instance, the main service of
+<a name="index-Facebook"></a>
+<a name="index-SaaS_002c-Facebook-and"></a>
+Facebook is social
+networking, and that is not SaaS; however, it supports third-party
+applications, some of which may be SaaS.
+<a name="index-Flickr"></a>
+<a name="index-SaaS_002c-Flickr-and"></a>
+Flickr&rsquo;s main service is
+distributing photos, which is not SaaS, but it also has features for
+editing photos, which is SaaS.
+</p>
+<a name="index-SaaS_002c-publication_002dand_002dcommunication-sites-and"></a>
+<p>Some sites whose main service is publication and communication
+extend it with &ldquo;contact management&rdquo;: keeping track of
+people you have relationships with. Sending mail to those people for
+you is not SaaS, but keeping track of your dealings with them, if
+substantial, is SaaS.
+</p>
+<p>If a service is not SaaS, that does not mean it is OK. There are
+other bad things a service can do. For instance, Facebook distributes
+video in Flash, which pressures users to run nonfree software, and it
+gives users a misleading impression of privacy. Those are important
+issues too, but this article&rsquo;s concern is the issue of SaaS.
+</p>
+<a name="index-_0060_0060cloud-computing_002c_0027_0027-avoid-use-of-term-1"></a>
+<a name="index-SaaS_002c-_0060_0060cloud-computing_0027_0027-obfuscating-problems-posed-by"></a>
+<p>The IT industry discourages users from considering these
+distinctions. That&rsquo;s what the buzzword &ldquo;cloud computing&rdquo;
+is for. This term is so nebulous that it could refer to almost any
+use of the Internet. It includes SaaS and it includes nearly
+everything else. The term only lends itself to uselessly broad
+statements.
+</p>
+<p>The real meaning of &ldquo;cloud computing&rdquo; is to suggest a
+devil-may-care approach towards your computing. It says, &ldquo;Don&rsquo;t
+ask questions, just trust every business without hesitation. Don&rsquo;t
+worry about who controls your computing or who holds your data. Don&rsquo;t
+check for a hook hidden inside our service before you swallow
+it.&rdquo; In other words, &ldquo;Think like a sucker.&rdquo; I prefer
+to avoid the term.
+<a name="index-SaaS_002c-as-distinguished-from-other-network-services-1"></a>
+</p>
+
+
+
+&#12;
+<a name="Dealing-with-the-SaaS-Problem"></a>
+<h3 class="heading">Dealing with the SaaS Problem</h3>
+
+<a name="index-SaaS_002c-dealing-with-problem-of"></a>
+<a name="index-call-to-action_002c-SaaS-threats"></a>
+<p>Only a small fraction of all web sites do SaaS; most don&rsquo;t raise
+the issue. But what should we do about the ones that raise it?
+</p>
+<p>For the simple case, where you are doing your own computing on data in
+your own hands, the solution is simple: use your own copy of a free
+software application. Do your text editing with your copy of a free
+text editor such as
+<a name="index-Emacs_002c-GNU-6"></a>
+<a name="index-GNU_002c-GNU-Emacs-6"></a>
+GNU Emacs or a free word
+<a name="index-processors-1"></a>
+processor. Do your photo
+editing with your copy of free software such as
+<a name="index-GNU_002c-GIMP-1"></a>
+<a name="index-GIMP-1"></a>
+GIMP.
+</p>
+<p>But what about collaborating with other individuals? It may be
+hard to do this at present without using a server. If you use one,
+don&rsquo;t trust a server run by a company. A mere contract as a customer
+is no protection unless you could detect a breach and could really
+sue, and the company probably writes its contracts to permit a broad
+range of abuses. Police can subpoena your data from the company with
+less basis than required to subpoena them from you, supposing the
+company doesn&rsquo;t volunteer them like the US phone companies that
+illegally wiretapped their customers for
+<a name="index-Bush_002c-President-George-W_002e"></a>
+Bush. If you must use a
+server, use a server whose operators give you a basis for trust beyond
+a mere commercial relationship.
+</p>
+<p>However, on a longer time scale, we can create alternatives to
+using servers. For instance, we can create a
+<a name="index-peer_002dto_002dpeer-3"></a>
+peer-to-peer program
+through which collaborators can share data encrypted. The free
+software community should develop distributed peer-to-peer
+replacements for important &ldquo;web applications.&rdquo; It may be
+wise to release them under GNU
+<a name="index-GNU_002c-GNU-Affero-General-Public-License-_0028AGPL_0029-1"></a>
+<a name="index-Affero-General-Public-License-_0028AGPL_0029_002c-GNU-1"></a>
+Affero GPL, since
+they are likely candidates for being converted into server-based
+programs by someone else. The
+<a name="index-GNU_002c-GNU-Project-6"></a>
+GNU Project is looking
+for volunteers to work on such replacements. We also invite other
+free software projects to consider this issue in their design.
+</p>
+<p>In the meantime, if a company invites you to use its server to do
+your own computing tasks, don&rsquo;t yield; don&rsquo;t use SaaS. Don&rsquo;t buy or
+install &ldquo;thin clients,&rdquo; which are simply computers so weak
+they make you do the real work on a server, unless you&rsquo;re
+going to use them with <em>your</em> server. Use a real
+computer and keep your data there. Do your work with your own copy of
+a free program, for your freedom&rsquo;s sake.
+<a name="index-call-to-action_002c-SaaS-threats-1"></a>
+<a name="index-SaaS_002c-dealing-with-problem-of-1"></a>
+<a name="index-Software-as-a-Service-_0028SaaS_0029-_0028see-also-SaaS_0029-1"></a>
+</p>
+<div class="footnote">
+<hr>
+<h4 class="footnotes-heading">Footnotes</h4>
+
+<h3><a name="FOOT50" href="#DOCF50">(50)</a></h3>
+
+</div>
+<hr>
+<div class="header">
+<p>
+Next: <a href="Free-but-Shackled_003b-The-Java-Trap.html#Free-but-Shackled_003b-The-Java-Trap" accesskey="n" rel="next">Free but Shackled; The Java Trap</a>, Previous: <a href="Can-You-Trust-Your-Computer_003f.html#Can-You-Trust-Your-Computer_003f" accesskey="p" rel="prev">Can You Trust Your Computer?</a>, Up: <a href="index.html#Top" accesskey="u" rel="up">Top</a> &nbsp; [<a href="Index.html#Index" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+We Can Put an End to Word Attachments
+*************************************
+
+This essay was originally published on <http://gnu.org>, in 2002.
+
+This document is part of GNU philosophy, the GNU Project's exhaustive
+collection of articles and essays about free software and related
+matters.
+
+   Copyright (C) 2002, 2007, 2010 Richard Stallman
+
+     Verbatim copying and distribution of this entire document are
+     permitted worldwide, without royalty, in any medium, provided this
+     notice is preserved.
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+Don't you just hate receiving Word documents in email messages?  Word
+attachments are annoying, but, worse than that, they impede people from
+switching to free software.  Maybe we can stop this practice with a
+simple collective effort.  All we have to do is ask each person who
+sends us a Word file to reconsider that way of doing things.
+
+   Most computer users use Microsoft Word.  That is unfortunate for
+them, since Word is proprietary software, denying its users the freedom
+to study, change, copy, and redistribute it.  And because Microsoft
+changes the Word file format with each release, its users are locked
+into a system that compels them to buy each upgrade whether they want a
+change or not.  They may even find, several years from now, that the
+Word documents they are writing this year can no longer be read with the
+version of Word they use then.
+
+   But it hurts us, too, when they assume we use Word and send us (or
+demand that we send them) documents in Word format.  Some people publish
+or post documents in Word format.  Some organizations will only accept
+files in Word format: I heard from someone that he was unable to apply
+for a job because resumes had to be Word files.  Even governments
+sometimes impose Word format on the public, which is truly outrageous.
+
+   For us users of free operating systems, receiving Word documents is
+an inconvenience or an obstacle.  But the worst impact of sending Word
+format is on people who might switch to free systems: they hesitate
+because they feel they must have Word available to read the Word files
+they receive.  The practice of using the secret Word format for
+interchange impedes the growth of our community and the spread of
+freedom.  While we notice the occasional annoyance of receiving a Word
+document, this steady and persistent harm to our community usually
+doesn't come to our attention.  But it is happening all the time.
+
+   Many GNU users who receive Word documents try to find ways to handle
+them.  You can manage to find the somewhat obfuscated ASCII text in the
+file by skimming through it.  Free software today can read most Word
+documents, but not all--the format is secret and has not been entirely
+decoded.  Even worse, Microsoft can change it at any time.
+
+   Worst of all, it has already done so.  Microsoft Office 2007 uses by
+default a format based on the patented OOXML format.  (This is the one
+that Microsoft got declared an "open standard" by political manipulation
+and packing standards committees.)  The actual format is not entirely
+OOXML, and it is not entirely documented.  Microsoft offers a gratis
+patent license for OOXML on terms which do not allow free
+implementations.  We are thus beginning to receive Word files in a
+format that free programs are not even allowed to read.
+
+   When you receive a Word file, if you think of that as an isolated
+event, it is natural to try to cope by finding a way to read it.
+Considered as an instance of a pernicious systematic practice, it calls
+for a different approach.  Managing to read the file is treating a
+symptom of an epidemic disease; what we really want to do is stop the
+disease from spreading.  That means we must convince people not to send
+or post Word documents.
+
+   I therefore make a practice of responding to Word attachments with a
+polite message explaining why the practice of sending Word files is a
+bad thing, and asking the person to resend the material in a nonsecret
+format.  This is a lot less work than trying to read the somewhat
+obfuscated ASCII text in the Word file.  And I find that people usually
+understand the issue, and many say they will not send Word files to
+others any more.
+
+   If we all do this, we will have a much larger effect.  People who
+disregard one polite request may change their practice when they receive
+multiple polite requests from various people.  We may be able to give
+_Don't send Word format!_  the status of netiquette, if we start
+systematically raising the issue with everyone who sends us Word files.
+
+   To make this effort efficient, you will probably want to develop a
+canned reply that you can quickly send each time it is necessary.  I've
+included two examples: the version I have been using recently, followed
+by a new version that teaches a Word user how to convert to other useful
+formats.
+
+Ex. 1
+     You sent the attachment in Microsoft Word format, a secret
+     proprietary format, so I cannot read it.  If you send me the plain
+     text, HTML, or PDF, then I could read it.
+
+     Sending people documents in Word format has bad effects, because
+     that practice puts pressure on them to use Microsoft software.  In
+     effect, you become a buttress of the Microsoft monopoly.  This
+     specific problem is a major obstacle to the broader adoption of
+     GNU/Linux.  Would you please reconsider the use of Word format for
+     communication with other people?
+
+Ex. 2
+     You sent the attachment in Microsoft Word format, a secret
+     proprietary format, so it is hard for me to read.  If you send me
+     plain text, HTML, or PDF, then I will read it.
+
+     Distributing documents in Word format is bad for you and for
+     others.  You can't be sure what they will look like if someone
+     views them with a different version of Word; they may not work at
+     all.
+
+     Receiving Word documents is bad for you because they can carry
+     viruses (see
+     <http://en.wikipedia.org/wiki/Macro_virus_(computing)>).  Sending
+     Word documents is bad for you because a Word document normally
+     includes hidden information about the author, enabling those in the
+     know to pry into the author's activities (maybe yours).  Text that
+     you think you deleted may still be embarrassingly present.  See
+     <http://news.bbc.co.uk/2/hi/technology/3154479.stm> for more info.
+
+     But above all, sending people Word documents puts pressure on them
+     to use Microsoft software and helps to deny them any other choice.
+     In effect, you become a buttress of the Microsoft monopoly.  This
+     pressure is a major obstacle to the broader adoption of free
+     software.  Would you please switch to a different way of sending
+     files to other people, instead of Word format?
+
+     To convert the file to HTML using Word is simple.  Open the
+     document, click on File, then Save As, and in the Save As Type
+     strip box at the bottom of the box, choose HTML Document or Web
+     Page.  Then choose Save.  You can then attach the new HTML document
+     instead of your Word document.  Note that Word changes in
+     inconsistent ways--if you see slightly different menu item names,
+     please try them.
+
+     To convert to plain text is almost the same--instead of HTML
+     Document, choose Text Only or Text Document as the Save As Type.
+
+     Your computer may also have a program to convert to PDF format.
+     Select File, then Print.  Scroll through available printers and
+     select the PDF converter.  Click on the Print button and enter a
+     name for the PDF file when requested.
+
+     See <http://gnu.org/philosophy/no-word-attachments.html> for more
+     about this issue.
+
+   You can use these replies verbatim if you like, or you can
+personalize them or write your own.  By all means construct a reply that
+fits your ideas and your personality--if the replies are personal and
+not all alike, that will make the campaign more effective.
+
+   These replies are meant for individuals who send Word files.  When
+you encounter an organization that imposes use of Word format, that
+calls for a different sort of reply; there you can raise issues of
+fairness that would not apply to an individual's actions.
+
+   Some recruiters ask for resumes in Word format.  Ludicrously, some
+recruiters do this even when looking for someone for a free software
+job.  (Anyone using those recruiters for free software jobs is not
+likely to get a competent employee.)  To help change this practice, you
+can put a link to <http://gnu.org/philosophy/no-word-attachments.html>
+into your resume, next to links to other formats of the resume.  Anyone
+hunting for a Word version of the resume will probably read the page.
+
+   This essay talks about Word attachments, since they are by far the
+most common case.  However, the same issues apply with other proprietary
+formats, such as PowerPoint and Excel.  Please feel free to adapt the
+replies to cover those as well.
+
+   With our numbers, simply by asking, we can make a difference.

@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- GNU philosophy is the GNU Project's exhaustive collection of articles
+and essays about free software and related matters.
+
+Copyright (C) 2002, 2010, 2013, 2014 Free Software Foundation, Inc.
+Verbatim copying and distribution of this entire book are permitted
+worldwide, without royalty, in any medium, provided this notice is
+preserved.  Permission is granted to copy and distribute translations
+of this book from the original English into another language provided
+the translation has been approved by the Free Software Foundation and
+the copyright notice and this permission notice are preserved on all
+copies. -->
+<!-- Created by GNU Texinfo 5.2, http://www.gnu.org/software/texinfo/ -->
+<head>
+<title>GNU philosophy: Why Upgrade to GPLv3</title>
+
+<meta name="description" content="GNU philosophy: Why Upgrade to GPLv3">
+<meta name="keywords" content="GNU philosophy: Why Upgrade to GPLv3">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="index.html#Top" rel="start" title="Top">
+<link href="Index.html#Index" rel="index" title="Index">
+<link href="index.html#Top" rel="up" title="Top">
+<link href="GNU-Lesser-General-Public-License.html#GNU-Lesser-General-Public-License" rel="next" title="GNU Lesser General Public License">
+<link href="GNU-General-Public-License.html#GNU-General-Public-License" rel="prev" title="GNU General Public License">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.indentedblock {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smallindentedblock {margin-left: 3.2em; font-size: smaller}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style:oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nocodebreak {white-space:nowrap}
+span.nolinebreak {white-space:nowrap}
+span.roman {font-family:serif; font-weight:normal}
+span.sansserif {font-family:sans-serif; font-weight:normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en" bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#800080" alink="#FF0000">
+<a name="Why-Upgrade-to-GPLv3"></a>
+<div class="header">
+<p>
+Next: <a href="GNU-Lesser-General-Public-License.html#GNU-Lesser-General-Public-License" accesskey="n" rel="next">GNU Lesser General Public License</a>, Previous: <a href="GNU-General-Public-License.html#GNU-General-Public-License" accesskey="p" rel="prev">GNU General Public License</a>, Up: <a href="index.html#Top" accesskey="u" rel="up">Top</a> &nbsp; [<a href="Index.html#Index" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<a name="Why-Upgrade-to-GPLv3-1"></a>
+<h2 class="unnumbered">Why Upgrade to GPLv3</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<blockquote class="smallquotation">
+<p>This essay was originally published on <a href="http://gnu.org">http://gnu.org</a>, in 2007.
+</p>
+
+<p>Copyright &copy; 2007, 2009 Richard Stallman
+</p>
+<blockquote>
+<p>Verbatim copying and distribution of this entire chapter are
+permitted worldwide, without royalty, in any medium, provided this
+notice is preserved.
+</p></blockquote>
+
+
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&#12;
+<a name="index-patents_002c-GPL-version-3-and-4"></a>
+<a name="index-GPL_002c-version-3_002c-why-upgrade-to"></a>
+<a name="index-call-to-action_002c-upgrade-to-GPL-version-3"></a>
+
+<p>Version 3 of the GNU General Public License (GNU GPL) has been
+released, enabling free software packages to upgrade from GPL version
+2. This article explains why upgrading the license is important.
+</p>
+<p>First of all, it is important to note that upgrading is a choice. GPL
+version 2 will remain a valid license, and no disaster will happen if
+some programs remain under GPLv2 while others advance to GPLv3. These
+two licenses are incompatible, but that isn&rsquo;t a fundamental problem.
+</p>
+<a name="index-copyleft_002c-GPL-and"></a>
+<a name="index-GPL_002c-version-3_002c-compatibility"></a>
+<p>When we say that GPLv2 and GPLv3 are incompatible, it means there is
+no legal way to combine code under GPLv2 with code under GPLv3 in a
+single program. This is because both GPLv2 and GPLv3 are copyleft
+licenses: each of them says, &ldquo;If you include code under this license
+in a larger program, the larger program must be under this license
+too.&rdquo; There is no way to make them compatible. We could add a
+GPLv2-compatibility clause to GPLv3, but it wouldn&rsquo;t do the job,
+because GPLv2 would need a similar clause.
+</p>
+<p>Fortunately, license incompatibility matters only when you want to
+link, merge or combine code from two different programs into a single
+program. There is no problem in having GPLv3-covered and
+GPLv2-covered programs side by side in an operating system. For
+instance, the
+<a name="index-TeX-4"></a>
+TeX license and the
+<a name="index-Apache-License"></a>
+Apache license are incompatible with
+GPLv2, but that doesn&rsquo;t stop us from running TeX and
+<a name="index-Apache"></a>
+Apache in the
+same system with Linux,
+<a name="index-BASH-_0028Bourne-Again-Shell_0029_002c-GNU-2"></a>
+<a name="index-GNU_002c-GNU-BASH-_0028Bourne-Again-Shell_0029-2"></a>
+Bash and
+<a name="index-GNU_002c-GCC-3"></a>
+GCC. This is because they are all
+separate programs. Likewise, if Bash and GCC move to GPLv3, while
+Linux remains under GPLv2, there is no conflict.
+</p>
+<p>Keeping a program under GPLv2 won&rsquo;t create problems. The reason to
+migrate is because of the existing problems that GPLv3 will address.
+</p>
+<a name="index-tivoization-4"></a>
+<p>One major danger that GPLv3 will block is tivoization. Tivoization
+means certain &ldquo;appliances&rdquo; (which have computers inside)
+contain
+<a name="index-GPL_002dcovered-software-_0028see-also-software_0029-3"></a>
+<a name="index-GPL_002c-GPL_002dcovered-software-_0028see-also-software_0029-3"></a>
+GPL-covered software that you can&rsquo;t effectively change, because the
+appliance shuts down if it detects modified software. The usual
+motive for tivoization is that the software has features the
+manufacturer knows people will want to change, and aims
+to stop people from changing them. The manufacturers of
+these computers take advantage of the freedom that free software
+provides, but they don&rsquo;t let you do likewise.
+</p>
+<p>Some argue that competition between appliances in a free market should
+suffice to keep nasty features to a low level. Perhaps competition
+alone would avoid arbitrary, pointless misfeatures like &ldquo;Must shut
+down between 1pm and 5pm every Tuesday,&rdquo; but even so, a choice of
+masters isn&rsquo;t freedom. Freedom means <em>you</em> control what your software
+does, not merely that you can beg or threaten someone else who decides
+for you.
+</p>
+<p>In the crucial area of
+<a name="index-DRM_002c-GPL-version-3-and"></a>
+<a name="index-DRM_002c-call-it-_0060_0060Digital-Restrictions-Management_0027_0027-1"></a>
+<a name="index-DMCA_002c-GPL-version-3-and"></a>
+Digital Restrictions Management (DRM)&mdash;nasty features
+designed to restrict your use of the data in your
+computer&mdash;competition is no help, because relevant competition is
+forbidden. Under the Digital Millennium Copyright Act and similar
+laws, it is illegal, in the US and many other countries, to distribute
+DVD players unless they restrict the user according to the official
+rules of the DVD conspiracy (its web site is <a href="http://www.dvdcca.org/">http://www.dvdcca.org/</a>,
+but the rules do not seem to be published there). The public can&rsquo;t
+reject DRM by buying non-DRM players because none are available. No
+matter how many products you can choose from, they all have equivalent
+digital handcuffs.
+</p>
+<p>GPLv3 ensures you are free to remove the handcuffs. It doesn&rsquo;t forbid
+DRM, or any kind of feature. It places no limits on the substantive
+functionality you can add to a program, or remove from it. Rather, it
+makes sure that you are just as free to remove nasty features as the
+distributor of your copy was to add them. Tivoization is the way they
+deny you that freedom; to protect your freedom, GPLv3 forbids
+tivoization.
+</p>
+<p>The ban on tivoization applies to any product whose use by consumers is to be expected, even occasionally. GPLv3 tolerates tivoization
+only for products that are almost exclusively meant for businesses and
+organizations.
+<a name="index-tivoization-5"></a>
+</p>
+<a name="index-Novell-_0028see-also-patents_002c-GPL_002c-and-Microsoft_0029"></a>
+<a name="index-patents_002c-Novell_002dMicrosoft-pact"></a>
+<a name="index-Microsoft_002c-Novell_002dMicrosoft-pact"></a>
+<a name="index-GPL_002c-version-3_002c-limited-patent-protection"></a>
+<p>Another threat that GPLv3 resists is that of patent deals like the
+Novell-Microsoft pact. Microsoft wants to use its thousands of
+patents to make users pay Microsoft for the privilege of running
+GNU/Linux, and made this pact to try to achieve that. The deal offers
+rather limited protection from Microsoft patents to Novell&rsquo;s customers.
+</p>
+<p>Microsoft made a few mistakes in the Novell-Microsoft deal, and GPLv3
+is designed to turn them against Microsoft, extending that limited
+patent protection to the whole community. In order to take advantage
+of this protection, programs need to use GPLv3.
+</p>
+<p>Microsoft&rsquo;s lawyers are not stupid, and next time they may manage to
+avoid those mistakes. GPLv3 therefore says they don&rsquo;t get a &ldquo;next
+time.&rdquo; Releasing a program under GPL version 3 protects it from
+Microsoft&rsquo;s future attempts to make redistributors collect Microsoft
+royalties from the program&rsquo;s users.
+</p>
+<p>GPLv3 also provides users with explicit patent protection from
+the program&rsquo;s contributors and redistributors. With GPLv2, users rely
+on an implicit patent license to make sure that the company which
+provided them a copy won&rsquo;t sue them, or the people they redistribute
+copies to, for patent infringement.
+</p>
+<p>The explicit patent license in GPLv3 does not go as far as we might
+have liked. Ideally, we would make everyone who redistributes
+GPL-covered code give up all software patents, along with everyone
+who does not redistribute GPL-covered code, because there should be
+no software patents. Software patents are a
+vicious and absurd system that puts all software developers in danger
+of being sued by companies they have never heard of, as well as by all
+the megacorporations in the field. Large programs typically combine
+thousands of ideas, so it is no surprise if they implement ideas
+covered by hundreds of patents. Megacorporations collect thousands of
+patents, and use those patents to bully smaller developers. Patents
+already obstruct free software development.
+</p>
+<p>The only way to make software development safe is to abolish software
+patents, and we aim to achieve this some day. But we cannot do this
+through a software license. Any program, free or not, can be killed
+by a software patent in the hands of an unrelated party, and the
+program&rsquo;s license cannot prevent that. Only court decisions or
+changes in patent law can make software development safe from patents.
+If we tried to do this with GPLv3, it would fail.
+</p>
+<p>Therefore, GPLv3 seeks to limit and channel the danger. In
+particular, we have tried to save free software from a fate worse than
+death: to be made effectively proprietary, through patents. The
+explicit patent license of GPLv3 makes sure companies that use the GPL
+to give users the four freedoms cannot turn around and use their
+patents to tell some users, &ldquo;That doesn&rsquo;t include you.&rdquo;
+It also stops them from colluding with other patent holders to do this.
+</p>
+<a name="index-BitTorrent"></a>
+<a name="index-Apache-License-1"></a>
+<p>Further advantages of GPLv3 include better internationalization, gentler
+termination, support for BitTorrent, and compatibility with the Apache
+license. All in all, plenty of reason to upgrade.
+</p>
+<p>Change is unlikely to cease once GPLv3 is released. If new threats to
+users&rsquo; freedom develop, we will have to develop GPL version 4. It is
+important to make sure that programs will have no trouble upgrading to
+GPLv4 if and when we write one.
+</p>
+<p>One way to do this is to release a program under &ldquo;GPL version 3 or any
+later version.&rdquo; Another way is for all the contributors to a program
+to state a proxy who can decide on upgrading to future GPL versions.
+The third way is for all the contributors to assign copyright to one
+designated copyright holder, who will be in a position to upgrade the
+license version. One way or another, programs should provide this
+flexibility for future GPL versions.
+<a name="index-GPL_002c-version-3_002c-why-upgrade-to-1"></a>
+<a name="index-call-to-action_002c-upgrade-to-GPL-version-3-1"></a>
+<a name="index-patents_002c-GPL-version-3-and-5"></a>
+</p>
+<hr>
+<div class="header">
+<p>
+Next: <a href="GNU-Lesser-General-Public-License.html#GNU-Lesser-General-Public-License" accesskey="n" rel="next">GNU Lesser General Public License</a>, Previous: <a href="GNU-General-Public-License.html#GNU-General-Public-License" accesskey="p" rel="prev">GNU General Public License</a>, Up: <a href="index.html#Top" accesskey="u" rel="up">Top</a> &nbsp; [<a href="Index.html#Index" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

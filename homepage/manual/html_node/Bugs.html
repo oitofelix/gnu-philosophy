@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- GNU philosophy is the GNU Project's exhaustive collection of articles
+and essays about free software and related matters.
+
+Copyright (C) 2002, 2010, 2013, 2014 Free Software Foundation, Inc.
+Verbatim copying and distribution of this entire book are permitted
+worldwide, without royalty, in any medium, provided this notice is
+preserved.  Permission is granted to copy and distribute translations
+of this book from the original English into another language provided
+the translation has been approved by the Free Software Foundation and
+the copyright notice and this permission notice are preserved on all
+copies. -->
+<!-- Created by GNU Texinfo 5.2, http://www.gnu.org/software/texinfo/ -->
+<head>
+<title>GNU philosophy: Bugs</title>
+
+<meta name="description" content="GNU philosophy: Bugs">
+<meta name="keywords" content="GNU philosophy: Bugs">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="index.html#Top" rel="start" title="Top">
+<link href="Index.html#Index" rel="index" title="Index">
+<link href="Release.html#Release" rel="up" title="Release">
+<link href="Authors.html#Authors" rel="next" title="Authors">
+<link href="To-do.html#To-do" rel="prev" title="To do">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.indentedblock {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smallindentedblock {margin-left: 3.2em; font-size: smaller}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style:oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nocodebreak {white-space:nowrap}
+span.nolinebreak {white-space:nowrap}
+span.roman {font-family:serif; font-weight:normal}
+span.sansserif {font-family:sans-serif; font-weight:normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en" bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#800080" alink="#FF0000">
+<a name="Bugs"></a>
+<div class="header">
+<p>
+Next: <a href="Authors.html#Authors" accesskey="n" rel="next">Authors</a>, Previous: <a href="To-do.html#To-do" accesskey="p" rel="prev">To do</a>, Up: <a href="Release.html#Release" accesskey="u" rel="up">Release</a> &nbsp; [<a href="Index.html#Index" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<a name="Bugs-1"></a>
+<h3 class="section">2.3 Bugs</h3>
+
+
+
+
+
+
+&#12;
+
+
+
+
+&#12;
+
+
+
+
+&#12;
+
+<p>This chapter contains a list of bugs of this
+package, prerequisite software or specific platforms that you must be
+aware of.  If there is a known workaround we describe it here too.  If
+you want to undertake the solution of any of these bugs, we appreciate
+your help; please write to <a href="mailto:bug-philosophy@gnu.org">bug-philosophy@gnu.org</a> so we can be
+aware that the problem is being addressed, and talk with you how to do
+it best.  It is best to consult the latest
+version of this file in the package source code repository.
+See <a href="Getting-a-copy.html#Getting-a-copy">Getting a copy</a> and <a href="Hacking.html#Hacking">Hacking</a> for instruction on how to access it.
+</p>
+<p>For more practical details about getting involved, see
+<a href="Contributing.html#Contributing">Contributing</a>.
+</p>
+<p>As well as the issues listed here, there are bug reports &mdash; that you
+might want to be aware of &mdash; at the <a href="https://savannah.gnu.org/bugs/?group=philosophy">bug
+tracker web interface</a>.  See <a href="Bug-reporting.html#Bug-reporting">Bug reporting</a> for more information.
+</p>
+
+<dl compact="compact">
+<dt><em>PO4A can&rsquo;t recognize Texinfo 5.2 quotation-like environments</em></dt>
+<dd><p>In PO4A 0.45 the quotation-like Texinfo environments
+<code>smallquotation</code>, <code>indentedblock</code>, <code>smallindentedblock</code>
+and <code>raggedright</code>, present in Texinfo 5.2, are not registered in
+its Texinfo module, causing <code>po4a-gettextize</code> to yield errors
+like:
+</p>
+<div class="example">
+<pre class="example">master.texi:71: (po4a::tex) unmatched end of environment
+</pre></div>
+
+<p>when such environments are found in master documents.  The fix is
+already applied in their <abbr title="Version Control System">VCS</abbr> (Version Control System)
+repository.  You can obtain the required development version running:
+</p>
+<div class="example">
+<pre class="example">svn checkout svn://scm.alioth.debian.org/svn/po4a/trunk
+</pre></div>
+
+<p>For the specific patch, check:
+<a href="https://lists.alioth.debian.org/pipermail/po4a-devel/2014-January/002240.html">[Po4a-devel] [PATCH] Register missing Texinfo 5.2 quotation-like
+environments</a>.
+</p>
+
+</dd>
+<dt><em>ImageMagick program <code>convert</code> treatment of BDF and TTF fonts</em></dt>
+<dd><p>There is a bug in ImageMagick program <code>convert</code>, which is used
+to perform the rendering of several language scripts, that prevents
+<abbr title="Glyph Bitmap Distribution Format">BDF</abbr> (Glyph Bitmap Distribution Format) and <abbr title="Portable
+Compiled Format">PCF</abbr> (Portable
+Compiled Format) formats of GNU Unifont from working properly.  If you
+see messages like &lsquo;<samp>convert: geometry does not contain image</samp>&rsquo;
+probably you are experiencing that bug.  The <abbr title="TrueType">TTF</abbr> (TrueType)
+format of GNU Unifont is known to work properly.  Therefore, to fix
+such a bug download the TTF build of GNU Unifont from
+<a href="http://unifoundry.com/pub/unifont-6.3.20131020/font-builds/unifont-6.3.20131020.ttf.gz">http://unifoundry.com/pub/unifont-6.3.20131020/font-builds/unifont-6.3.20131020.ttf.gz</a>
+and ask the GNU philosophy build system to use it by means of the
+<code>configure</code> option <samp>--with-font</samp>.
+</p></dd>
+</dl>
+
+
+
+
+&#12;
+
+
+
+
+&#12;
+<hr>
+<div class="header">
+<p>
+Next: <a href="Authors.html#Authors" accesskey="n" rel="next">Authors</a>, Previous: <a href="To-do.html#To-do" accesskey="p" rel="prev">To do</a>, Up: <a href="Release.html#Release" accesskey="u" rel="up">Release</a> &nbsp; [<a href="Index.html#Index" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

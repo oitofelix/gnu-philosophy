@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- GNU philosophy is the GNU Project's exhaustive collection of articles
+and essays about free software and related matters.
+
+Copyright (C) 2002, 2010, 2013, 2014 Free Software Foundation, Inc.
+Verbatim copying and distribution of this entire book are permitted
+worldwide, without royalty, in any medium, provided this notice is
+preserved.  Permission is granted to copy and distribute translations
+of this book from the original English into another language provided
+the translation has been approved by the Free Software Foundation and
+the copyright notice and this permission notice are preserved on all
+copies. -->
+<!-- Created by GNU Texinfo 5.2, http://www.gnu.org/software/texinfo/ -->
+<head>
+<title>GNU philosophy: Usage</title>
+
+<meta name="description" content="GNU philosophy: Usage">
+<meta name="keywords" content="GNU philosophy: Usage">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="index.html#Top" rel="start" title="Top">
+<link href="Index.html#Index" rel="index" title="Index">
+<link href="Overview.html#Overview" rel="up" title="Overview">
+<link href="Distribution.html#Distribution" rel="next" title="Distribution">
+<link href="Making-a-tarball.html#Making-a-tarball" rel="prev" title="Making a tarball">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.indentedblock {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smallindentedblock {margin-left: 3.2em; font-size: smaller}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style:oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nocodebreak {white-space:nowrap}
+span.nolinebreak {white-space:nowrap}
+span.roman {font-family:serif; font-weight:normal}
+span.sansserif {font-family:sans-serif; font-weight:normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en" bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#800080" alink="#FF0000">
+<a name="Usage"></a>
+<div class="header">
+<p>
+Next: <a href="Distribution.html#Distribution" accesskey="n" rel="next">Distribution</a>, Previous: <a href="Making-a-tarball.html#Making-a-tarball" accesskey="p" rel="prev">Making a tarball</a>, Up: <a href="Overview.html#Overview" accesskey="u" rel="up">Overview</a> &nbsp; [<a href="Index.html#Index" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<a name="Usage-1"></a>
+<h3 class="section">1.10 Usage</h3>
+
+<p>All GNU philosophy essays are promptly available for inclusion in
+another package&rsquo;s documentation.  To exemplify how to do it, consider
+the following hypothetical situation: your target documentation main
+file is <samp>gnu-3.0/doc/manual.texi</samp> and you want to include the
+original, English version, of <cite>The GNU Project</cite> essay.  Supposing
+GNU philosophy source tree is under <samp>philosophy</samp> directory, you
+can find the correspondent essay file in <samp>philosophy/src/essays</samp>
+directory named as <samp>the-gnu-project.texi</samp>.  As a general rule,
+for an essay, whose title in lowercase, with all non-alphanumeric and
+non-blank characters removed, all blank characters collapsed to a
+single one, and then transliterated to &lsquo;<samp>-</samp>&rsquo;, is <var>essay-title</var>,
+one can find the correspondent Texinfo source as
+<samp>philosophy/src/essays/<var>essay-title</var></samp>.
+</p>
+<p>After locating the desired essay file, the next step is to copy it
+from the GNU philosophy source tree to the desired target main
+documentation file directory, in this illustration case the following
+command suffices:
+</p>
+<div class="example">
+<pre class="example">cp <samp>philosophy/src/essays/the-gnu-project.texi</samp> <samp>gnu-3.0/doc</samp>
+</pre></div>
+
+<p>There is another required file, which is included by every essay file,
+namely <samp>essay-header.texi</samp>.  That file contains all aggregate
+type specific settings, the definition of several Texinfo helper
+macros, huge conditional processing, among other things, whose aim is
+to make essay&rsquo;s Texinfo source perfectly portable between the various
+use cases, therefore not requiring the modification of a single line
+of code in the essay file properly.  You must copy it also:
+</p>
+<div class="example">
+<pre class="example">cp <samp>philosophy/src/essay-header.texi</samp> <samp>gnu-3.0/doc</samp>
+</pre></div>
+
+<p>Now you are just a couple of changes in your documentation main file
+from achieving the desired goal.  For that end, edit the file
+<samp>gnu-3.0/doc/manual.texi</samp> and put somewhere inside its header the
+Texinfo command:
+</p>
+<pre class="verbatim">@set GNUphiThird
+</pre>
+<p>That will inform <samp>essay-header.texi</samp> about our specific use case,
+and thence make the <samp>the-gnu-project.texi</samp> essay file to behave
+properly when included.  Now, wherever you want an entry for the essay
+in the documentation main file, you can put an include for the essay
+file, like:
+</p>
+<pre class="verbatim">@node The GNU Project
+@appendix The GNU Project
+@include the-gnu-project.texi
+</pre>
+<p>If the documentation is supposed to generate also Info files, do not
+forget to put a menu entry for it:
+</p>
+<pre class="verbatim">@menu
+[...]
+GNU philosophy:
+* The GNU Project::
+[...]
+@end menu
+</pre>
+<p>You are done.  Simple isn&rsquo;t it?
+</p>
+
+
+
+
+&#12;
+<hr>
+<div class="header">
+<p>
+Next: <a href="Distribution.html#Distribution" accesskey="n" rel="next">Distribution</a>, Previous: <a href="Making-a-tarball.html#Making-a-tarball" accesskey="p" rel="prev">Making a tarball</a>, Up: <a href="Overview.html#Overview" accesskey="u" rel="up">Overview</a> &nbsp; [<a href="Index.html#Index" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

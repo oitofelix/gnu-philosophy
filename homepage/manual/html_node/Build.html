@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- GNU philosophy is the GNU Project's exhaustive collection of articles
+and essays about free software and related matters.
+
+Copyright (C) 2002, 2010, 2013, 2014 Free Software Foundation, Inc.
+Verbatim copying and distribution of this entire book are permitted
+worldwide, without royalty, in any medium, provided this notice is
+preserved.  Permission is granted to copy and distribute translations
+of this book from the original English into another language provided
+the translation has been approved by the Free Software Foundation and
+the copyright notice and this permission notice are preserved on all
+copies. -->
+<!-- Created by GNU Texinfo 5.2, http://www.gnu.org/software/texinfo/ -->
+<head>
+<title>GNU philosophy: Build</title>
+
+<meta name="description" content="GNU philosophy: Build">
+<meta name="keywords" content="GNU philosophy: Build">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="index.html#Top" rel="start" title="Top">
+<link href="Index.html#Index" rel="index" title="Index">
+<link href="Overview.html#Overview" rel="up" title="Overview">
+<link href="Installation.html#Installation" rel="next" title="Installation">
+<link href="Goal-suffixes.html#Goal-suffixes" rel="prev" title="Goal suffixes">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.indentedblock {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smallindentedblock {margin-left: 3.2em; font-size: smaller}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style:oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nocodebreak {white-space:nowrap}
+span.nolinebreak {white-space:nowrap}
+span.roman {font-family:serif; font-weight:normal}
+span.sansserif {font-family:sans-serif; font-weight:normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en" bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#800080" alink="#FF0000">
+<a name="Build"></a>
+<div class="header">
+<p>
+Next: <a href="Installation.html#Installation" accesskey="n" rel="next">Installation</a>, Previous: <a href="Goal-suffixes.html#Goal-suffixes" accesskey="p" rel="prev">Goal suffixes</a>, Up: <a href="Overview.html#Overview" accesskey="u" rel="up">Overview</a> &nbsp; [<a href="Index.html#Index" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<a name="Build-1"></a>
+<h3 class="section">1.6 Build</h3>
+
+
+
+
+
+
+
+&#12;
+
+
+
+
+&#12;
+
+
+
+
+&#12;
+
+<div class="smallindentedblock">
+<p>This particular text can be seen by running &lsquo;<samp>make help-build</samp>&rsquo;.
+</p></div>
+
+<p>After the configuration step, as described
+in <a href="Configuration.html#Configuration">Configuration</a>, is complete, it is time to build the package.
+The primary used for this is &lsquo;<samp>all[<var>a</var>][<var>f</var>][<var>l</var>]</samp>&rsquo;.
+Therefore to build all collection and standalone formats, in all
+available languages, invoke &lsquo;<samp>make all</samp>&rsquo; (or simply &lsquo;<samp>make</samp>&rsquo;).
+As explained in <a href="Goal-suffixes.html#Goal-suffixes">Goal suffixes</a>, you can further
+specify the build by using any combination of <em>aggregate</em>,
+<em>format</em> and <em>language</em> suffixes.
+</p>
+<p>There are two special <code>make</code> goals which aid GNU philosophy
+maintainers: &lsquo;<samp>www-gnu[<var>l</var>]</samp>&rsquo; and &lsquo;<samp>homepage[<var>l</var>]</samp>&rsquo;.
+The former build all <a href="https://www.gnu.org/philosophy/">GNU website
+philosophy section essays</a>, and the latter the
+<a href="https://www.gnu.org/software/philosophy/">homepage of GNU
+philosophy package</a>.
+</p>
+<p>The silent rules of <code>make</code> are enabled by default.  Therefore,
+you will see just one line for each file <code>make</code> builds, since
+the output of recipes is suppressed.  That is a reasonable behavior
+unless you have problems in the build process.  On that case you
+probably will need the full output of <code>make</code> to be able to
+debug the problem.  To do that at <code>make</code> time, pass &lsquo;<samp>V=1</samp>&rsquo;
+as an argument to <code>make</code> when building the targets that causes
+problem.  To disable silent rules at <code>configure</code> time use the
+configure option <samp>--disable-silent-rules</samp>.
+</p>
+
+
+
+&#12;
+
+
+
+
+
+&#12;
+
+
+
+</body>
+</html>

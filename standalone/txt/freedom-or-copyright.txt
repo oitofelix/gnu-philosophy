@@ -1,0 +1,178 @@
+Freedom--or Copyright
+*********************
+
+This essay was originally published on <http://gnu.org>, in 2008.
+
+This document is part of GNU philosophy, the GNU Project's exhaustive
+collection of articles and essays about free software and related
+matters.
+
+   Copyright (C) 2008, 2010 Richard Stallman
+
+     Verbatim copying and distribution of this entire document are
+     permitted worldwide, without royalty, in any medium, provided this
+     notice is preserved.
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+     This essay addresses how the principles of software freedom apply
+     in some cases to other works of authorship and art.  It's included
+     here since it involves the application of the ideas of free
+     software.
+
+Copyright was established in the age of the printing press as an
+industrial regulation on the business of writing and publishing.  The
+aim was to encourage the publication of a diversity of written works.
+The means was to require publishers to get the author's permission to
+publish recent writings.  This enabled authors to get income from
+publishers, which facilitated and encouraged writing.  The general
+reading public received the benefit of this, while losing little:
+copyright restricted only publication, not the things an ordinary reader
+could do.  That made copyright arguably a beneficial system for the
+public, and therefore arguably legitimate.
+
+   Well and good--back then.
+
+   Now we have a new way of distributing information: computers and
+networks.  Their benefit is that they facilitate copying and
+manipulating information, including software, musical recordings, books,
+and movies.  They offer the possibility of unlimited access to all sorts
+of data--an information utopia.
+
+   One obstacle stood in the way: copyright.  Readers and listeners who
+made use of their new ability to copy and share published information
+were technically copyright infringers.  The same law which had formerly
+acted as a beneficial industrial regulation on publishers had become a
+restriction on the public it was meant to serve.
+
+   In a democracy, a law that prohibits a popular and useful activity is
+usually soon relaxed.  Not so where corporations have political power.
+The publishers' lobby was determined to prevent the public from taking
+advantage of the power of their computers, and found copyright a handy
+weapon.  Under their influence, rather than relaxing copyright rules to
+suit the new circumstances, governments made them stricter than ever,
+imposing harsh penalties on the practice of sharing.  The latest fashion
+in supporting the publishers against the citizens, known as "three
+strikes," is to cut off people's Internet connections if they share.
+
+   But that wasn't the worst of it.  Computers can be powerful tools of
+domination when software suppliers deny users the control of the
+software they run.  The publishers realized that by publishing works in
+encrypted format, which only specially authorized software could view,
+they could gain unprecedented power: they could compel readers to pay,
+and identify themselves, every time they read a book, listen to a song,
+or watch a video.  That is the publishers' dream: a pay-per-view
+universe.
+
+   The publishers gained US government support for their dream with the
+Digital Millennium Copyright Act of 1998.  This law gave publishers
+power to write their own copyright rules, by implementing them in the
+code of the authorized player software.  Under this practice, called
+Digital Restrictions Management, or DRM, even reading or listening
+without authorization is forbidden.
+
+   We still have the same old freedoms in using paper books and other
+analog media.  But if e-books replace printed books, those freedoms will
+not transfer.  Imagine: no more used book stores; no more lending a book
+to your friend; no more borrowing one from the public library--no more
+"leaks" that might give someone a chance to read without paying.  No
+more purchasing a book anonymously with cash--you can only buy an e-book
+with a credit card.  That is the world the publishers want to impose on
+us.  If you buy the Amazon Kindle (we call it the Swindle) or the Sony
+Reader (we call it the Shreader for what it threatens to do to books),
+you pay to establish that world.
+
+   The Swindle even has an Orwellian back door that can be used to erase
+books remotely.  Amazon demonstrated this capability by erasing copies,
+purchased from Amazon, of Orwell's book '1984.' Evidently Amazon's name
+for this product reflects the intention to burn our books.
+
+   Public anger against DRM is slowly growing, held back because
+propaganda expressions such as "protect authors" and "intellectual
+property" have convinced readers that their rights do not count.  These
+terms implicitly assume that publishers deserve special power in the
+name of the authors, that we are morally obliged to bow to them, and
+that we have wronged someone if we see or hear anything without paying
+for permission.
+
+   The organizations that profit most from copyright legally exercise it
+in the name of the authors (most of whom gain little).  They would have
+you believe that copyright is a natural right of authors, and that we
+the public must suffer it no matter how painful it is.  They call
+sharing "piracy," equating helping your neighbor with attacking a ship.
+
+   They also tell us that a War on Sharing is the only way to keep art
+alive.  Even if true, it would not justify the policy; but it isn't
+true.  Public sharing of copies is likely to increase the sales of most
+works, and decrease sales only for big hits.
+
+   Bestsellers can still do well without forbidding sharing.  Stephen
+King got hundreds of thousands of dollars selling an unencrypted e-book
+serial with no obstacle to copying and sharing.  (He was dissatisfied
+with that amount and called the experiment a failure, but it looks like
+a success to me.)  Radiohead made millions in 2007 by inviting fans to
+copy an album and pay what they wished, while it was also shared through
+peer-to-peer.  In 2008, Nine Inch Nails released an album with
+permission to share copies and made $750,000 in a few days.(1)
+
+   The possibility of success without oppression is not limited to
+bestsellers.  Many artists of various levels of fame now make an
+adequate living through voluntary support:(2) donations and merchandise
+purchases of their fans.  Kevin Kelly(3) estimates the artist need only
+find around 1,000 true fans.(4)
+
+   When computer networks provide an easy anonymous method for sending
+someone a small amount of money, without a credit card, it will be easy
+to set up a much better system to support the arts.  When you view a
+work, there will be a button you can press saying, "Click here to send
+the artist one dollar."  Wouldn't you press it, at least once a week?
+
+   Another good way to support music and the arts is with tax
+funds--perhaps a tax on blank media or on Internet connectivity.  The
+state should distribute the tax money entirely to the artists, not waste
+it on corporate executives.  But the state should not distribute it in
+linear proportion to popularity, because that would give most of it to a
+few superstars, leaving little to support all the other artists.  I
+therefore recommend using a cube-root function or something similar.
+With linear proportion, superstar A with 1,000 times the popularity of a
+successful artist B will get 1,000 times as much money as B.  With the
+cube root, A will get 10 times as much as B.  Thus, each superstar gets
+a larger share than a less popular artist, but most of the funds go to
+the artists who really need this support.  This system will use our tax
+money efficiently to support the arts.
+
+   The Global Patronage(5) proposal combines aspects of those two
+systems, incorporating mandatory payments with voluntary allocation
+among artists.
+
+   In Spain, this tax system should replace the SGAE(6) and its canon,
+which could be eliminated.
+
+   To make copyright fit the network age, we should legalize the
+noncommercial copying and sharing of all published works, and prohibit
+DRM.  But until we win this battle, you must protect yourself: don't buy
+any products with DRM unless you personally have the means to break the
+DRM.  Never use a product designed to attack your freedom unless you can
+nullify the attack.
+
+   ---------- Footnotes ----------
+
+   (1) "Nine Inch Nails Made at Least $750k from CC Release in Two
+Days," posted by Cory Doctorow, 5 March 2008,
+<http://boingboing.net/2008/03/05/nine-inch-nails-made.html>.
+
+   (2) Mike Masnick, "The Future of Music Business Models (and Those Who
+Are Already There)," 25 January 2010,
+<http://techdirt.com/articles/20091119/1634117011.shtml>.
+
+   (3) Kevin Kelly is a commentator on digital culture and the founder
+of 'Wired' magazine.
+
+   (4) Kevin Kelly, "1,000 True Fans," 4 March 2008,
+<http://kk.org/thetechnium/archives/2008/03/1000_true_fans.php>.
+
+   (5) See <http://mecenatglobal.org/> for more information.
+
+   (6) The SGAE is Spain's main copyright collective for composers,
+authors, and publishers.
+

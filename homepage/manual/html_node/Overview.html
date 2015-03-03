@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- GNU philosophy is the GNU Project's exhaustive collection of articles
+and essays about free software and related matters.
+
+Copyright (C) 2002, 2010, 2013, 2014 Free Software Foundation, Inc.
+Verbatim copying and distribution of this entire book are permitted
+worldwide, without royalty, in any medium, provided this notice is
+preserved.  Permission is granted to copy and distribute translations
+of this book from the original English into another language provided
+the translation has been approved by the Free Software Foundation and
+the copyright notice and this permission notice are preserved on all
+copies. -->
+<!-- Created by GNU Texinfo 5.2, http://www.gnu.org/software/texinfo/ -->
+<head>
+<title>GNU philosophy: Overview</title>
+
+<meta name="description" content="GNU philosophy: Overview">
+<meta name="keywords" content="GNU philosophy: Overview">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="index.html#Top" rel="start" title="Top">
+<link href="Index.html#Index" rel="index" title="Index">
+<link href="index.html#Top" rel="up" title="Top">
+<link href="Description.html#Description" rel="next" title="Description">
+<link href="index.html#Top" rel="prev" title="Top">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.indentedblock {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smallindentedblock {margin-left: 3.2em; font-size: smaller}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style:oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nocodebreak {white-space:nowrap}
+span.nolinebreak {white-space:nowrap}
+span.roman {font-family:serif; font-weight:normal}
+span.sansserif {font-family:sans-serif; font-weight:normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en" bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#800080" alink="#FF0000">
+<a name="Overview"></a>
+<div class="header">
+<p>
+Next: <a href="Release.html#Release" accesskey="n" rel="next">Release</a>, Previous: <a href="index.html#Top" accesskey="p" rel="prev">Top</a>, Up: <a href="index.html#Top" accesskey="u" rel="up">Top</a> &nbsp; [<a href="Index.html#Index" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<a name="Overview-1"></a>
+<h2 class="chapter">1 Overview</h2>
+
+
+
+
+
+
+&#12;
+
+
+
+
+
+&#12;
+
+
+
+
+&#12;
+
+
+
+
+&#12;
+
+
+
+
+&#12;
+
+<p>This chapter briefly
+explains for what this package is intended, gives relevant
+considerations regarding dependencies, configuration, build,
+installation and use, describes which are the rules for its
+distribution, how to get a copy of it, how to contact the community,
+how to fill bug reports, how to contribute to the package, how to make
+donations to support its development and how to get started hacking
+the code.  Bear in mind that instructions in this chapter are package-specific; for general and
+in-depth configuration, build and installation instructions refer to
+the file <samp>INSTALL</samp> present in the top-level directory of the
+source distribution.  If you have checked out the source tree from the
+CVS repository see <a href="Hacking.html#Hacking">Hacking</a>.
+</p>
+
+<table class="menu" border="0" cellspacing="0">
+<tr><td align="left" valign="top">&bull; <a href="Description.html#Description" accesskey="1">Description</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">What this package is all about;
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Prerequisites.html#Prerequisites" accesskey="2">Prerequisites</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Package build prerequisites;
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Configuration.html#Configuration" accesskey="3">Configuration</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Influential configuration settings;
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Make-interface.html#Make-interface" accesskey="4">Make interface</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">General concepts about the GNU make interface;
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Goal-suffixes.html#Goal-suffixes" accesskey="5">Goal suffixes</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Further specifying the action of goal;
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Build.html#Build" accesskey="6">Build</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Build instructions;
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Installation.html#Installation" accesskey="7">Installation</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Install goals and locations;
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Cleaning.html#Cleaning" accesskey="8">Cleaning</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Deleting non-source objects from build directory;
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Making-a-tarball.html#Making-a-tarball" accesskey="9">Making a tarball</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Generating a pristine tarball for redistribution;
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Usage.html#Usage">Usage</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Using the essays in other package&rsquo;s documentation;
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Distribution.html#Distribution">Distribution</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">The user&rsquo;s right to modify and redistribute;
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Getting-a-copy.html#Getting-a-copy">Getting a copy</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">GNU FTP server and CVS;
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Contact.html#Contact">Contact</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Mailing list and IRC;
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Bug-reporting.html#Bug-reporting">Bug reporting</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Support and bug trackers;
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Contributing.html#Contributing">Contributing</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Several ways to help program&rsquo;s development;
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Donating.html#Donating">Donating</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Supporting developer&rsquo;s work;
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Hacking.html#Hacking">Hacking</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Get started with CVS checkout;
+</td></tr>
+</table>
+
+<p>For more information about this package you can visit its home page at
+<a href="https://www.gnu.org/software/philosophy/">https://www.gnu.org/software/philosophy/</a>.  If you want to receive notifications about new
+releases of this package or important issues related to it, subscribe
+to the mailing list, as described in <a href="Contact.html#Contact">Contact</a>, or subscribe to
+the package atom feed <a href="https://savannah.gnu.org/news/atom.php?group=philosophy">https://savannah.gnu.org/news/atom.php?group=philosophy</a>.
+</p>
+
+
+
+
+&#12;
+<hr>
+<div class="header">
+<p>
+Next: <a href="Release.html#Release" accesskey="n" rel="next">Release</a>, Previous: <a href="index.html#Top" accesskey="p" rel="prev">Top</a>, Up: <a href="index.html#Top" accesskey="u" rel="up">Top</a> &nbsp; [<a href="Index.html#Index" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,539 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- 
+
+
+
+
+
+
+This essay was originally published on http://gnu.org, in 2007.
+
+
+This document is part of GNU philosophy, the GNU Project's exhaustive
+collection of articles and essays about free software and related
+matters.
+
+Copyright (C) 2007, 2008, 2010 Richard Stallman
+
+Verbatim copying and distribution of this entire document are
+permitted worldwide, without royalty, in any medium, provided this
+notice is preserved.
+
+
+
+
+
+ -->
+<!-- Created by GNU Texinfo 5.2, http://www.gnu.org/software/texinfo/ -->
+<head>
+<title>Why Open Source Misses the Point of Free Software</title>
+
+<meta name="description" content="Why Open Source Misses the Point of Free Software">
+<meta name="keywords" content="Why Open Source Misses the Point of Free Software">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="#Top" rel="start" title="Top">
+<link href="dir.html#Top" rel="up" title="(dir)">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.indentedblock {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smallindentedblock {margin-left: 3.2em; font-size: smaller}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style:oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nocodebreak {white-space:nowrap}
+span.nolinebreak {white-space:nowrap}
+span.roman {font-family:serif; font-weight:normal}
+span.sansserif {font-family:sans-serif; font-weight:normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en" bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#800080" alink="#FF0000">
+
+
+
+
+
+
+
+<a name="Top"></a>
+<a name="Why-Open-Source-Misses-the-Point-of-Free-Software"></a>
+<h1 class="top">Why Open Source Misses the Point of Free Software</h1>
+
+
+
+
+
+
+
+<blockquote class="smallquotation">
+<p>This essay was originally published on <a href="http://gnu.org">http://gnu.org</a>, in 2007.
+</p>
+
+<p>This document is part of GNU philosophy, the GNU Project&rsquo;s exhaustive
+collection of articles and essays about free software and related
+matters.
+</p>
+<p>Copyright &copy; 2007, 2008, 2010 Richard Stallman
+</p>
+<blockquote>
+<p>Verbatim copying and distribution of this entire document are
+permitted worldwide, without royalty, in any medium, provided this
+notice is preserved.
+</p></blockquote>
+
+
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+&#12;
+<a name="index-open-source-software-_0028see-also-software_0029"></a>
+<a name="index-terminology_002c-importance-of-using-correct"></a>
+<a name="index-free-software_002c-essential-difference-between-open-source-and"></a>
+<a name="index-open-source_002c-essential-difference-between-free-software-and"></a>
+
+<p>When we call software &ldquo;free,&rdquo; we mean that it respects the users&rsquo;
+essential freedoms: the freedom to run it, to study and change it, and
+to redistribute copies with or without changes. This is a matter of
+freedom, not price, so think of &ldquo;free speech,&rdquo; not &ldquo;free beer.&rdquo;
+</p>
+<p>These freedoms are vitally important. They are essential, not just for
+the individual users&rsquo; sake, but for society as a whole because they
+promote social solidarity&mdash;that is, sharing and cooperation. They
+become even more important as our culture and life activities are
+increasingly digitized. In a world of digital sounds, images, and
+words, free software becomes increasingly essential for freedom in
+general.
+</p>
+<a name="index-India"></a>
+<p>Tens of millions of people around the world now use free software; the
+public schools of some regions of India and
+<a name="index-Spain"></a>
+Spain now teach all students to use the free GNU/Linux operating
+system. Most of these users, however, have never heard of the ethical
+reasons for which we developed this system and built the free software
+community, because nowadays this system and community are more often
+spoken of as &ldquo;open source,&rdquo; attributing them to a different
+philosophy in which these freedoms are hardly mentioned.
+</p>
+<a name="index-free-software-movement-_0028see-also-GNU-Project_0029"></a>
+<p>The free software movement has campaigned for computer users&rsquo; freedom
+since 1983. In 1984 we launched the development of the free operating
+system GNU, so that we could avoid the nonfree operating systems that
+deny freedom to their users. During the 1980s, we developed most of
+the essential components of the system and designed the GNU General
+Public License (GNU GPL) to release them under&mdash;a license designed
+specifically to protect freedom for all users of a program.
+</p>
+<a name="index-_0060_0060open-source_002c_0027_0027-values-of-1"></a>
+<p>Not all of the users and developers of free software agreed with the
+goals of the free software movement. In 1998, a part of the free
+software community splintered off and began campaigning in the name of
+&ldquo;open source.&rdquo; The term was originally proposed to avoid a possible
+misunderstanding of the term &ldquo;free software,&rdquo; but it soon became
+associated with philosophical views quite different from those of the
+free software movement.
+</p>
+<a name="index-citizen-values_002c-open-source-v_002e-free-software"></a>
+<p>Some of the supporters of open source considered the term a
+&ldquo;marketing campaign for free software,&rdquo; which would appeal to
+business executives by highlighting the software&rsquo;s practical benefits,
+while not raising issues of right and wrong that they might not like
+to hear. Other supporters flatly rejected the free software movement&rsquo;s
+ethical and social values. Whichever their views, when campaigning for
+open source, they neither cited nor advocated those values. The term
+&ldquo;open source&rdquo; quickly became associated with ideas and arguments
+based only on practical values, such as making or having powerful,
+reliable software. Most of the supporters of open source have come to
+it since then, and they make the same association.
+</p>
+<p>Nearly all open source software is free software. The two terms
+describe almost the same category of software, but they stand for
+views based on fundamentally different values. Open source is a
+development methodology; free software is a social movement. For the
+free software movement, free software is an ethical imperative,
+because only free software respects the users&rsquo; freedom. By contrast,
+the philosophy of open source considers issues in terms of how to make
+software &ldquo;better&rdquo;&mdash;in a practical sense only. It says that nonfree
+software is an inferior solution to the practical problem at hand.
+For the free software movement, however, nonfree software is a social
+problem, and the solution is to stop using it and move to free
+software.
+</p>
+<a name="index-call-to-action_002c-teach-others-to-value-freedom"></a>
+<a name="index-call-to-action_002c-use-correct-terminology-_0028see-also-terminology_0029"></a>
+<p>&ldquo;Free software.&rdquo; &ldquo;Open source.&rdquo; If it&rsquo;s the same software, does it
+matter which name you use? Yes, because different words convey
+different ideas. While a free program by any other name would give you
+the same freedom today, establishing freedom in a lasting way depends
+above all on teaching people to value freedom. If you want to help do
+this, it is essential to speak of &ldquo;free software.&rdquo;
+</p>
+<p>We in the free software movement don&rsquo;t think of the open source camp
+as an enemy; the enemy is proprietary (nonfree) software. But we want
+people to know we stand for freedom, so we do not accept being
+mislabeled as open source supporters.
+<a name="index-_0060_0060open-source_002c_0027_0027-values-of-2"></a>
+<a name="index-free-software_002c-essential-difference-between-open-source-and-1"></a>
+<a name="index-open-source_002c-essential-difference-between-free-software-and-1"></a>
+<a name="index-open-source-software-_0028see-also-software_0029-1"></a>
+</p>
+
+
+
+&#12;
+<a name="Common-Misunderstandings-of-_0060_0060Free-Software_0027_0027-and-_0060_0060Open-Source_0027_0027"></a>
+<h3 class="heading">Common Misunderstandings of &ldquo;Free Software&rdquo; and &ldquo;Open&nbsp;Source&rdquo;</h3>
+
+<a name="index-_0060_0060open-source_002c_0027_0027-common-misunderstandings-of"></a>
+<a name="index-_0060_0060free-software_002c_0027_0027-common-misunderstandings-of"></a>
+<p>The term &ldquo;free software&rdquo; is prone to misinterpretation: an
+unintended meaning, &ldquo;software you can get for zero price,&rdquo; fits the
+term just as well as the intended meaning, &ldquo;software which gives the
+user certain freedoms.&rdquo; We address this problem by publishing the
+definition of free software, and by saying, &ldquo;Think of &lsquo;free speech,&rsquo;
+not &lsquo;free beer.&rsquo;&rdquo; This is not a perfect solution; it cannot
+completely eliminate the problem. An unambiguous and correct term
+would be better, if it didn&rsquo;t present other problems.
+</p>
+<a name="index-_0060_0060free-software_002c_0027_0027-unambiguous-translations-of"></a>
+<p>Unfortunately, all the alternatives in English have problems of their
+own. We&rsquo;ve looked at many that people have suggested, but none is so
+clearly &ldquo;right&rdquo; that switching to it would be a good idea. (For
+instance, in some contexts the French and Spanish word &ldquo;libre&rdquo; works
+well, but people in India do not recognize it at all.) Every proposed
+replacement for &ldquo;free software&rdquo; has some kind of semantic
+problem&mdash;and this includes &ldquo;open source software.&rdquo;
+<a name="index-India-1"></a>
+</p>
+<p>The official definition of &ldquo;open source software&rdquo;<a name="DOCF1" href="#FOOT1"><sup>1</sup></a>
+(which is published by the
+<a name="index-Open-Source-Initiative-_0028OSI_0029"></a>
+Open Source Initiative and is too long to include here)
+was derived indirectly from our criteria for free software. It is not
+the same; it is a little looser in some respects, so the open source
+people have accepted a few licenses that we consider unacceptably
+restrictive. Also, they judge solely by the license of the source
+code, whereas our criterion also considers whether a device will let
+you <em>run</em> your modified version of the program. Nonetheless,
+their definition agrees with our definition in most cases.
+</p>
+<p>However, the obvious meaning for the expression &ldquo;open source
+software&rdquo;&mdash;and the one most people seem to think it means&mdash;is &ldquo;You
+can look at the source code.&rdquo; That criterion is much weaker than the
+free software definition, much weaker also than the official
+definition of open source. It includes many programs that are neither
+free nor open source.
+</p>
+<p>Since that obvious meaning for &ldquo;open source&rdquo; is not the meaning that
+its advocates intend, the result is that most people misunderstand the
+term. According to writer
+<a name="index-Stephenson_002c-Neal"></a>
+Neal Stephenson, &ldquo;Linux is &lsquo;open source&rsquo; software, meaning simply,
+anyone can get copies of its source code files.&rdquo;<a name="DOCF2" href="#FOOT2"><sup>2</sup></a> I don&rsquo;t think he
+deliberately sought to reject or dispute the &ldquo;official&rdquo;
+definition. I think he simply applied the conventions of the English
+language to come up with a meaning for the term. The state of
+<a name="index-Kansas"></a>
+Kansas published a similar definition: &ldquo;Make use
+of open-source software (OSS). OSS is software for which the source
+code is freely and publicly available, though the specific licensing
+agreements vary as to what one is allowed to do with that code.&rdquo;
+</p>
+<a name="index-New-York-Times"></a>
+<p>The <cite>New York Times</cite> has run an article that stretches the
+meaning of the term to refer to user beta testing<a name="DOCF3" href="#FOOT3"><sup>3</sup></a>&mdash;letting
+a few users try an early version and give confidential
+feedback&mdash;which proprietary software developers have practiced for
+decades.
+</p>
+<p>Open source supporters try to deal with this by pointing to their
+official definition, but that corrective approach is less effective
+for them than it is for us. The term &ldquo;free software&rdquo; has two natural
+meanings, one of which is the intended meaning, so a person who has
+grasped the idea of &ldquo;free speech, not free beer&rdquo; will not get it
+wrong again. But the term &ldquo;open source&rdquo; has only one natural
+meaning, which is different from the meaning its supporters intend.
+So there is no succinct way to explain and justify its official
+definition. That makes for worse confusion.
+</p>
+<a name="index-GPL_002c-_0060_0060open-source_0027_0027-and"></a>
+<a name="index-_0060_0060open-source_002c_0027_0027-the-GPL-and"></a>
+<a name="index-GPL_002c-GPL_002dcovered-software-_0028see-also-software_0029"></a>
+<a name="index-GPL_002dcovered-software-_0028see-also-software_0029"></a>
+<p>Another misunderstanding of &ldquo;open source&rdquo; is the idea that it means
+&ldquo;not using the GNU GPL.&rdquo; This tends to accompany another
+misunderstanding that &ldquo;free software&rdquo; means &ldquo;GPL-covered
+software.&rdquo; These are both mistaken, since the GNU GPL qualifies as an
+open source license and most of the open source licenses qualify as
+free software licenses.
+</p>
+<p>The term &ldquo;open source&rdquo; has been further stretched by its application
+to other activities, such as government, education, and science, where
+there is no such thing as source code, and where criteria for software
+licensing are simply not pertinent. The only thing these activities
+have in common is that they somehow invite people to participate.
+They stretch the term so far that it only means &ldquo;participatory.&rdquo;
+<a name="index-_0060_0060open-source_002c_0027_0027-common-misunderstandings-of-1"></a>
+<a name="index-_0060_0060free-software_002c_0027_0027-common-misunderstandings-of-1"></a>
+</p>
+
+
+
+&#12;
+<a name="Different-Values-Can-Lead-to-Similar-Conclusions_2026-but-Not-Always"></a>
+<h3 class="heading">Different Values Can Lead to Similar Conclusions&hellip; but Not&nbsp;Always</h3>
+
+<p>Radical groups in the 1960s had a reputation for factionalism: some
+organizations split because of disagreements on details of strategy,
+and the two daughter groups treated each other as enemies despite
+having similar basic goals and values. The right wing made much of
+this and used it to criticize the entire left.
+</p>
+<p>Some try to disparage the free software movement by comparing our
+disagreement with open source to the disagreements of those radical
+groups. They have it backwards. We disagree with the open source camp
+on the basic goals and values, but their views and ours lead in many
+cases to the same practical behavior&mdash;such as developing free
+software.
+</p>
+<p>As a result, people from the free software movement and the open
+source camp often work together on practical projects such as software
+development. It is remarkable that such different philosophical views
+can so often motivate different people to participate in the same
+projects. Nonetheless, there are situations where these fundamentally
+different views lead to very different actions.
+</p>
+<p>The idea of open source is that allowing users to change and
+redistribute the software will make it more powerful and reliable.
+But this is not guaranteed. Developers of proprietary software are not
+necessarily incompetent. Sometimes they produce a program that is
+powerful and reliable, even though it does not respect the users&rsquo;
+freedom. Free software activists and open source enthusiasts will
+react very differently to that.
+</p>
+<a name="index-_0060_0060open-source_002c_0027_0027-values-of"></a>
+<p>A pure open source enthusiast, one that is not at all influenced by
+the ideals of free software, will say, &ldquo;I am surprised you were able
+to make the program work so well without using our development model,
+but you did. How can I get a copy?&rdquo; This attitude will reward schemes
+that take away our freedom, leading to its loss.
+</p>
+<p>The free software activist will say, &ldquo;Your program is very
+attractive, but I value my freedom more. So I reject your program.
+Instead I will support a project to develop a free replacement.&rdquo; If
+we value our freedom, we can act to maintain and defend it.
+</p>
+
+
+
+&#12;
+<a name="Powerful_002c-Reliable-Software-Can-Be-Bad"></a>
+<h3 class="heading">Powerful, Reliable Software Can Be Bad</h3>
+
+<a name="index-DRM_002c-open-source-and"></a>
+<a name="index-open-source_002c-DRM-and"></a>
+<p>The idea that we want software to be powerful and reliable comes from
+the supposition that the software is designed to serve its users. If
+it is powerful and reliable, that means it serves them better.
+</p>
+<p>But software can be said to serve its users only if it respects their
+freedom. What if the software is designed to put chains on its users?
+Then powerfulness means the chains are more constricting, and
+reliability that they are harder to remove. Malicious features, such
+as spying on the users, restricting the users, back doors, and imposed
+upgrades are common in proprietary software, and some open source
+supporters want to implement them in open source programs.
+</p>
+<p>Under pressure from the movie and record companies, software for
+individuals to use is increasingly designed specifically to restrict
+them. This malicious feature is known as Digital Restrictions
+Management (DRM) (see
+<a name="index-Defective-by-Design-_0028see-also-DRM_0029"></a>
+<a href="http://defectivebydesign.org">http://defectivebydesign.org</a>) and is
+the antithesis in spirit of the freedom that free software aims to
+provide. And not just in spirit: since the goal of DRM is to trample
+your freedom, DRM developers try to make it hard, impossible, or even
+illegal for you to change the software that implements the DRM.
+</p>
+<p>Yet some open source supporters have proposed &ldquo;open source DRM&rdquo;
+software. Their idea is that, by publishing the source code of
+programs designed to restrict your access to encrypted media and by
+allowing others to change it, they will produce more powerful and
+reliable software for restricting users like you. The software would
+then be delivered to you in devices that do not allow you to change
+it.
+</p>
+<p>This software might be open source and use the open source development
+model, but it won&rsquo;t be free software since it won&rsquo;t respect the
+freedom of the users that actually run it. If the open source
+development model succeeds in making this software more powerful and
+reliable for restricting you, that will make it even worse.
+<a name="index-DRM_002c-open-source-and-1"></a>
+<a name="index-open-source_002c-DRM-and-1"></a>
+</p>
+
+
+
+&#12;
+<a name="Fear-of-Freedom"></a>
+<h3 class="heading">Fear of Freedom</h3>
+
+<a name="index-open-source_002c-and-fear-of-freedom"></a>
+<a name="index-_0060_0060open-source_002c_0027_0027-values-of-3"></a>
+<a name="index-citizen-values_002c-convenience-v_002e"></a>
+<p>The main initial motivation of those who split off the open source
+camp from the free software movement was that the ethical ideas of
+&ldquo;free software&rdquo; made some people uneasy. That&rsquo;s true: raising
+ethical issues such as freedom, talking about responsibilities as well
+as convenience, is asking people to think about things they might
+prefer to ignore, such as whether their conduct is ethical. This can
+trigger discomfort, and some people may simply close their minds to
+it. It does not follow that we ought to stop talking about these
+issues.
+<a name="index-free-software-movement-_0028see-also-GNU-Project_0029-1"></a>
+</p>
+<p>That is, however, what the leaders of open source decided to do. They
+figured that by keeping quiet about ethics and freedom, and talking
+only about the immediate practical benefits of certain free software,
+they might be able to &ldquo;sell&rdquo; the software more effectively to
+certain users, especially business.
+</p>
+<p>This approach has proved effective, in its own terms. The rhetoric of
+open source has convinced many businesses and individuals to use, and
+even develop, free software, which has extended our community&mdash;but
+only at the superficial, practical level. The philosophy of open
+source, with its purely practical values, impedes understanding of the
+deeper ideas of free software; it brings many people into our
+community, but does not teach them to defend it. That is good, as far
+as it goes, but it is not enough to make freedom secure. Attracting
+users to free software takes them just part of the way to becoming
+defenders of their own freedom.
+</p>
+<p>Sooner or later these users will be invited to switch back to
+proprietary software for some practical advantage. Countless companies
+seek to offer such temptation, some even offering copies gratis. Why
+would users decline? Only if they have learned to value the freedom
+free software gives them, to value freedom in and of itself rather
+than the technical and practical convenience of specific free
+software. To spread this idea, we have to talk about freedom. A
+certain amount of the &ldquo;keep quiet&rdquo; approach to business can be
+useful for the community, but it is dangerous if it becomes so common
+that the love of freedom comes to seem like an eccentricity.
+</p>
+<p>That dangerous situation is exactly what we have. Most people involved
+with free software, especially its distributors, say little about
+freedom&mdash;usually because they seek to be &ldquo;more acceptable to
+business.&rdquo; Nearly all GNU/Linux operating system distributions add
+proprietary packages to the basic free system, and they invite users
+to consider this an advantage rather than a flaw.
+</p>
+<p>Proprietary add-on software and partially nonfree GNU/Linux
+distributions find fertile ground because most of our community does
+not insist on freedom with its software. This is no coincidence. Most
+GNU/Linux users were introduced to the system through &ldquo;open source&rdquo;
+discussion, which doesn&rsquo;t say that freedom is a goal. The practices
+that don&rsquo;t uphold freedom and the words that don&rsquo;t talk about freedom
+go hand in hand, each promoting the other. To overcome this tendency,
+we need more, not less, talk about freedom.
+<a name="index-open-source_002c-and-fear-of-freedom-1"></a>
+<a name="index-_0060_0060open-source_002c_0027_0027-values-of-4"></a>
+<a name="index-citizen-values_002c-convenience-v_002e-1"></a>
+</p>
+
+
+
+&#12;
+<a name="Conclusion"></a>
+<h3 class="heading">Conclusion</h3>
+
+<a name="index-call-to-action_002c-teach-others-to-value-freedom-1"></a>
+<p>As the advocates of open source draw new users into our community, we
+free software activists must shoulder the task of bringing the issue
+of freedom to their attention. We have to say, &ldquo;It&rsquo;s free software
+and it gives you freedom!&rdquo;&mdash;more and louder than ever. Every time
+you say &ldquo;free software&rdquo; rather than &ldquo;open source,&rdquo; you help our
+campaign.
+</p>
+
+
+
+&#12;
+<a name="Notes"></a>
+<h3 class="heading">Notes</h3>
+
+<ul>
+<li> <a name="index-Barr_002c-Joe"></a>
+Joe Barr&rsquo;s article &ldquo;Live and Let License&rdquo; (ITworld.com, 22&nbsp;May&nbsp;2001, <a href="http://www.itworld.com/LWD010523vcontrol4">http://www.itworld.com/LWD010523vcontrol4</a>) gives his perspective on this issue.
+</li><li> <a name="index-Lakhani_002c-Karim-R_002e"></a>
+Karim R.&nbsp;Lakhani and
+<a name="index-Wolf_002c-Robert-G_002e"></a>
+Robert G.&nbsp;Wolf&rsquo;s paper on the motivation of free
+software developers (&ldquo;Why
+<a name="index-hackers"></a>
+Hackers Do What They Do: Understanding
+Motivation and Effort in Free/Open Source Software Projects,&rdquo; in
+<cite>Perspectives on Free and Open Source Software,</cite> edited by J.&nbsp;Feller
+and others (Cambridge: MIT Press, 2005)) says that a considerable
+fraction are motivated by the view that software should be free. This
+is despite the fact that they surveyed the developers on
+<a name="index-SourceForge"></a>
+SourceForge, a site that does not support the view that this is an
+ethical issue.
+</li></ul>
+<a name="index-terminology_002c-importance-of-using-correct-1"></a>
+<a name="index-_0060_0060open-source_002c_0027_0027-values-of-5"></a>
+<div class="footnote">
+<hr>
+<h4 class="footnotes-heading">Footnotes</h4>
+
+<h3><a name="FOOT1" href="#DOCF1">(1)</a></h3>
+<p>See
+<a href="http://opensource.org/docs/osd">http://opensource.org/docs/osd</a> for the full definition.</p>
+<h3><a name="FOOT2" href="#DOCF2">(2)</a></h3>
+<p>Neal
+Stephenson, <cite>In the Beginning&hellip;Was the Command Line</cite> (New
+York: HarperCollins Publishers, 1999), p.&nbsp;94.</p>
+<h3><a name="FOOT3" href="#DOCF3">(3)</a></h3>
+<p>Mary Jane
+Irwin, &ldquo;The Brave New World of Open-Source Game Design,&rdquo; <cite>New
+York Times,</cite> online ed., 7&nbsp;February&nbsp;2009,
+<a href="http://www.nytimes.com/external/gigaom/2009/02/07/07gigaom-the-brave-new-world-of-open-source-game-design-37415.html">http://www.nytimes.com/external/gigaom/2009/02/07/07gigaom-the-brave-new-world-of-open-source-game-design-37415.html</a>.</p>
+</div>
+<hr>
+
+
+
+</body>
+</html>

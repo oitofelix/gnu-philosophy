@@ -1,0 +1,94 @@
+Why Schools Should Exclusively Use Free Software
+************************************************
+
+This essay was originally published on <http://gnu.org>, in 2003.
+
+This document is part of GNU philosophy, the GNU Project's exhaustive
+collection of articles and essays about free software and related
+matters.
+
+   Copyright (C) 2003, 2009 Richard Stallman
+
+     Verbatim copying and distribution of this entire document are
+     permitted worldwide, without royalty, in any medium, provided this
+     notice is preserved.
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+There are general reasons why all computer users should insist on free
+software: it gives users the freedom to control their own
+computers--with proprietary software, the computer does what the
+software owner wants it to do, not what the user wants it to do.  Free
+software also gives users the freedom to cooperate with each other, to
+lead an upright life.  These reasons apply to schools as they do to
+everyone.
+
+   The purpose of this article is to state additional reasons that apply
+specifically to education.
+
+   First, free software can save schools money.  Free software gives
+schools, like other users, the freedom to copy and redistribute the
+software, so the school system can make copies for all the computers
+they have.  In poor countries, this can help close the digital divide.
+
+   This obvious reason, while important in practical terms, is rather
+shallow.  And proprietary software developers can eliminate this reason
+by donating copies to the schools.  (Warning: a school that accepts such
+an offer may have to pay for upgrades later.)  So let's look at the
+deeper reasons.
+
+   Schools have a social mission: to teach students to be citizens of a
+strong, capable, independent, cooperating and free society.  They should
+promote the use of free software just as they promote recycling.  If
+schools teach students free software, then the students will tend to use
+free software after they graduate.  This will help society as a whole
+escape from being dominated (and gouged) by megacorporations.
+
+   What schools should refuse to do is teach dependence.  Those
+corporations offer free samples to schools for the same reason tobacco
+companies distribute free cigarettes to minors: to get children
+addicted.(1)  They will not give discounts to these students once
+they've grown up and graduated.
+
+   Free software permits students to learn how software works.  Some
+students, on reaching their teens, want to learn everything there is to
+know about their computer and its software.  They are intensely curious
+to read the source code of the programs that they use every day.  To
+learn to write good code, students need to read lots of code and write
+lots of code.  They need to read and understand real programs that
+people really use.  Only free software permits this.
+
+   Proprietary software rejects their thirst for knowledge: it says,
+"The knowledge you want is a secret--learning is forbidden!"  Free
+software encourages everyone to learn.  The free software community
+rejects the "priesthood of technology," which keeps the general public
+in ignorance of how technology works; we encourage students of any age
+and situation to read the source code and learn as much as they want to
+know.  Schools that use free software will enable gifted programming
+students to advance.
+
+   The deepest reason for using free software in schools is for moral
+education.  We expect schools to teach students basic facts and useful
+skills, but that is not their whole job.  The most fundamental job of
+schools is to teach good citizenship, which includes the habit of
+helping others.  In the area of computing, this means teaching people to
+share software.  Schools, starting from nursery school, should tell
+their pupils, "If you bring software to school, you must share it with
+the other students.  And you must show the source code to the class, in
+case someone wants to learn."
+
+   Of course, the school must practice what it preaches: all the
+software installed by the school should be available for students to
+copy, take home, and redistribute further.
+
+   Teaching the students to use free software, and to participate in the
+free software community, is a hands-on civics lesson.  It also teaches
+students the role model of public service rather than that of tycoons.
+All levels of school should use free software.
+
+   ---------- Footnotes ----------
+
+   (1) RJ Reynolds Tobacco Company was fined $15m in 2002 for handing
+out free samples of cigarettes at events attended by children.  See
+<http://www.bbc.co.uk/worldservice/sci_tech/features/health/tobaccotrial/usa.htm>.
+

@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- GNU philosophy is the GNU Project's exhaustive collection of articles
+and essays about free software and related matters.
+
+Copyright (C) 2002, 2010, 2013, 2014 Free Software Foundation, Inc.
+Verbatim copying and distribution of this entire book are permitted
+worldwide, without royalty, in any medium, provided this notice is
+preserved.  Permission is granted to copy and distribute translations
+of this book from the original English into another language provided
+the translation has been approved by the Free Software Foundation and
+the copyright notice and this permission notice are preserved on all
+copies. -->
+<!-- Created by GNU Texinfo 5.2, http://www.gnu.org/software/texinfo/ -->
+<head>
+<title>GNU philosophy: Cleaning</title>
+
+<meta name="description" content="GNU philosophy: Cleaning">
+<meta name="keywords" content="GNU philosophy: Cleaning">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="index.html#Top" rel="start" title="Top">
+<link href="Index.html#Index" rel="index" title="Index">
+<link href="Overview.html#Overview" rel="up" title="Overview">
+<link href="Making-a-tarball.html#Making-a-tarball" rel="next" title="Making a tarball">
+<link href="Installation.html#Installation" rel="prev" title="Installation">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.indentedblock {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smallindentedblock {margin-left: 3.2em; font-size: smaller}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style:oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nocodebreak {white-space:nowrap}
+span.nolinebreak {white-space:nowrap}
+span.roman {font-family:serif; font-weight:normal}
+span.sansserif {font-family:sans-serif; font-weight:normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en" bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#800080" alink="#FF0000">
+<a name="Cleaning"></a>
+<div class="header">
+<p>
+Next: <a href="Making-a-tarball.html#Making-a-tarball" accesskey="n" rel="next">Making a tarball</a>, Previous: <a href="Installation.html#Installation" accesskey="p" rel="prev">Installation</a>, Up: <a href="Overview.html#Overview" accesskey="u" rel="up">Overview</a> &nbsp; [<a href="Index.html#Index" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<a name="Cleaning-1"></a>
+<h3 class="section">1.8 Cleaning</h3>
+
+
+
+
+
+
+
+&#12;
+
+
+
+
+&#12;
+
+
+
+
+&#12;
+
+<div class="smallindentedblock">
+<p>This particular text can be seen by running &lsquo;<samp>make help-clean</samp>&rsquo;.
+</p></div>
+
+<p>Sometimes, after the building process (see <a href="Build.html#Build">Build</a>), it is useful to
+delete all file objects built by <code>make</code> invocation which are
+present in the build tree, perhaps because it coincides with the
+source tree and you want to make it like pristine again, or you want
+to ensure every object gets rebuilt after a particular change to the
+sources or build procedure.  The primary used for this is
+&lsquo;<samp>all-clean[<var>a</var>][<var>f</var>][<var>l</var>]</samp>&rsquo;.  Therefore, to clean all
+collection and standalone formats, in all available languages, invoke
+&lsquo;<samp>make all-clean</samp>&rsquo;.  As explained in <a href="Goal-suffixes.html#Goal-suffixes">Goal suffixes</a>, you can further
+specify the cleaning by using any combination of <em>aggregate</em>,
+<em>format</em> and <em>language</em> suffixes.
+</p>
+
+
+
+&#12;
+
+
+
+
+
+&#12;
+
+
+
+</body>
+</html>
