@@ -1,2 +1,6 @@
 # gnu-philosophy
-GNU philosophy, the GNU project's exhaustive collection of articles and essays about free software and related matters.
+
+GNU philosophy: GNU project's exhaustive collection of articles and
+essays about free software and related matters.
+
+Homepage: http://oitofelix.github.io/gnu-philosophy/
