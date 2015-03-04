@@ -30,7 +30,7 @@
     {% endif %}
 
     <style type="text/css">
-     .nav-bar a[href="{{ page.url | remove: 'index.html' }}"] {
+     .nav-bar a[href="{{ site.baseurl | append: page.url | remove: 'index.html' }}"] {
 	 color: black;
 	 background-color: red;
 	 border-color: black;
