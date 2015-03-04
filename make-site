@@ -1,6 +1,0 @@
-#!/bin/sh
-
-makeinfo --html --css-ref=http://oitofelix.github.io/styles/base.css \
-	 philosophy-evaluation.texi &&
-    mv philosophy-evaluation/index.html . &&
-    rmdir philosophy-evaluation

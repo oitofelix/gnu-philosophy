@@ -1,1 +1,1 @@
-exclude: ["make-site", "philosophy-evaluation.texi"]
+baseurl: /gnu-philosophy
