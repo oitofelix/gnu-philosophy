@@ -1,0 +1,25 @@
+#!/bin/bash
+
+for d in standalone/*; do 
+    if [ -d $d ]; then
+	cat > $d/index.md <<EOF
+---
+title: oitofelix - GNU philosophy
+description: >
+  GNU Project's exhaustive collection of articles and essays about free
+  software and related matters.
+tags: philosophy, articles, essays, documentation, free software
+license: CC BY-ND 4.0
+layout: oitofelix-homepage
+---
+EOF
+	for f in $d/*; do
+	    if [ -f $f ]; then
+		file=$(basename $f)
+		if [ $file != index.md ]; then
+		   echo "- [${file%.*}]($file)" >> $d/index.md
+		fi
+	    fi
+	done
+    fi
+done
