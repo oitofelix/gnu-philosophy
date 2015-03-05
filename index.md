@@ -89,13 +89,13 @@ Finally, you can get the GNU philosophy 0.1.20140214 source code, a
 pre-release and demonstration version, specifically made for this
 evaluation process.
 
-[philosophy-0.1.20140214.tar.gz](philosophy-0.1.20140214.tar.gz)
+> [philosophy-0.1.20140214.tar.gz](philosophy-0.1.20140214.tar.gz)
 
 Its VCS repository is located at
 [https://github.com/oitofelix/gnu-philosophy](https://github.com/oitofelix/gnu-philosophy).
 
 
-### heading Dependencies
+### Dependencies
 
 Obviously, this package depends only on free software and has
 dependencies only at build time.  They are:
