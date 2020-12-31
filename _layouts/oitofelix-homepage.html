@@ -4,6 +4,8 @@
 
   <head>
 
+    <base href="//oitofelix.github.io" />
+
     <title>{{ page.title }}</title>
 
     <!-- Metadata -->
@@ -11,12 +13,14 @@
     <meta name="author" content="Bruno Félix Rezende Ribeiro" />
 
     <!-- External resources -->
-    <link rel="author" href="/about-me.html" />
+    <!-- <link rel="author" href="/about-me.html" /> -->
     <link rel="alternate" type="application/rss+xml"
 	  title="OITOFELIX homepage feed" href="/feed.xml" />
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" media="print" href="/styles/print.css" />
     <link rel="stylesheet" href="/styles/base.css" />
     <link rel="stylesheet" href="/styles/navigation.css" />
+    <link rel="stylesheet" href="/styles/emacs-highlight.css" />
 
     <!-- Licenses -->
     {% if page.license == 'CC BY-ND 4.0' %}
@@ -42,7 +46,7 @@
     <meta name="keywords" content="{{ page.tags }}" />
 
     <!-- External resources -->
-    <link rel="stylesheet" href="{{ page.url | remove: '.html' | append: '.css'}}" />
+    <link rel="stylesheet" href="{{ page.base_local | append: site.baseurl | append: '/index.html' | remove: '.html' | append: '.css'}}" />
 
     {% unless page.news == null %}
     <script src="/scripts/jquery-1.6.4.min.js"></script>
@@ -59,37 +63,37 @@
     <header>
       <h1>OITOFELIX</h1>
 
-      <!-- ===================== Search tool ===================== -->
-      <form id="search-form"
-	    target="_blank"
-	    action="https://startpage.com/do/search"
-	    method="post"
-	    name="searchsys"
-	    autocomplete="off"
-	    onsubmit="javascript:document.searchsys.query.value=document.searchsys.keyword.value;">
+      <!-- <\!-- ===================== Search tool ===================== -\-> -->
+      <!-- <form id="search-form" -->
+	    <!--       target="_blank" -->
+	    <!--       action="https://startpage.com/do/search" -->
+	    <!--       method="post" -->
+	    <!--       name="searchsys" -->
+	    <!--       autocomplete="off" -->
+	    <!--       onsubmit="javascript:document.searchsys.query.value=document.searchsys.keyword.value;"> -->
 
-	<input id="search-input" name="keyword" />
-	<input id="search-image"
-	       title="Search this site" alt="Search this site"
-	       type="image" src="/images/spacer.png"/>
+	    <!--   <input id="search-input" name="keyword" /> -->
+	    <!--   <input id="search-image" -->
+	    <!--          title="Search this site" alt="Search this site" -->
+	    <!--          type="image" src="/images/spacer.png"/> -->
 
-	<input type="hidden" name="query" />
-	<input type="hidden" name="host" value="oitofelix.github.io"/>
+	    <!--   <input type="hidden" name="query" /> -->
+	    <!--   <input type="hidden" name="host" value="oitofelix.github.io"/> -->
 
-      </form>
+      <!-- </form> -->
 
       <!-- ===================== Navigation Menu ===================== -->
       <nav>
 	<ul class="nav-bar">
 
-	  <!-- Front page -->
-	  <li><a href="/">Front page</a></li>
-
-	  <!-- About me -->
-	  <li><a href="/about-me.html">About me</a></li>
+	  <!-- <\!-- Front page -\-> -->
+	  <!-- <li><a href="/">Front page</a></li> -->
 
 	  <!-- Curriculum -->
 	  <li><a href="/curriculum.html">Curriculum</a></li>
+
+	  <!-- <\!-- About me -\-> -->
+	  <!-- <li><a href="/about-me.html">About me</a></li> -->
 
 	  <!-- Donation -->
 	  <li><a href="/funding.html">Funding</a></li>
@@ -106,13 +110,20 @@
 	<div>
 	  {{ content }}
 	</div>
-	  
+
 	<footer>
 	  <div id="copyright-notice">
 
-	    <p>
-	      <strong>Copyright © 2014, 2015 Bruno Félix Rezende Ribeiro</strong>
-	    </p>
+	    {% case page.author %}
+	      {% when 'tilim' %}
+                <p>
+	          <strong>Copyright © César Augustus de Souza Garcia</strong>
+	        </p>
+	      {% else %}
+	        <p>
+	          <strong>Copyright © Bruno Félix Rezende Ribeiro</strong>
+	        </p>
+	      {% endcase %}
 
 	    <p>
 	      <!-- CC BY-ND 4.0 -->
@@ -160,24 +171,24 @@
     <footer>
       <footer>
 
-	<!-- ===================== Navigation Menu ===================== -->
-	<nav>
-	  <ul class="nav-bar">
+	<!-- <\!-- ===================== Navigation Menu ===================== -\-> -->
+	<!-- <nav> -->
+	<!--   <ul class="nav-bar"> -->
 
-	    <!-- About this site -->
-	    <li><a href="/about-this-site.html#start">About this site</a></li>
+	<!--     <\!-- About this site -\-> -->
+	<!--     <li><a href="/about-this-site.html#start">About this site</a></li> -->
 
-	    <!-- Licenses -->
-	    <li><a href="/about-this-site.html#licensing">Licensing</a></li>
+	<!--     <\!-- Licenses -\-> -->
+	<!--     <li><a href="/about-this-site.html#licensing">Licensing</a></li> -->
 
-	    <!-- Contact me -->
-	    <li><a href="/about-this-site.html#contact-me">Contact me</a></li>
+	<!--     <\!-- Contact me -\-> -->
+	<!--     <li><a href="/about-this-site.html#contact-me">Contact me</a></li> -->
 
-	    <!-- News -->
-	    <li><a href="/about-this-site.html#news">News</a></li>
+	<!--     <\!-- News -\-> -->
+	<!--     <li><a href="/about-this-site.html#news">News</a></li> -->
 
-	  </ul>
-	</nav>
+	<!--   </ul> -->
+	<!-- </nav> -->
 
 
 	<!-- ===================== Contact information ===================== -->
@@ -189,33 +200,33 @@
 	</address>
 
 
-	<!-- ===================== Logos ===================== -->
-	<div id="footer-logos">
-	  <p>
-	    <span id="modification-time"><!--#echo var="LAST_MODIFIED"  --></span>
+<!-- 	<\!-- ===================== Logos ===================== -\-> -->
+<!-- 	<div id="footer-logos"> -->
+<!-- 	  <p> -->
+<!-- 	    <span id="modification-time"><\!--#echo var="LAST_MODIFIED"  -\-></span> -->
 
-	    <span id="logos">
-	      <a rel="jslicense" href="/about-this-site.html#javascript">
-		<img src="/images/librejs.png"
-		     title="JavaScript license information"
-		     alt="JavaScript license information"
-		     width="72" height="31" /></a>
-		<a href="http://validator.w3.org/check?uri=referer">
-		  <img src="/images/valid-html5.png"
-		       title="Validate HTML5"
-		       alt="Valid HTML 5" width="88" height="31" /></a>
-		  <a href="http://jigsaw.w3.org/css-validator/check/referer">
-		    <img src="/images/valid-css.png"
-			 title="Validate CSS"
-			 alt="Valid CSS" width="88" height="31" /></a>
-		    <a
-href="http://validator.w3.org/feed/check.cgi?url=http%3A//oitofelix.github.io/feed.xml">
-		      <img src="/images/valid-rss.png"
-			   title="Validate RSS feed"
-			   alt="Valid RSS" /></a>
-	    </span>
-	  </p>
-	</div>
+<!-- 	    <span id="logos"> -->
+<!-- 	      <a rel="jslicense" href="/about-this-site.html#javascript"> -->
+<!-- 		<img src="/images/librejs.png" -->
+<!-- 		     title="JavaScript license information" -->
+<!-- 		     alt="JavaScript license information" -->
+<!-- 		     width="72" height="31" /></a> -->
+<!-- 		<a href="http://validator.w3.org/check?uri=referer"> -->
+<!-- 		  <img src="/images/valid-html5.png" -->
+<!-- 		       title="Validate HTML5" -->
+<!-- 		       alt="Valid HTML 5" width="88" height="31" /></a> -->
+<!-- 		  <a href="http://jigsaw.w3.org/css-validator/check/referer"> -->
+<!-- 		    <img src="/images/valid-css.png" -->
+<!-- 			 title="Validate CSS" -->
+<!-- 			 alt="Valid CSS" width="88" height="31" /></a> -->
+<!-- 		    <a -->
+<!-- href="http://validator.w3.org/feed/check.cgi?url=http%3A//oitofelix.github.io/feed.xml"> -->
+<!-- 		      <img src="/images/valid-rss.png" -->
+<!-- 			   title="Validate RSS feed" -->
+<!-- 			   alt="Valid RSS" /></a> -->
+<!-- 	    </span> -->
+<!-- 	  </p> -->
+<!-- 	</div> -->
 
 
       </footer>
